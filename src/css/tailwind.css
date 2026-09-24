@@ -2,6 +2,7 @@
 /* @import "./font-roboto.css"; */
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @import "./base.css";
 @import "./menu.css";
 
@@ -10,7 +11,7 @@
 
 /* Adjusting variables and adding custom styles */
 @theme {
-    --text-base: 1.25rem;
+    --text-base: 3rem;
     --font-sans: Inter, system-ui, sans-serif;
     --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 }

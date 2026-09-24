@@ -18,7 +18,7 @@ Ctatitle: Make it your own!
 
 ----
 
-Ctasubtitle: Tux Kart is free and open source.
+Ctasubtitle: SuperTuxKart is free and open source.
 
 ----
 
@@ -27,6 +27,50 @@ Ctatext: Create tracks and karts and share them with the community.
 ----
 
 Ctaimage: - file://jr4zz4kijlq3yd4a
+
+----
+
+Abouttitle: <p>About</p>
+
+----
+
+Aboutsubtitle: <p>SuperTuxKart Evolution</p>
+
+----
+
+Abouttext: <p>Karts. Nitro. Action! SuperTuxKart is a 3D open-source arcade racer with a variety of characters, tracks, and modes to play. Our aim is to create a game that is more fun than realistic, and provide an enjoyable experience for all ages. <a href="http://localhost/en#">Discover the world of Super Tux Kart</a></p><p><strong><em>SuperTuxKart Evolution</em></strong> is our latest major release. Building upon the foundation laid by all those who made STK what it is today, SuperTuxKart Evolution will be the biggest release in STK’s history in terms of new content: new tracks, new features, improved gameplay, enhanced graphics, and much more. <a href="http://localhost/en#">Read the release notes</a></p>
+
+----
+
+Features:
+
+- 
+  title: Cross platform
+  text: '<p>Tux Kart runs on Windows, Linux, Mac OS, Android, iOS and Switch.<br>Find a download</p>'
+  icon: [ ]
+- 
+  title: Family Friendly
+  text: >
+    There is no violence or offensive
+    language – just pure fun!
+  icon: [ ]
+- 
+  title: Play together
+  text: '<p>Play in Couch mode against friends and family or join an online race.</p>'
+  icon: [ ]
+- 
+  title: Many Play Modes
+  text: '<p>Try all our different racing modes. There is one for everybody.<br>Learn more about game modes</p>'
+  icon:
+    - file://mszyr6e4fk9imqmz
+- 
+  title: Free and Open Source
+  text: >
+    Tux Kart is created by enthusiasts and
+    lovers of open source software. Even the
+    tools to create Tux Kart are open.
+  icon:
+    - file://jynfigm1j5l72qnq
 
 ----
 

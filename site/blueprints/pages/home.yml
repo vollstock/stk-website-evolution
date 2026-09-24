@@ -29,20 +29,46 @@ columns:
             type: headline
             label: Call to action
           ctaTitle:
-            type: text
+            type: writer
+            nodes: false
+            marks: false
           ctaSubTitle:
-            type: text
+            type: writer
+            nodes: false
+            marks: false
           ctaText:
-            type: text
+            type: writer
           ctaImage:
             type: files
             multiple: false
+          
+          # About
+          aboutHeadline:
+            type: headline
+            label: About
+          aboutTitle:
+            type: writer
+            nodes: false
+            marks: false
+          aboutSubTitle:
+            type: writer
+            nodes: false
+            marks: false
+          aboutText:
+            type: writer
+          features:
+            type: structure
+            fields:
+              title:
+                type: text
+              text:
+                type: writer
+              icon:
+                type: files
+                multiple: false
 
   sidebar:
     width: 1/3
     sections:
-      pages:
-        type: pages
-        template: default
       files:
         type: files

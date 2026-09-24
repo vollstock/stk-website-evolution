@@ -4,11 +4,11 @@ const swiper = new Swiper('#blog-swiper', {
     grabCursor: true,
     lazy: true,
     pagination: {
+        clickable: true,
         el: '.swiper-pagination',
         type: 'bullets'
     },
     navigation: {
-        clickable: true,
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },

@@ -16,6 +16,6 @@
     <?php endif ?>
 </head>
 
-<body>
+<body class="bg-white dark:bg-gray-800">
 
     <?= snippet('components/menu'); ?>

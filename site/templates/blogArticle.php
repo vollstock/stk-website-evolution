@@ -12,7 +12,7 @@
             src="<?= $poster->url() ?>" alt="">
     <?php endif ?>
 
-    <?php snippet('components/container', ['class' => 'lg:absolute inset-x-0 bottom-0 w-full bg-white lg:rounded-t-3xl flex flex-col justify-end items-center gap-6 pt-18! pb-8!'], slots: true) ?>
+    <?php snippet('components/container', ['class' => 'prose prose-sm dark:prose-invert lg:absolute inset-x-0 bottom-0 w-full bg-white dark:bg-gray-800 lg:rounded-t-3xl flex flex-col justify-end items-center gap-6 pt-18! pb-8!'], slots: true) ?>
     <?php slot() ?>
 
     <!-- Meta -->
@@ -50,7 +50,7 @@
 <?php slot() ?>
 
 <div class="md:grid grid-cols-[auto_240px] gap-6 mt-6">
-    <article class="prose">
+    <article class="prose prose-lg dark:prose-invert">
         <?= $page->text()->kt() ?>
     </article>
     <aside class="mt-6 md:mt-0">

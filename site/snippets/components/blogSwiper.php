@@ -15,7 +15,7 @@ $articles = $blog->children()->listed()->sortBy('date', 'desc')->limit(5);
                 <a href="<?= $article->url() ?>">
                     <?php if ($poster = $article->poster()->toFile()): ?>
                         <!-- TODO: use smaller thumbnail -->
-                        <img src="<?= $poster->url() ?>" class="size-full object-cover" loading="lazy" />
+                        <img src="<?= $poster->resize(850, 564, 80)->url() ?>" class="size-full object-cover" loading="lazy" />
                         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <?php endif ?>
                     <div
@@ -28,7 +28,7 @@ $articles = $blog->children()->listed()->sortBy('date', 'desc')->limit(5);
                             <?php if ($author = $article->author()->toUser()): ?>
                                 <!-- TODO: use smaller thumbnail -->
                                 <?php if ($avatar = $author->avatar()): ?>
-                                    <img class="size-5 mr-1 rounded-full inline border-background/50 border" src="<?= $avatar->url() ?>" />
+                                    <img class="size-5 mr-1 rounded-full inline border-background/50 border" src="<?= $avatar->resize(40, 40, 80)->url() ?>" />
                                 <?php endif ?>
                                 <span><?= $author->name() ?></span>
                             <?php endif ?>
