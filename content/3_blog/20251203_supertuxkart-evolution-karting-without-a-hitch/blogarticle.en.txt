@@ -1,0 +1,170 @@
+Title: SuperTuxKart Evolution: Karting without a hitch
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Physics in SuperTuxKart are a careful mix between realistic elements and gameplay elements to smooth the experience and avoid many of the ways the kart could get completely out of control. Kart racers are all about doing crazy jumps and flying around corners without having to worry if the vehicle will suddenly flip and tumble.</p>
+
+<p>I began contributing to the game during 1.0’s development and I remember well the work to fix <a href="https://forum.supertuxkart.net/thread-127.html">a physics issue</a> present in 0.9.3 that sometimes led to uncontrollable karts floating on downward slopes.</p>
+
+<p>When STK 1.0 came out, it already had many years of fine-tuning behind it, delivering a satisfying experience in most situations.</p>
+
+<p>In this blog post, I’m going to present many changes that have been done for SuperTuxKart Evolution to further enhance how the kart behaves: a major redesign of collisions between karts, aligning the obtention of collectibles with visible contact, changes to jumps, as well as subtler improvements.</p>
+  
+<br/>
+<div style="text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-z_yRdqfVN61Fck_iQnBGzqW6OYx_us5fpCkd-wNA3Xxh1ZDOJ7cIBqJAJTC_Q-w17bQzaMHrp6Q0L_MOOFZphdq44F7UaxxaOWHeDLz5E6RKjdruTCAgMMiWD29vcqi5YTekycON5_HSVu9Ocvk7f4y6zj_-bCzh-N_CkmlhtR9T7_RZEBTxtc62Dw/s1280/Video_thumbnailA.png" frameborder="0" height="360" src="https://www.youtube.com/embed/QMZZpqQFf-M?feature=player_embedded" width="640"></iframe><span style="font-size: x-small;"><span style="font-size: small;"> </span></span><br />
+<span style="font-size: x-small;"><span style="font-size: small;">SuperTuxKart Evolution devlog: Bumps and Jumps</span></span></div>
+<br />
+<h1 style="text-align: left;">Kart-on-kart collisions</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Collisions between karts are perhaps one of the gameplay’s least satisfying elements in SuperTuxKart 1.5. It happens more by accident than deliberately, because the player initiating the collision will very often lose a lot of speed. Realistic, but not very fun.</p>
+
+<p>In 1.5, collisions are only sought to pass off a bomb.</p>
+
+<p>The philosophy behind the improvements brought by STK Evolution has been to make accidental collisions less disruptive while also creating more opportunities for deliberate collisions: pushing a rival off the track or into a road hazard is now a legitimate tactic.</p>
+
+<p>To achieve this, we use several tricks:</p>
+  <ul style="text-align: left;"><li>An impulse pushing both karts away from each other is generated whenever a kart collides with the side of another kart. It is not instantaneous, rather it applies a pushing force for a short period of time, with a fade-in and a fade-out period.</li>
+  <li>We look at several factors to determine the strength of the impulse for each kart: relative speed, relative weight, which kart is pushing the other, and at what angle.</li>
+  <li>We prevent the kart from being rotated by the collision or the impulse: collisions cause lateral motion, not imprevisible changes of direction. Steering continues working normally while the impulse is applied.</li></ul>
+
+<p>As a result of all these changes and a lot of careful tuning, the effect of collisions is more predictable and manageable for players.</p>
+
+<p>Accidental collisions are usually harmless, there is more incentive to deliberately try to push a rival off the track, and factors such as kart weight, collision angle and relative speed matter much more than they used to.</p>
+
+  <p>All this together transform collisions from an annoyance into a fun part of the game.</p></span>
+
+<Picture - What to put here ???>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Note that all the changes discussed above apply to collisions where the side of a kart is touched. This includes some collisions that may look at first glance to be more from the back, because the kart hitting from behind is substantially on the left or the right.</p>
+
+<p>Collisions with the front of a kart touching the back of another, which are only a small portion of all collisions, are deliberately left unchanged, with the kart behind transferring speed to the kart in front.</p>
+
+<p>To match the gameplay improvements with some eye-candy, we also plan on adding new kart animations that would be triggered when karts hit an obstacle or each other.</p>
+
+<p>These changes also fix an issue present in SuperTuxKart 1.5 and earlier versions that frequent participants of online multiplayer encounter sooner or later : the collision deadlock.</p>
+
+<p>When the kart in front got pushed from the side in the back, it would create a rotational force: the back of the kart would move away from the pushing kart, while the front would move towards it.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMLWMDooMGrqxtfJPPyZiaUtYb5H5AwufEhK-pRtk568jpJp8mQK__P_HnLlJiDlEOkKkI4BASbTKMynWwEm_BVQTJaJjZBOCEx45InlIrCVh_eP-4_HXARiBGke7oWQGL9K7D8rq7TcAeUCFhDh3M8EGqt96Elx9Ts52-YowOAEEPNLkWD26YlBy67g/s720/Blog_Hitch_RotationalForces.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="400" data-original-width="720" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMLWMDooMGrqxtfJPPyZiaUtYb5H5AwufEhK-pRtk568jpJp8mQK__P_HnLlJiDlEOkKkI4BASbTKMynWwEm_BVQTJaJjZBOCEx45InlIrCVh_eP-4_HXARiBGke7oWQGL9K7D8rq7TcAeUCFhDh3M8EGqt96Elx9Ts52-YowOAEEPNLkWD26YlBy67g/s640/Blog_Hitch_RotationalForces.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The arrows show the rotational forces the pushed kart is subject to without the impulse separating the karts.<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>To try to keep going in its intended direction, the kart being pushed would start turning in the opposite direction. It prevents veering off-track, but it means that now both karts are pushing against each other.</p>
+
+<p>At this stage, neither kart is able to steer freely, nor to disengage safely : both karts locked together would usually soon crash. This situation can never arise in SuperTuxKart Evolution.</p></span>
+
+<br/>
+<h1 style="text-align: left;">Touching items on the track</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>In SuperTuxKart 1.5, hitboxes are used for collisions with karts, walls and other physical objects, but they don’t matter when it comes to collecting nitro bottles, bananas, gums laying on the ground, etc.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1dpLz2AXBWogAEKRV9EYIDCvorRH3WMc-U_bYGeI5ccIP0Fd8-OEH9yw_wz36sBU0J134BOTL0Bmi3X6jihLIqXLRXkruCVNbIgPztxRpUp57Ih2bI5I_XR55TFQQRoZ6Jm6EBTTlNT1H1LxYTiJM11OpXYBPDW8oYQqW_zp8H3dj8shnqJP3k2lscw/s1500/Blog_Hitch_touch.jpg" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="880" data-original-width="1500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1dpLz2AXBWogAEKRV9EYIDCvorRH3WMc-U_bYGeI5ccIP0Fd8-OEH9yw_wz36sBU0J134BOTL0Bmi3X6jihLIqXLRXkruCVNbIgPztxRpUp57Ih2bI5I_XR55TFQQRoZ6Jm6EBTTlNT1H1LxYTiJM11OpXYBPDW8oYQqW_zp8H3dj8shnqJP3k2lscw/s640/Blog_Hitch_touch.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">In 1.5, the gum is not triggered despite clear contact with the kart.<br /></td></tr></tbody></table>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioIQ3i0OYPPwz_TolVKIR4IPb7cCFE1DQonedA5XCvB7kP2t-Q-HjEcnH9-VPmTnBoF-C1BRA2eFzxBgY7uqKhgpXMjoQWqYtyJcItrvJj_CEuc6j8xJS4yO50vKw2YO6sOWYL9dhcKUEXnTgxLE4zgozmlsvKWZBkYThib9-jahDojji8-xli5kqLCw/s960/Blog_Hitch_touch2.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="550" data-original-width="960" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioIQ3i0OYPPwz_TolVKIR4IPb7cCFE1DQonedA5XCvB7kP2t-Q-HjEcnH9-VPmTnBoF-C1BRA2eFzxBgY7uqKhgpXMjoQWqYtyJcItrvJj_CEuc6j8xJS4yO50vKw2YO6sOWYL9dhcKUEXnTgxLE4zgozmlsvKWZBkYThib9-jahDojji8-xli5kqLCw/s640/Blog_Hitch_touch2.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">In 1.5, if this kart gets any closer to the nitro can, it will collect it, despite a clear gap between the kart and the nitro.<br /></td></tr></tbody></table>
+  
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>With SuperTuxKart Evolution, this changes. Whereas the only thing that counted previously was the distance between the kart’s center and the item’s center, kart and item size are made relevant again.</p>
+
+  <p>As a consequence:</p>
+  <ul style="text-align: left;"><li>There is close alignment between visual touch and item collection. There is no need to internalize the collection distance to pick optimal trajectories.</li>
+  <li>A kart having a smaller hitbox is not always an advantage. It helps to avoid dangerous items and for cornering, but more precision and focus is required to pick up beneficial items.</li>
+  <li>It offers another way to differentiate between item types. Small nitro bottle are harder to catch than big nitro cans, STK Evolution introduces small gums that are easier to avoid than regular gums, and more possibilities are open.</li></ul>
+
+<p>STK Evolution also fixes a related issue, curious yet frustrating: karts flying slightly above a gum laying on the ground would trigger it and slow down drastically. Now, at least one wheel needs to be touching the ground for the kart to stick to the gum.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs7gJCBn3mpq04crr-RffMlaMKLwokucRx84NjpT5DJM9GbW2BTLeJS5ghE1_eS-Q_06cZTzcC84k8yRfOw8PBMK4eIh2fevHg-0P0m9j13XyGJA1-ozmENEcGCI_xCZ65Ss7vb3nf6ypTyr-Rr8ejebGUZJGvsu_AP7Q8q1JbKukAiJesNsC5R1j2Ng/s640/Blog_Hitch_GumFly.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="270" data-original-width="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs7gJCBn3mpq04crr-RffMlaMKLwokucRx84NjpT5DJM9GbW2BTLeJS5ghE1_eS-Q_06cZTzcC84k8yRfOw8PBMK4eIh2fevHg-0P0m9j13XyGJA1-ozmENEcGCI_xCZ65Ss7vb3nf6ypTyr-Rr8ejebGUZJGvsu_AP7Q8q1JbKukAiJesNsC5R1j2Ng/s640/Blog_Hitch_GumFly.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">In STK 1.5, this kart would have triggered the gum it is jumping above.<br /></td></tr></tbody></table>
+
+<br/>
+<h1 style="text-align: left;">Everyone jumps!</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Another improvement made with STK Evolution comes to how easily various karts take off when the road’s slope quickly changes.</p>
+
+<p>In STK 1.5, the lighter the kart, the more difficulty it has to jump. Yes, you read that right, in 1.5 heavy karts jump more easily than light karts.</p>
+
+<p>This counter-intuitive behavior comes from a stabilizing force that’s applied to karts when all their wheels are touching the ground, preventing karts from taking off in unintended places. The first version of that code was created during the STK 0.8 development cycle, and <a href ="https://github.com/supertuxkart/stk-code/commit/97772ba1aee8346070ac4620e4e4080d2f206610">it was enabled</a> starting with STK 0.9.</p>
+
+<p>Because the force applied was the same for all karts, it had a smaller effect on heavier karts.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitiwDPagVfXDnqOaLsYrPyhpv4OL9ULye-hMH_EvowLtYZf452AxHiwQ7Y6e_I7rB3rV54hSkJF3VPl-DEcyA0GullGqh1UPYN8DMK6u6Swu7gL1B9_EsY7WYz42SQj1XZFlTi_DvSd6zyfzGZdAKBEL2v2eaqoqcJKjV2oC8cLP0SWjlbKHOnQJztuw/s960/Blog_Hitch_BarnJump.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="480" data-original-width="960" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitiwDPagVfXDnqOaLsYrPyhpv4OL9ULye-hMH_EvowLtYZf452AxHiwQ7Y6e_I7rB3rV54hSkJF3VPl-DEcyA0GullGqh1UPYN8DMK6u6Swu7gL1B9_EsY7WYz42SQj1XZFlTi_DvSd6zyfzGZdAKBEL2v2eaqoqcJKjV2oC8cLP0SWjlbKHOnQJztuw/s640/Blog_Hitch_BarnJump.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">An infamous spot in Cornfield Crossing where only heavy karts would fly off.<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>For SuperTuxKart Evolution, this force now depends on kart weight: the take-off speed is now the same accross all kart classes, with values tuned to make jumps slightly easier than they used to be for medium karts.</p>
+
+<p>This change makes the game behavior more intuitive for players and helps track creators to create and calibrate spots with optional jumps that only happen at high speeds.</p>
+
+<p>Jumps are a track-design element that we want to make more common in STK Evolution!</p></span>
+
+<br/>
+<h1 style="text-align: left;">Driving on the side</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>A kart balanced on two wheels, at the edge of equilibrium: a rare occurrence, but sometimes seen in some tracks: a road border going up while the road goes down, wheels straddling across the divide, some momentum, and voilà.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS5uFNcz_AGWuuRfUsVXZu2tsmsWfgWGPmgwkMesGo6qivT8CMgXbxHy3YYrJCEgL7MWaJQv9WJHDeUN-arpIEP2qLo6eyEKE9Cvm0Etc82tWA39IT6LbL0aHGMaICBPOnv2cOT2etl_64RfdsKOofwloQRyve0mtrnFFHjz9-ZrGw6vp5bqSQUHB_dA/s800/Blog_Hitch_TiltedKart.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="450" data-original-width="800" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS5uFNcz_AGWuuRfUsVXZu2tsmsWfgWGPmgwkMesGo6qivT8CMgXbxHy3YYrJCEgL7MWaJQv9WJHDeUN-arpIEP2qLo6eyEKE9Cvm0Etc82tWA39IT6LbL0aHGMaICBPOnv2cOT2etl_64RfdsKOofwloQRyve0mtrnFFHjz9-ZrGw6vp5bqSQUHB_dA/s640/Blog_Hitch_TiltedKart.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A kart tilted on its side with only two wheels making contact with the ground.<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Steering and acceleration are applied through the wheels: with some wheels off the ground, they are extremely unresponsive, and the kart is likely to crash before it can recover.</p>
+
+<p>When karts are flying through the air in SuperTuxKart, they are subject to an automatical balancing force that pushes them upright. It has no basis in the real-world, but it means karts can happily do crazy jumps without the player having to fear a rollover.</p>
+
+<p>In SuperTuxKart 1.5, if at least a wheel is touching the ground, this correction is not applied. If it was indiscriminately applied to cases with only one or two wheels touching, it would create new glitches of its own, with wheels floating away from the ground on slopes.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3LoRGP9DGAnTqhCeADfXDPaAIqxx55WIJex0sopf5wxsORkbnHGGU9KLRWpZrOWBtllKxIbIpiZA5ThFUw6GWeKRREb6H99dSwOPX4R_OaG4BsauocCWbCXkO1AMoim58hQ-uP9oF_D5YDK6CEiy7U-hB6kBoTEjbmgEZUAqEqgP5dzqOTfbkoFeNkw/s1280/Blog_Hitch_IncorrectCorrection.jpg" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="720" data-original-width="1280" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3LoRGP9DGAnTqhCeADfXDPaAIqxx55WIJex0sopf5wxsORkbnHGGU9KLRWpZrOWBtllKxIbIpiZA5ThFUw6GWeKRREb6H99dSwOPX4R_OaG4BsauocCWbCXkO1AMoim58hQ-uP9oF_D5YDK6CEiy7U-hB6kBoTEjbmgEZUAqEqgP5dzqOTfbkoFeNkw/s640/Blog_Hitch_IncorrectCorrection.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A naive approach to keep the kart upright would produce this result: wheels that are artificially kept levitating on slopes.<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>For SuperTuxKart Evolution, elaborate logic detects if the balancing force would help bring the wheels back to the ground or not. As a result, the duration spent on two wheels is reduced by over 70 % and the player has time to take back control before the next curve.</p></span>
+
+<br/>
+<h1 style="text-align: left;">Collision curves</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Restitution curves are another area of physics that has seen change for STK Evolution. It’s not something easily noticed when not looking for it, but if you are still reading this far, you probably care about the technical details.</p>
+
+<p>Essentially, when a kart collides with a track element, its speed is used to determine how strong the bounceback force is. It feels nice to have some bounce back, but too much of it can quickly create issues with collisions sending the kart flying far away.</p>
+
+<p>In STK 1.5, the parameters used to avoid huge bounces result in a very curious behavior where the bounce strength peaks around a kart speed of 12 (about half of SuperTux’s max speed without boost) and sharply declines until a speed of 20.</p>
+
+<p>STK Evolution does away with this paradoxical behavior. It also reduces bounce strength at very high speeds.</p></span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiQ1niNU-w2fxg9Y1lwAlG5dfny9-uEcNrG8T0bjbOhhQa91S4s0_WeVxlfpN-oy3cVDY12CJ2ZlAeYUTftKbIAF28VDk1857QWLzwb5uGESe1HE1k0L-FYnKNTHGrJdW6gZyodDpP0iRNdLKR-IWdttpAY1jC27MIcJ7sMfbzK4-pg-SX_JvOiFALMQ/s1354/Blog_Hitch_Graph1.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="753" data-original-width="1354" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiQ1niNU-w2fxg9Y1lwAlG5dfny9-uEcNrG8T0bjbOhhQa91S4s0_WeVxlfpN-oy3cVDY12CJ2ZlAeYUTftKbIAF28VDk1857QWLzwb5uGESe1HE1k0L-FYnKNTHGrJdW6gZyodDpP0iRNdLKR-IWdttpAY1jC27MIcJ7sMfbzK4-pg-SX_JvOiFALMQ/s640/Blog_Hitch_Graph1.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Pure frontal collisions are fairly rare, but they are simpler to measure and explain. The restitution curve matters most for collisions on the side where the combination of rebound and some momentum can make the kart fly off-track.<br /></td></tr></tbody></table>
+
+<br/>
+<h1 style="text-align: left;">Falling (almost) like a feather</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>SuperTuxKart Evolution also brings changes to the behavior of karts flying after a jump.</p>
+
+<p>In STK 1.5, karts would continuously accelerate following the pull of gravity (tracks can mark textures as having gravity, allowing for tracks to have upside down sections). With jumps rarely lasting more than one second, it rarely mattered, but some addon tracks with huge jumps had karts falling so fast that they’d sometimes go through the ground instead of colliding with it.</p>
+
+<p>For STK Evolution, pseudo-friction dependent on vertical speed slows down the rise and fall of jumping karts. Forward movement is unaffected: where would the fun be in jumps that lose you speed?</p>
+
+<p>As a result, karts have a reasonable maximum falling speed and track creators can design crazy jumps without having to worry about physics issues.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijrYPfuRBPanY0vDnCzVFZ4ydF_gPj0n2M7W0EayyAU8QWS46dgp5d1-le8nwjIAY2ocFVGSQrgbJoY0s-0vxA8ejYlk3WKzW-EIsxQLvnB5oMTnbIMgI4vlW77xrf2Yz877kqeABbb9SGCfVJwV-cwScIQ798nchwcPkOqU1Gw7LZcwHJSp9zPONChQ/s1300/Blog_Hitch_Graph3.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="731" data-original-width="1300" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijrYPfuRBPanY0vDnCzVFZ4ydF_gPj0n2M7W0EayyAU8QWS46dgp5d1-le8nwjIAY2ocFVGSQrgbJoY0s-0vxA8ejYlk3WKzW-EIsxQLvnB5oMTnbIMgI4vlW77xrf2Yz877kqeABbb9SGCfVJwV-cwScIQ798nchwcPkOqU1Gw7LZcwHJSp9zPONChQ/s640/Blog_Hitch_Graph3.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">This data was recorded in the last jump of Cocoa Temple with a medium kart.<br /></td></tr></tbody></table>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaxP3UytC7vRZ54dDK8ZShl1oI_h4h1fVot1pw_adL104Bkrrq2lxnw0wDtoIi0lSmJQUrCNhFqi_kMWKuR8GD2JmDaxmrw4D2kwG73V2n_Jp7MMxNrfnLMLcegYS2J34E9OdmgjZEY7R7YfERZ6b6Ei6fTXPHG7fbY2L-TnHTxQBUhyphenhyphenvCFof8YWqQVw/s1302/Blog_Hitch_Graph2.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="737" data-original-width="1302" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaxP3UytC7vRZ54dDK8ZShl1oI_h4h1fVot1pw_adL104Bkrrq2lxnw0wDtoIi0lSmJQUrCNhFqi_kMWKuR8GD2JmDaxmrw4D2kwG73V2n_Jp7MMxNrfnLMLcegYS2J34E9OdmgjZEY7R7YfERZ6b6Ei6fTXPHG7fbY2L-TnHTxQBUhyphenhyphenvCFof8YWqQVw/s640/Blog_Hitch_Graph2.png" width="640" /></a></td></tr></tbody></table>
+
+<br/>
+<h1 style="text-align: left;">Conclusion</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Block by block, these changes are building STK Evolution, making it different and better than the versions that came before. Improvement in gameplay are more often felt than consciously perceived, but they play a key part in making the game the best we can.</p>
+
+<p>If you’d like to support our work, there are many ways to contribute; either directly by <a href="https://supertuxkart.net/How_to_contribute_code">improving the code</a>, contributing art, working <a href="https://supertuxkart.net/Translating_STK">on the game’s translations</a> ; or by <a href="https://supertuxkart.net/Donate">donating to the project</a> to allow us to spend more time working on the game.</p>
+
+<p>We also welcome your thoughts on this blog post in the comments!</p></span>
+
+----
+
+Date: 2025-12-03T22:57:00
+
+----
+
+Uuid: swyx1dio8n6epnuk

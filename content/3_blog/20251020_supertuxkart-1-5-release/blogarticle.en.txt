@@ -1,0 +1,124 @@
+Title: SuperTuxKart 1.5 release
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>SuperTuxKart’s 1.5 is now available!</p>
+
+<p>You will find the official binaries for Windows, Linux, Mac and Android on <a href="https://supertuxkart.net/Download">our download page</a>.</p></span>
+<br/>
+<div style="text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLk1P9hXsxuanAumbphOmpRcal9GQGYsDiLUbyHPSmh4LM3Qr0wXR11cgFF60XJ5pJpVZv9V6ahMXLHcjy_AQVE8C4NiOBKIwJNxfUfeVBZeS8-cXvP501w8SSH-7gqFnamthzZWkw1ek75lUm7htppSEHfifyhaHL-uVnX5hVqbWP8B9PdinwmyxCKA/s1280/1.5-trailer_thumbnail.jpg" frameborder="0" height="360" src="https://www.youtube.com/embed/H1Lo7PlTGBk?feature=player_embedded" width="640"></iframe><span style="font-size: x-small;"><span style="font-size: small;"> </span></span><br />
+<span style="font-size: x-small;"><span style="font-size: small;">SuperTuxKart 1.5 official trailer</span></span></div>
+<br />
+
+
+  <h1 style="text-align: left;">Gift package</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>From 0.9 to 0.9.3, each new release of SuperTuxKart was accompanied by a gift package containing new tracks, that would later make their way in the main game. Tracks such as Cornfield Crossing and Ravenbridge Mansion were first available that way.</p>
+
+<p>For STK 1.5, we are once again making a donation package available: anyone giving at least 5$ will receive early access to two new tracks designed for SuperTuxKart Evolution: Drainage Dash and Freytra Peaks.</p></span>
+
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3X5bI9Ir0Z-XeRRJsn5LgH1tuD4Ev_Rdeo4G-XQSwmbh3Umo9k6tL-FcQKvxwIIySXK6lSkg96dusqXo_sZ_FZMPiGrKzKQikh3Td0XdhyphenhyphenYt9X-tyfV6j1OjeZfps1kHwtd43_ffn49qje_lKWkCl0gm-3mgsKX3CqUOhr6VgmE_QDAiZ1HtyzhwU1A/s1920/STK_1.5_giftPackage_poster.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3X5bI9Ir0Z-XeRRJsn5LgH1tuD4Ev_Rdeo4G-XQSwmbh3Umo9k6tL-FcQKvxwIIySXK6lSkg96dusqXo_sZ_FZMPiGrKzKQikh3Td0XdhyphenhyphenYt9X-tyfV6j1OjeZfps1kHwtd43_ffn49qje_lKWkCl0gm-3mgsKX3CqUOhr6VgmE_QDAiZ1HtyzhwU1A/s640/STK_1.5_giftPackage_poster.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Gift package poster<br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>See <a href="https://supertuxkart.net/Donate">our donate page</a> for details.</p>
+  </span>
+  <br/>
+
+  <h1 style="text-align: left;">Eggs and themes</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Three new egg hunts in Black Forest, Gran Paradisio Island and The Old Mine invite curious players to explore and look at the tracks from new angles. In higher difficulties, some locations will truly challenge your wits!</p></span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgatppZGSDMW6h5b_LzSrunkAzn4cMgHo7btE6ntaoqpdlxW-frj2__7OSN73rZzyZ1-TxlTELd98SHlsMFEwKr2oPpXroH8NDnBeyd8LSiV8teSRd7Ud_VOqAeEXxzIZnZ9nRaC7LFDdBHVoBDX1LbIJAIPV5g_jXPR1QjlBCeNEBdn0dcfQcgiF7RuQ/s1920/Blog_07_egg.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="884" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgatppZGSDMW6h5b_LzSrunkAzn4cMgHo7btE6ntaoqpdlxW-frj2__7OSN73rZzyZ1-TxlTELd98SHlsMFEwKr2oPpXroH8NDnBeyd8LSiV8teSRd7Ud_VOqAeEXxzIZnZ9nRaC7LFDdBHVoBDX1LbIJAIPV5g_jXPR1QjlBCeNEBdn0dcfQcgiF7RuQ/s640/Blog_07_egg.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">One of the new egg hunts<br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Soccer mode is quite popular in online multiplayer, and it now receives three new official fields – Oasis, Hole Drop and XR-4R3N4.</p>
+
+<p>Tracks themselves remain the same for the sake of compatibility, except for the fixing of a few checkline exploits.</p>
+
+<p>Meanwhile in the overworld, the sun is setting. As a last hurrah after more than ten years of presence in STK releases, it has received a set of small visual improvements.</p></span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnNQhoKcXzNsifhblRja5XjZoHYViOsBaaKiVlSfw7o3hIdj0U0_uQ0xbLMPsPqQHWSqzumd4NyIsQJ3h7awb4bgKftAxRKD6r56RzImISd9DpVLSJ0k0pFwWLh9jO21YcnGwFbtZnFiWqkg_MK0l_O7s1DIIHFE1C5I2jueZOPr08SmxgoOsa3Zv-Jg/s1200/Blog_07_soccerb.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="537" data-original-width="1200" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnNQhoKcXzNsifhblRja5XjZoHYViOsBaaKiVlSfw7o3hIdj0U0_uQ0xbLMPsPqQHWSqzumd4NyIsQJ3h7awb4bgKftAxRKD6r56RzImISd9DpVLSJ0k0pFwWLh9jO21YcnGwFbtZnFiWqkg_MK0l_O7s1DIIHFE1C5I2jueZOPr08SmxgoOsa3Zv-Jg/s640/Blog_07_soccerb.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">XR-4R3N4<br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>The user interface will be very familiar to players of previous versions, yet many changes are present. The game window can now be resized in almost any screen. Preset window sizes, the fullscreen toggle and camera options are now located in a new display tab.</p>
+
+<p>The dynamic display system when selecting a kart, track, or game mode, is much better at showing the optimal number of items accounting for screen size, reducing the need for scrolling. Search bars, a kart class filter and a quick access random track button also help.</p>
+
+<p>Minor changes include better support for unusual aspect ratios, improved contrast for some UI elements, fixes for overflow issues that could occur with some translations, time warnings with color and sound indicators in time-limited modes, colored score indicators for battles, and keyboard navigation fixes.</p>
+
+<p>More directly noticeable are six new themes, doubling the number of UI skins available compared to 1.4. The classic theme gets a new Desert variant, while the Cartoon theme gets five new variants, matching the colors of the classic theme. Each of those themes come with a background picture showing a scene from one of STK’s tracks.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN6VgoE1JyUMTqiTJ04BMrXhZlD2dp9FFOhwxElGdjkaiilRYDeA6v4aI9NvnvC1SeUrS4qee9XHXJTgJ_jsAHxp3esECDPYK5CuHXA_L0Oxgn9jnXU_Bg0K0WLjNf2YyHLHa8vsCpNcd6aLSLnUKWjDix_uyLDEzdkDNb6lGPWCaURwqGSEoqvHSz4w/s1704/Blog_07_cartoon-forest.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="896" data-original-width="1704" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN6VgoE1JyUMTqiTJ04BMrXhZlD2dp9FFOhwxElGdjkaiilRYDeA6v4aI9NvnvC1SeUrS4qee9XHXJTgJ_jsAHxp3esECDPYK5CuHXA_L0Oxgn9jnXU_Bg0K0WLjNf2YyHLHa8vsCpNcd6aLSLnUKWjDix_uyLDEzdkDNb6lGPWCaURwqGSEoqvHSz4w/s640/Blog_07_cartoon-forest.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Cartoon Forest theme<br /></td></tr></tbody></table>
+  
+<br/>
+
+  <h1 style="text-align: left;">Features and Fixes</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>SuperTuxKart now offers the possibility to mark tracks and karts as favorites. Marked with a heart, favorites are automatically shown first for quicker selection and are also available in a dedicated tab.</p>
+
+<p>Several audio improvements are also present. The improved sound scale allows headphone users to easily pick the ideal sound level. In-race, the switch powerup sound is global to help players avoid bad surprises, while some issues related to the pause menu (some sounds playing during pauses, and the last-lap music sometimes missing) have been resolved.</p></span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn-K1xuw9GxO76cW8uDmal5_KRHsCfoBAptz655mEQkbvbcvub40km5Uy3QGTDvHA26XRtzKHWQPGLVAvOlcipcH226o3M4JW6XdV_dm60RRCVT40e4WYs5t61uenKxc2iQmJr0wWlJGNOjDEG7_p6_aAH7Z3hPX7ZY8vjUMRBJHpdVc4EMlE3tQCQdA/s1920/Blog_07_favorites.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1200" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn-K1xuw9GxO76cW8uDmal5_KRHsCfoBAptz655mEQkbvbcvub40km5Uy3QGTDvHA26XRtzKHWQPGLVAvOlcipcH226o3M4JW6XdV_dm60RRCVT40e4WYs5t61uenKxc2iQmJr0wWlJGNOjDEG7_p6_aAH7Z3hPX7ZY8vjUMRBJHpdVc4EMlE3tQCQdA/s640/Blog_07_favorites.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Favorite tracks<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Game graphics have also seen progress, with several changes bringing improved visuals for negligible performance cost. This is supported by several code changes alleviating inefficiencies in the game’s graphics loop, helping performance in complex tracks.</p>
+
+<p>For example, the game now uses x16 <a href="https://en.wikipedia.org/wiki/Anisotropic_filtering">anisotropic filtering</a> on all but the lowest settings, getting rid of the blur often present with x2 and x4 filtering for a barely measurable FPS drop of 1-2 %.</p>
+
+<p>Improved level of details (LoD) and shadow mapping logic allow to significantly reduce the occurrence of distracting pop-in, or effectively eliminate it using new higher settings. Several shaders have also been fixed or improved to provide better image quality.</p>
+
+<p>Parachute and Bubblegums come with a new nicer spawn animation, and karts in night tracks can make use of a new spotlight lighting effect.</p>
+
+<p>Still, some new options are meant for users with discrete GPUs and performance to spare : 1.5 offers 2048 resolution shadows, percentage-closer soft shadows, and even the option to render at a higher-than-native resolution, improving finer details.</p>
+
+<p>The built-in frame-limiter can also be configured by the player. Instead of always being at 120, it can be set as low as 30 and as high as 1000.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQVnQZDnjzh3zwPU9PhyphenhyphenPlEhJfEA99dV1efjufMEOgYaDgg4T4u2UpBnMHuYHpJHtH4bZ8km1BBxcSb0uFwox1Kp38Dhn_jStu8ZoPlwiNrgg-Pzg5Uvk1iuNY9OPQGh443kCJmqb1brzkIpGtC4tzK62pZXteJ41h21XpUstLYc1vHzb7Nu-rNKfT1Q/s913/Blog_07_power-lines.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="581" data-original-width="913" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQVnQZDnjzh3zwPU9PhyphenhyphenPlEhJfEA99dV1efjufMEOgYaDgg4T4u2UpBnMHuYHpJHtH4bZ8km1BBxcSb0uFwox1Kp38Dhn_jStu8ZoPlwiNrgg-Pzg5Uvk1iuNY9OPQGh443kCJmqb1brzkIpGtC4tzK62pZXteJ41h21XpUstLYc1vHzb7Nu-rNKfT1Q/s640/Blog_07_power-lines.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Supersampling<br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+    <p>All these changes to graphics are accompanied by a new benchmark mode.</p>
+
+<p>A <a href="https://blog.supertuxkart.net/2024/07/why-average-fps-and-1-low-fps-are.html">previous blog post</a> dove deeper into the details, but in short it helps players to measure the performance effect of various settings on their particular machine, while also being able to more easily compare how different machines perform.</p>
+
+<p>It is also useful for development, allowing us to more easily ascertain the performance effect of some changes and to optimize the graphics presets for ordinary users.</p></span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3R9B-ouJHLynB8BSph91WOyRKkLi5gHxrMVsg1XgBHW9XSwJIFV9QBzKkBbyZhlLvh_rJMjt_FAcn5Afx3sqsVcUJu_Tv-HVzeP_x240EMEXhNcA_IwbAFiVoJ7A94yFrZ2v2G5lX4y4JcPuUFwkpyVXv9RkToA7PzG17olSLrQgIltHIzvSjYlASLA/s1920/Blog_07_benchmark.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1200" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3R9B-ouJHLynB8BSph91WOyRKkLi5gHxrMVsg1XgBHW9XSwJIFV9QBzKkBbyZhlLvh_rJMjt_FAcn5Afx3sqsVcUJu_Tv-HVzeP_x240EMEXhNcA_IwbAFiVoJ7A94yFrZ2v2G5lX4y4JcPuUFwkpyVXv9RkToA7PzG17olSLrQgIltHIzvSjYlASLA/s640/Blog_07_benchmark.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The benchmark end screen<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>As always, many code changes under the hood are less exciting to talk about and describe, but they play an important role in keeping the project going: correction of various bugs, code quality improvements making future changes easier and helping to prevent future bugs, updates to the build system to keep the game compiling fine with newer libraries, compilers and operating systems, etc.</p>
+
+<p>In the replay section, 1.5 players will also find the glitchless time-trial world records for each track included.</p>
+
+<p>Finally, SuperTuxKart 1.5 offers several new langages. Filipino, Rusyn and Welsh have full translations, while partial translations are available for Hindi, Bengali and Georgian alongside the new fonts needed to render their scripts.</p>
+
+<p>As usual, a more detailed list can be found in <a href="https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md">the changelog</a> and looking at <a href="https://github.com/supertuxkart/stk-code/milestone/19?closed=1">tickets solved for 1.5</a>.</p>
+
+<p>I also want to say thank you to everyone who contributed to the release through code, assets, bug reports or translations.</p></span>
+  <br/>
+
+  <h1 style="text-align: left;">Future development</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>It is now almost 20 years since Hiker, STK’s former project leader, began working on the game. Over the years, the code, assets and gameplay changed so dramatically it is in some ways more appropriate to talk of different games in the same series.</p>
+
+<p>After SuperTuxKart 1.0 <a href="https://blog.supertuxkart.net/2019/04/supertuxkart-10-release.html">released</a> with support for online multiplayer, releases focused on iterative improvements while preserving gameplay compatibility. In comparison, SuperTuxKart 1.5 offers a lot of polish, new features, and bug-fixes, but it is still unmistakably the same game.</p>
+
+<p>Now, developpment moves on to <a href="https://blog.supertuxkart.net/2025/09/supertuxkart-evolution-roadmap.html">SuperTuxKart Evolution</a>, with the aim of retaining the core of what so many players enjoy in SuperTuxKart, while bringing a fresh playing experience through a myriad of new elements and changes.</p>
+
+  <p>In the meantime, enjoy STK 1.5 !</p></span>
+
+----
+
+Date: 2025-10-20T20:03:00
+
+----
+
+Uuid: vfhgvtbonzf5s98n

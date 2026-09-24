@@ -1,0 +1,185 @@
+Title: My Departure from SuperTuxKart
+
+----
+
+Text:
+
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeYc-yeCWqt4FbNnkc-3vaB3gqZiXFpIX7AiPNUE3MLX_E8DDHN8dPCY3Fr1GZAjB17DPCCnHlmCjFyviB_HgUBgIIol0f7xLDru7Ck9OuwQSxVjYjf4ekwQoM6UNqd3H4Vu9sOEoIA_J_/s1600/tuxkart_screenshot3.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" data-original-height="620" data-original-width="800" height="248" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeYc-yeCWqt4FbNnkc-3vaB3gqZiXFpIX7AiPNUE3MLX_E8DDHN8dPCY3Fr1GZAjB17DPCCnHlmCjFyviB_HgUBgIIol0f7xLDru7Ck9OuwQSxVjYjf4ekwQoM6UNqd3H4Vu9sOEoIA_J_/s320/tuxkart_screenshot3.png" width="320" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">The original TuxKart</td></tr>
+</tbody></table>
+After 13 years of
+working on SuperTuxKart I have decided to step away from the project,
+and make space for a new team of leaders. As this is my last post,
+and I assume that we have many new readers who might not be aware of
+the history of SuperTuxKart, I'll use this opportunity to give a
+brief summary of what happened to SuperTuxKart in these 13 years,
+that resulted in the 1.0 version that you are playing now.
+
+<br />
+I discovered TuxKart in 2006 after installing the latest SUSE distribution.
+Never having played Mario Kart, I was quite fascinated by the game. By sheer
+coincidence I then heard of SuperTuxKart, a project trying to improve TuxKart.<br />
+<br />
+ <div style="clear:both"></div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRN0snmSfsTBS_9JWBU45EUFSPCV7Vfug1DSCsjQLuqukgSkqyCB0ZxAGIQ0q9HWgmIB3UyIeFLYOal7VQsiIgTluoNSxJQfOy2g11LPFvPVK_q1V-iIO-yijsWSRjIr76GsNY9UAgrKqf/s1600/Screenshot_v0.2-1.jpg" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" data-original-height="600" data-original-width="800" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRN0snmSfsTBS_9JWBU45EUFSPCV7Vfug1DSCsjQLuqukgSkqyCB0ZxAGIQ0q9HWgmIB3UyIeFLYOal7VQsiIgTluoNSxJQfOy2g11LPFvPVK_q1V-iIO-yijsWSRjIr76GsNY9UAgrKqf/s320/Screenshot_v0.2-1.jpg" width="320" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">An early SuperTuxKart screenshot</td></tr>
+</tbody></table>
+Being intrigued by
+the promised improvement in graphics, I tried to look for
+the community developing SuperTuxKart, only to learn that the project
+had been basically dead and the game in an unplayable state for over one year.
+I decided to see if I could fix this. Soon some other
+contributors joined and a 0.2 version was released in September 2006,
+making the graphical improvements of
+SuperTuxKart available in a playable form for the first time.<br />
+<br />
+ <div style="clear:both"></div>
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoj81yvsgbmX0qwVcQb2XL23uXtthT9gRhjgeFYF0Mfoo7qoTfHdbJ6R140Wi7yBb8TuSf-51qnl89b4iqYYGhDo0h_e4TbI8bB1g6Zje3sB5ZXpsvQp_QLFAs_6Cm-iJbniMfO0WNYVVu/s1600/Lighthouse.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" data-original-height="601" data-original-width="800" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoj81yvsgbmX0qwVcQb2XL23uXtthT9gRhjgeFYF0Mfoo7qoTfHdbJ6R140Wi7yBb8TuSf-51qnl89b4iqYYGhDo0h_e4TbI8bB1g6Zje3sB5ZXpsvQp_QLFAs_6Cm-iJbniMfO0WNYVVu/s320/Lighthouse.jpg" width="320" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">SuperTuxKart 0.4</td><td class="tr-caption" style="text-align: center;"><br /></td></tr>
+</tbody></table>
+With the 0.4 release
+in 2008 the physics were newly implemented: the open source physics
+engine bullet was integrated, and the physics were tweaked to give it
+a fun-racer feeling. Did you know that previously a kart would just
+stop if it hit any other kart?  The initial port took around 9 months,
+though of course other work was done for the 0.4 release as well
+during that time. But tweaking the physics was a long ongoing
+process, in between we suffered from karts sometimes hovering, 
+sticking to a wall, or being shot rocket-like into the air. Anyone
+thinking of 'just using a physics engine' - do not underestimate the
+tweaking effort necessary to make a game behave the way you want it to behave :)<br />
+<br />
+ <div style="clear:both"></div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO0P1LPyTlX0qdOUs2fGyNhFvgn7igTVsgH9buaeUMuCFPaCIYrRguoOmsIZhnu4ybqHRVYPQJZDmHez1oarQCD-7dN9tnZ1cIarV1plv5VxssRTDMYJYXbm1bLvczoW9t5rCLicO7krWg/s1600/0_7_2_golf.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" data-original-height="639" data-original-width="1025" height="199" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO0P1LPyTlX0qdOUs2fGyNhFvgn7igTVsgH9buaeUMuCFPaCIYrRguoOmsIZhnu4ybqHRVYPQJZDmHez1oarQCD-7dN9tnZ1cIarV1plv5VxssRTDMYJYXbm1bLvczoW9t5rCLicO7krWg/s320/0_7_2_golf.jpg" width="320" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">SuperTuxKart 0.7</td></tr>
+</tbody></table>
+The 0.6 release in
+2009 saw the introduction of OpenAL, allowing for positional audio
+effects, and the introduction of the skidding and nitro speed boosts.
+It also included the 3-strike battle mode. In 2010 SuperTuxKart
+0.7 was released: we finished the migration of the rendering from PLIB
+to irrlicht. This allowed us to animate karts, and started a series
+of graphical improvements that is still ongoing. We also implemented
+a new GUI engine, and allowed short-cuts in tracks.
+
+<br />
+ <div style="clear:both"></div>
+<br />
+<br />
+Beginning of 2013 we were in the race to become the Sourceforge Project of the month, and we unleashed the ultimate weapon:
+cuteness showing off our new wiimote support:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/KRkUh1zW6A0/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/KRkUh1zW6A0?feature=player_embedded" width="320"></iframe></div>
+<br />
+In 2013 and 2014
+SuperTuxKart participated in the <a href="https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code</a>, a program
+where Google pays students
+to work full time on open source projects for three months. Of course
+we had very many students interested (each year we got over 70
+applications, which made it very difficult to select a small
+number of students that we could accept) - how cool it is to work
+implementing a game and getting paid for it :) The SuperTuxKart team
+mentored all in all 8 students during that time, who contributed
+important code to improve the graphics, game play, and to add online
+features. We somewhat underestimated the effort it would take to
+merge the code developed by students back into our main trunk, in
+some cases it took over one year before the code was finally merged
+into our development trunk.
+
+While this was  a
+somewhat stressful period, it was also extremely rewarding – not
+only in terms of new benefits for SuperTuxKart, but also seeing the
+development of the students: In at least one case
+that I know of a
+student got a job in the gaming industry because of his work with
+SuperTuxKart, and only recently I received an email from a previous
+contributor stating: "<i>I basically owe my career to
+SuperTuxKart</i>".<br />
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgHcheBzVKOgx5saI1goEkSnQFTDYMvRQPlcBHbe1PRkhxrISav0tigfF47g8G8eRHRJA0IGgSpD-GbVb4qIqWQ8aYtYDDOyRqH_o-GLwCfNtveC-SAl5i6BT_azJKF0qa9-WbXgNxIqDA/s1600/1200px-Supertuxkart-0.9-screenshot-1.jpg" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" data-original-height="644" data-original-width="1200" height="171" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgHcheBzVKOgx5saI1goEkSnQFTDYMvRQPlcBHbe1PRkhxrISav0tigfF47g8G8eRHRJA0IGgSpD-GbVb4qIqWQ8aYtYDDOyRqH_o-GLwCfNtveC-SAl5i6BT_azJKF0qa9-WbXgNxIqDA/s320/1200px-Supertuxkart-0.9-screenshot-1.jpg" width="320" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">SuperTuxKart 0.9</td></tr>
+</tbody></table>
+2015 saw the 0.9
+release, in which a completely new, shader-based renderer was
+introduced. It also opened the door for many many woes with graphic
+driver bugs. We actually had to add a configuration file that would
+activate features depending on graphics hardware and driver
+version used.
+
+<br />
+<br />
+ <div style="clear:both"></div>
+<br />
+End of 2017 I
+started to implement the networking mode. If anyone is interested in
+details, I would strongly recommend Glenn <a href="https://gafferongames.com/" target="_blank">Fiedler's excellent article collection.</a> This is probably
+some of the most complex code I have added to SuperTuxKart, since we
+are not just sending the input from clients to the server, which would
+lead to a lagging and unplayable experience. Read Glen's article about <a href="https://gafferongames.com/post/networked_physics_2004" target="_blank">networked physics</a> and look for
+client-side prediction if you want to learn why SuperTuxKart plays
+rather smooth even with a ping over 100ms. And you will also appreciate
+why your computer has to work much harder in a networked game.
+It was an extremely
+frustrating time - often what would work just fine in my local
+environment, would fail horrendously  when trying it in a wide-area
+network. The first big milestone was reached around March 2018 when
+we were able to  play a first race reasonably well without too much
+shaking and teleporting of karts. It still took a long time to iron
+out all the bugs, and make the whole experience smoother. On the 20th
+of April 2019 we finally released version 1.0, the first release of
+SuperTuxKart that allows online races.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiQaaJLXXcsAIcIgwkEO2WbtrvG5d1v1mauk3aPj7O_dCgZKiA9HmzL-rrZaDf7Cx_DePcFJychSvduOUZ8gysY6MNJmMIEi-6gSxsDnEyoc9-JhUq0rqi5G1p72Aw27BRoIOPd1AASBWJ/s1600/stk-beta-4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="721" data-original-width="1280" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiQaaJLXXcsAIcIgwkEO2WbtrvG5d1v1mauk3aPj7O_dCgZKiA9HmzL-rrZaDf7Cx_DePcFJychSvduOUZ8gysY6MNJmMIEi-6gSxsDnEyoc9-JhUq0rqi5G1p72Aw27BRoIOPd1AASBWJ/s320/stk-beta-4.png" width="320" /></a></div>
+Another highlight of
+the history of SuperTuxKart was seeing the code being used in other
+projects: Microsoft used it to
+develop and showcase their 'Future of the Living Room' concept
+<a href="https://www.youtube.com/watch?v=-6SJnpBfdBs&t=160" target="_blank">IllumiRoom</a>, and Daimler used it as a <a href="https://youtu.be/DkEe8zKMhlA" target="_blank">demo of an entertainment unit</a> in one
+of their cars. Research was also done with SuperTuxKart ("<a href="https://www.youtube.com/watch?v=ywH9Z2NivjY" target="_blank">Comparison of Supervised Learning and SMILe for Imitation Learning in SuperTuxKart",</a> "<a href="https://www.researchgate.net/publication/279257881_Real_Time_Drunkness_Analysis_Through_Games_Using_Artificial_Neural_Networks" target="_blank">Real Time Drunkenness Analysis Through Games Using Artificial Neural Networks</a>"), and it was used by schools and Universities
+to teach programming, internationalisation and other subjects. Various special versions for people with certain impairments were created, e.g.: <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=11&ved=2ahUKEwi0x8OzkpviAhVB4HMBHRKTABMQFjAKegQIBRAC&url=https%3A%2F%2Fpdfs.semanticscholar.org%2F51fb%2Fc3e6c428ae7cf767b191e2462756352d444f.pdf&usg=AOvVaw0JxVvdal0reLnDvIXC_qzI" target="_blank">Gaze and accessibility in gaming.</a> I consider those outcomes a shining example of the benefits of open source code development.
+<br />
+<br />
+To the supporters of SuperTuxKart throughout the years: I feel I owe you
+a big “Thank You”, and an explanation of my exit. To be completely
+honest, the main reason for my departure was not that my goal of online
+races was reached. It is a matter or principle and professionalism. From
+my point of view a big change has gone through the development team,
+when new members were added and older members left. Let’s just say that
+the newer team members preferred to pursue a faster-paced development
+style with fewer reviews, less documentation, less oversight and a
+reduced need for consensus, and that our differences in approach could
+not be reconciled.<br />
+<br />
+We would also like to announce that Auria, who has been the co-project
+leader for around 10 years, has decided to step down from a management
+position in STK, but she will stay around and help out where required.
+Arthur, our pun master and social media manager, has also decided to
+quit the project. The team (excluding Auria and myself) has decided with
+3 to 2 votes (and one abstention) that Benau and Alayan will be the new
+leaders of SuperTuxKart.<br />
+<br />
+My profound gratitude to all the SuperTuxKart supporters who have
+witnessed and supported the game in the last 13 years! Let’s welcome the
+new age of SuperTuxKart and look forward to it achieving even greater goals. <br /> <br />
+ Hiker, out<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBk5spXh9-W_tJX5vbIU3Qapp4TTK_l6MmVaBI8PUID7Ab1nSqMZCYwMOPCMjDXIx9twWDAyf8fg2ZZYJiZ364jrFKinDTBORFdTNTxZ4nJQpJut-vKavKErJfRYaxUwHEJnjsHAjtjINd/s1600/stkflag_valverdePresident_a.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="386" data-original-width="602" height="205" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBk5spXh9-W_tJX5vbIU3Qapp4TTK_l6MmVaBI8PUID7Ab1nSqMZCYwMOPCMjDXIx9twWDAyf8fg2ZZYJiZ364jrFKinDTBORFdTNTxZ4nJQpJut-vKavKErJfRYaxUwHEJnjsHAjtjINd/s320/stkflag_valverdePresident_a.png" width="320" /></a></div>
+<br />
+<br />
+<br />
+
+----
+
+Date: 2019-05-16T04:36:00
+
+----
+
+Uuid: k9ilsgpku5xokncg

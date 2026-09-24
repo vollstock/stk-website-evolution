@@ -1,0 +1,12 @@
+type: pages
+parent: site.find("blog")
+label: Articles
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: blogarticle
+empty: No articles yet
+sortBy: date desc
+image:
+  query: page.poster.toFile
+  cover: true
+  back: gray-900
+  icon: page

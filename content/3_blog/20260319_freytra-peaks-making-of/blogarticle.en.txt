@@ -1,0 +1,157 @@
+Title: Freytra Peaks making of
+
+----
+
+Text:
+
+<span>
+<p>Hi, I'm Sven, lead artist of SuperTuxKart.</p>
+
+<p>In this blog post, we'll look at the creation process behind the upcoming track "Freytra Peaks", which will be included in the main game with the release of STK Evolution. This new track will retire the venerable "Snow Peak" after many years of faithful service. You can get early access to Freytra Peaks now through our 1.5 donation package.</p>
+
+<p>I started work on this track pretty early, not long after I began "Black Forest". At the time I was still exploring and experimenting with track creation. I've learned a ton since then, but honestly, that makes revisiting this project even more enlightening!</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1RJtF_AS4VQf-dGq329LLTFkbXTroRaS7G-KG-mVR3GVQ3sp8XOfmpoRwMProWNbwlQAhOadKkOfgA9tTNK_Vpe7bA3cvaeBb1AECY46h5A-5i2a179U_ZmKzAGoIiSRZIftvi_ZJjZ9kSsfdpetQeVMk-eYzhdMPYv4F-mIX4t812tUa5crivd-PsQ/s1002/Freytra_sunlight.jpg"></a>
+
+<br>
+<h1>Carving out the Layout</h1>
+
+<span>
+<p>Every track starts with a vision. For Freytra Peaks, I knew I wanted a winter track built around one signature moment: a massive jump that would give players that exhilarating rush of flying through mountain air.</p>
+
+<p>I began by sketching the road layout spontaneously, letting the terrain and that central jump dictate the flow. This intuitive approach can produce natural-feeling tracks quickly, but it requires careful refinement. Early versions included a corkscrew turn near the end that I ultimately cut. It added track length without adding excitement. In kart racing, every second matters. Players should spend their time in memorable moments, not filler sections.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf59mVkjGACRav1h85uZ_qdKfKDOWr8vfvugwd0lS9VauThCeKsD2Gzyp1Zu54RV7rWTFjLYIx1HzIHa-M0LaSRVtlct8sw8wIIk0b-p5WHOJVva5RilWqwPIlegBEMzLxNFReVpQR1uUioQvI7kaGZCJZIB75v6ostg-wXK4JM7FdmlHjU9NgG6JupQ/s1919/Freytra_layout1.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjSH2xPaKmqZvooxa9PfqmVALUkY5H24fdatPsbINNAMZIvVZTdHZ5ErOMee5rC9gSiCCB49FNHhiVoXCpx2HlQPcfsWTQVJkpBqVTv6pKgtDCP3bBaGDHoZk1FjgncjKG8NiWAbO0uubpD1uYEktsULfAtVklfmp_UkGf-wQ3Zi-065gOLph7yNRm2A/s2559/Freytra_layout2.png"></a><br>
+
+<span>
+<p>The challenge with organic track design is ensuring players get great views of what's coming. When you're racing at speed, sightlines are everything. For Freytra Peaks, the open mountain setting gave me flexibility. I could sculpt the landscape around the road to create eye-catching views and telegraph upcoming turns. A sprawling mountain range as your backdrop is forgiving that way.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjONqPVhwnD7DVprvOUjahxZRwZqwq-sLQiid_-m-t4K-7Rykgp4jaiHU7fe_loMBRXD4SKIeWLaJOIndLovS3xy81UTJWl7n-BDGijVNfQHXc-N-xJCzPWRfhSH7s7BXSU_qNZ9EvohwOKVCmZK6sQMbUgNKk5FGMTI687_6G-fDMsmjLGdlfN2ACjQQ/s628/Freytra_layout3.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJkeb2ejdstCNomhJfnpwB8iFO7ATMN2yE1WxC4RQ9XJaD4ulHPXE_yx-R_v9u37TAFNxbKg6lCQr2lXZBQDSZMdHac862l_AjwmhNwEzAGu51ffB60VABz1tV_TJ_ZX35du56ALDakXgltKrO5zTbm1blcPz4YMRMwk039SKjvlHL9x4H_3U5WljKmg/s1280/Freytra_layout4.png"></a>
+
+<span>
+<p>Today, my process has evolved. I now map out key visual landmarks first, then build the road to showcase them. But Freytra Peaks taught me those lessons, and the final result captures exactly what I was after: the feeling of racing through isolated mountains, with nothing but snow, stone, and sky around you.</p>
+</span>
+
+<br>
+<h1>Painting the landscape</h1>
+
+<span>
+<p>With the road layout established, it was time to build the world around it. My goal was clear: create the atmosphere of a remote mountain refuge, isolated peaks, a tiny village clinging to the slopes, and vast stretches of untouched snow.</p>
+
+<p>I started with placeholder assets, existing trees, houses, rocks, and background mountains from our library. This is a crucial step in track development. Placeholders let you evaluate composition, scale, and atmosphere quickly before committing to custom modeling. You can iterate on the overall feel without getting bogged down in details too early.</p>
+</span>
+
+  <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgULi5DCvOuGPXoxdXBOynjSELI6pJAqnBQgMn9FDQM9hsSyrgbnLs9eNCdX3PkCGH2ar-4k1DOBrOhvZxacN-xBDjgHXSbTua-Wf-kvrHqx1gMWDaMnvE5NyQTkvYIFNohqE8gWrtPAYg1_P7WRn9XMT_KEexoZACD3N0o0sarn0vcemQOS60Jk1ccsg/s3724/Freytra_layout5.png"></a>
+
+<span>
+<p>The terrain itself required careful sculpting to achieve those characteristic alpine forms, sharp ridges, sweeping bowls, and dramatic elevation changes. For the distant mountain ranges, I used Blender's A.N.T. Landscape addon to generate realistic terrain, then created height-based masks to blend snow and exposed rock textures naturally. Blender's texture baking feature let me convert these procedural materials into optimized textures that work seamlessly in Antarctica, our game engine.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGu_A8eKojD4lje7PzIfImc868D0cZ7t8ilmn6hOQ-7QZcHalkXEuzF1E9ADEI_bom7uMgGXIfvzMP0xqZ8z8nyeUyZvCvQndtTqEi1PfSi4E2GZfMgfPOc4KNqNRpnz2Eg0bCkNNLLRiXeAt9cD-kQTX1a9CQ0ZyUqkgFsYMcT6-4JDgqUruQbcVUBg/s1094/Freytra_mountains.jpg"></a><br>
+
+<span>
+<p>The background mountains don't need to be highly detailed, their job is to create depth and sell the scale of the environment. They do that job perfectly, framing the track in an expansive alpine wilderness.</p>
+  
+<p>One technique I'm particularly fond of: the snow layer. By duplicating the landscape geometry, raising it slightly, and tucking the edges under the road and rocks, I created a convincing blanket of snow that gives the environment real depth. It's a simple trick, but very effective.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfTRchT9Ts78XiAzF00qDofkF61gaS6lQN8f6w-Wq3zpdZI3fuEacP3SGUXrz-HrNL8DDKumh-UjTTTA9l0SNDagmWGO9gBzzuLbic3nzuxkZeWLe7O4-SRbrMIIPSLJqYtDU-L3fAz6vm8IFHyw20R5sjQBX9f5CsPlbHuJaAe2b2NpZV_RPiWlzyEQ/s2048/Freytra_snow1.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9HCmqV8tsUq-FOBNyfO2RoTOa2l4YX3P9o5YHvm1EAxlBZSs-_YJvfLRmb2p1rXYdfQDmXMzTf5kuSutVAnMoD6oTKxYxgWbzrMeMMmsqy2XEBWe8dtkVOpIASxvkHsm8HCdxlNPTaMlpxiYKvncYoR4DHiJg8l81pvE-v2s47p45cZZK0IU85H69QQ/s1010/Freytra_snow2.jpg"></a><br>
+
+
+<br>
+<h1>The Devil's in the Details</h1>
+
+<span>
+<p>With the landscape established, I began populating the world with the details that would bring it to life. This phase is where tracks truly find their character and where the bulk of development time goes.</p>
+
+<p>I created custom props for the track: signs, barriers, small structures, and environmental details. Most of these initial models served the track well, though I knew the main lodge building would need a complete overhaul eventually. Sometimes you need to see an asset in context before you know what it really needs to be.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4ufqXzY6YU1cTW1-d7Bal_pxVg25xZ_KxZ2gyR-wUkDfQ24wiEcCGyS1vpU7UV8wddcvHLoBGliBCS9b-2Rv3hGsEip33Dgelqv7ee9Xav6IWlEsZRMJqGEfsL2nU8flVjz-2MG8sL1hg_fZbiXbQuKvOqQwK6scDJQ__QPVlDiMsuHdn3qnF5QtTQw/s3840/Freytra_objects.jpg"></a><br>
+
+<span>
+<p>At this point, the track had its bones. I set it aside to work on other projects, knowing I'd return with fresh eyes later.</p>
+</span>
+
+<br>
+<h1>From Snow Peak to Freytra Peaks</h1>
+
+<span>
+<p>When I returned to Freytra Peaks years later with STK Evolution on the horizon, I saw it with new eyes and new standards. The trees and buildings, in particular, needed to match the quality bar we're setting for Evolution.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd5Gkevv5yWeI9uxvczGLj39LmCNoz0JNuLNHEL5cjnOlc2dNBD4oOWs8zW-E2tBxJyE1KXhUB7aTb4LYMYVLzUHunhWWLsrtVW8V6mi8bSheWrquwtQr8VHvOni_DNahyd-xurv_5ZedSV-gLo3dK_h9yDi2YW8QknChUpMLfFFA-nxicusDTU8Lgnw/s2560/Freytra_snowpeak.png"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNIRPYNYhGUBEgBBsooW6_b3BXrO6k52BRKtGEqUTE_uLGBHwYiHkQw69BYcIycIfWKE6mOB-8Nz-74GNYayPNPUPudpKxkJPrPwzV9b29guq3uaoHQ8DNK3_BO_2WuY8RBuL2OjeddEffYRLXUMG9N_3HshVk7AYOf8VLEo9eMYsP0A4fJPm4jWjgAA/s2560/Freytra_landscape.png"></a><br>
+
+<span>
+<p>The trees presented an interesting challenge. I adapted three tree models I'd created for another track, modifying their textures to carry snow. The trick was making snow look like it's actually resting on the branches, not just painted on. Pure white snow looked flat and unconvincing. The solution: blending the original green foliage with snow texture, letting some green peek through while the snow extends slightly beyond the branch geometry. It creates that heavy, winter-laden look that sells the environment. Given unlimited time, I'd love to add actual 3D snow clumps on the branches, but the current approach strikes a good balance between visual quality and performance.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjedrqZq31QZpvFJHDIIImIpn_WyUF_j2FnJdJObktcRVMxoEOE7s6vratrJAR-okq9PV5ZzjpHD7A3WjtlPVNRCD-R6MXosudqI66kict80o271zsgAzTRkqF9g8FRKmbkf6P3x9ofk4aAOwAaEyp4HrA-FAJQqn_33tFgFU5LV_n-vGda_zZuvSMICA/s2004/Freytra_snowtree.jpg"></a><br>
+
+<span>
+<p>For the village buildings, I crafted one detailed house, then created variants by modifying it. A practical approach that maintains visual consistency while populating the scene efficiently. Smart asset reuse is part of professional game development.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxSRrdK6fADfJhSuSZWY8yg0RpnnA58zd4ClCuOvEvd-mYXtpqbqDAVIVIh17MC5StsSOMU95jP67MyYFKO9pWDPIWmMYRfzYw-EthOyp6lNaQV2pa6btYbr_YAXV517mfKba4fA_vQg2m2RSRTA85IIjh-hFvWU4zt4HvWkf7OUEtYRSlscIFEegpbA/s1880/Freytra_building1.jpg"></a><br>
+
+<span>
+<p>The track's signature jump created an interesting problem for reverse mode, players couldn't make it backwards. I considered building a reverse jump, but the terrain didn't support it elegantly. Instead, I carved three narrow paths through the forest that feel like mountain hiking trails. It's a solution that fits the environment naturally while solving the gameplay challenge.</p>
+
+<p>Before releasing the track in the donation package, I rebuilt the main wooden lodge from scratch. I also refined countless smaller elements: icicles clinging to rocky overhangs, smoother texture transitions across the terrain, more detailed rock formations. These touches might seem minor individually, but collectively they create polish and immersion.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYgBZZQZHLVWWRENTlBGPCfMwIblh-MGMPZPEHnvq1YKh8DbllBkOiD_ggsopDnXG_vB01mi5UDGu6uufGcyYzq8uIJ1APANk4d-zeWLirb8ARqd36rHJ4m95ptHjpbg7ZI5RTggfKIACe-CFCFf2SfuClwni60TzRZjsbBUbByGf2Ut3bv-v_rxMYPA/s1201/Freytra_building2.png"></a><br>
+
+
+<br>
+<h1>What's Next for Freytra Peaks</h1>
+
+<span>
+<p>Ask any artist when their work is truly finished, and an honest answer will often be: never. Given unlimited time, I could refine Freytra Peaks endlessly, tweaking textures, adjusting geometry, adding new details. It's the George Lucas problem: without discipline, you end up releasing Special Editions every few years with "enhanced" Jabba scenes nobody asked for.</p>
+
+<p>Before STK Evolution's full release, I'm planning a final polish pass: more sculptural roadside rocks, a more dramatic start/finish area, improvements to the main jump, and enhanced tunnel atmosphere ; but for the most part, I'm calling Freytra Peaks done, focusing my attention on other tracks.</p>
+
+<p>Indeed, beyond Freytra Peaks, I'm bringing this same quality standard across the entire game. "Candela City" and "Old Mine" are currently on the workbench, getting the Evolution treatment. Every classic track deserves to meet the bar we're setting.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNYLfFCGo7E6fhoAGYob8yOIWuLuhqRu1cS04uQYO364lx7gRS4dXjtYE-jcYFSqVjNbbbx_SZxkkAVH7mFUqBQ6pI_giiJ2zKyrwExfRylXd8T0D9bRZeJton1RWjRXIRRW0ha7xlJigOAZHlsYaL8CMNGHSS1hwDn-blPDfHRB1wlI3jcrCkR1C0MQ/s2560/Freytra_landscape2.png"></a>
+
+<br>
+<h1>Join the Journey</h1>
+
+<span>
+<p>Inspired to create your own track? The SuperTuxKart community welcomes creators of all skill levels. Check out our track creation guide at <a href="https://supertuxkart.net/Making_Tracks">supertuxkart.net/Making_Tracks</a> to get started, maybe your creation will feature alongside Freytra Peaks someday!</p>
+  
+<p>I'd also like to thank Samuncle and Alayan for their help in drafting this blog post.</p>
+</span>
+
+----
+
+Poster: - file://drsdjseejcizpevj
+
+----
+
+Date: 2026-03-19 18:20:00
+
+----
+
+Author: - user://cCMr51jQ
+
+----
+
+Tags: 
+
+----
+
+Uuid: ncwgjvnf5avmc8q4

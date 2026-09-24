@@ -1,0 +1,47 @@
+Title: SuperTuxKart 1.0 Release
+
+----
+
+Text:
+
+Yes, if you have followed our development a bit, that might be a bit of a surprise. But we have been asked why we don't call this release 1.0, and the majority of us developers discussed this and decided that indeed this release is a major milestone that deserves the big 1.0 number.<br />
+<br />
+<div style="text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/Lm1TFDBiIIg/0.jpg" frameborder="0" height="360" src="https://www.youtube.com/embed/Lm1TFDBiIIg?feature=player_embedded" width="640"></iframe><span style="font-size: x-small;"><span style="font-size: small;"> </span></span><br />
+<span style="font-size: x-small;"><span style="font-size: small;">SuperTuxKart 1.0 official trailer</span></span></div>
+<br />
+Should you not have followed our development: this 1.0 release adds support for networking races to SuperTuxKart. You can play with your friends online, and it doesn't have to be split screen anymore - your gaming partners can be in a different city, country, or even continent - you can still meet for a race or two. Cross-continent may not work the best; you should try to have a reasonable ping - 100ms works fine, and we had some races with 300ms ping, though unavoidable sudden stuttering and karts jumping around is more frequent at higher latencies. Even more important than the ping (unless it's abnormally high) is that there isn't packet loss or packet slowdowns (jitter), so a stable connection is required, especially for the server hosts. The bandwidth use is minimal even for hosting 10 players, so as long as you don't use a metered connection it should be fine for anyone with 150 kilobytes (~1.2 megabit) per second upload speed to spare. If that's still too much, less bandwidth is used with fewer players.<br />
+<br />
+With the new version you can play various game modes online: normal race, time trial, soccer mode, battle mode and the new Capture-The-Flag mode. While you can easily start your own server (just select 'create server' in the GUI), the community also provides a set of servers to be used by everyone. Certain servers provide online ranking (since we have to make sure that the servers are not modified to favor certain players), and you can find the current rankings <a href="https://online.supertuxkart.net/rankings.php" target="_blank">here</a>. You can use one of the servers provided by the community. We would request that you do not abuse the servers provided by the community - they are meant to be used by everyone. If you want to play only with a certain set of friends, let SuperTuxKart create a server for you, and do not grab a public server and kick everyone else who wants to join.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj56mbK6vgmsd0IZSCF8Ws9zUH9bq1WYaU0VomYhs1-sgDWnB925JKlZ7NQzzFby946EkIQRC7EIe2HY888uJgxA0sRuxkxVeX-W6HET1FSYC8KDjZlr8jEqcXoKAnlbKXIMaB__shvRw/s1600/STK-1.0-ravenbridge.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj56mbK6vgmsd0IZSCF8Ws9zUH9bq1WYaU0VomYhs1-sgDWnB925JKlZ7NQzzFby946EkIQRC7EIe2HY888uJgxA0sRuxkxVeX-W6HET1FSYC8KDjZlr8jEqcXoKAnlbKXIMaB__shvRw/s640/STK-1.0-ravenbridge.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+<span style="font-size: small;">Ravenbridge Mansion</span></div>
+<br />
+The networking implementation has been a very big and ambitious task, which took even longer than the port from PLIB (anyone remember that?) to Irrlicht in 2010, which took around 14 months. But it is done: more than 20,000 lines of network related code and 18 months later, we have reached our goal, and online play is a reality. Across the whole game, more than 2500 commits and 300 resolved issues separate the 1.0 release from 0.9.3. And it was a very concerted effort, so a big thanks to all contributors involved, For the people who don't know the team, here a short introduction:<br />
+<br />
+First and foremost Benau, who originally told me he would only like to work on some of the GUI aspects of networking, but who then grew to meet the challenges the network implementation threw at us. Without his work networking support would nowhere close to being ready or as complete as it is. <br />
+<br />
+Alayan, a relatively new main contributor started several months ago, with a keen interest in balancing game play. He is an experienced speed runner for SuperTuxKart, and one of the best players in our online ranking system. While he was also essential in testing online racing, he made significant contributions to balancing SuperTuxKart and overall improving the playing experience.<br />
+<br />
+We are still reaping the benefits from Google's Summer of Code program: leyyin is still with us, and he is helping us with the server side implementation. E.g. anytime you are looking for servers, his code will be involved. Then let's not forget Hilnius, who
+ back in 2013 started to design the protocol implementation on which our
+ networking code is still based. A very successful result for our 
+participation in the GSoC.<br />
+<br />
+Then the older core team, and I'll be a bit briefer here: Deve as always makes sure that all is fine on the Linux front, do many bugfixes and small enhancements, and maintains and improves our Android port. Auria keeps everything else running - pull requests, bug reports, forum posts, ...  Samuncle, though busy with his private life, came through with the wonderful new "Ravenbridge Mansion" track. And Arthur keeping our social media feeds updated. Oh yes, there is also me (hiker) :)<br />
+<br />
+For the record: is the 1.0 release 'perfect'? No, it is not. There are improvements to be done, features to be added, and gameplay to be improved. Still, it is probably the most significant step forward in SuperTuxKart's more than 12 years of history. We would like to invite all of you to join some online games by fetching the new 1.0 release from our <a href="https://supertuxkart.net/Download">Download</a> page.<br />
+<br />
+<br />
+On behalf of the SuperTuxKart team: thank you for your continued support through the years, and enjoy the big 1.0!<br />
+<br />
+
+----
+
+Date: 2019-04-20T19:02:00
+
+----
+
+Uuid: fz27ytgq57ik4mzt

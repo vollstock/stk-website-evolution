@@ -1,0 +1,25 @@
+Title: SuperTuxKart Evolution's new logo
+
+----
+
+Text: <p><em>A few words from Alayan: Vollstock is a new contributor to SuperTuxKart, who has created the new logo and written this blog post. A professional designer, he is helping us with Evolution's new user interface and with other visual elements associated with the project.</em></p><p>Last year the SuperTuxKart Team <a href="https://blog.supertuxkart.net/2025/09/supertuxkart-evolution-roadmap.html" target="_blank">unveiled the roadmap</a> for SuperTuxKart Evolution.</p><p>Since then they've shared progress on gameplay, polished classic tracks, and continued work on exciting new features and circuits.</p><p>Alongside that, I quietly began a much-needed refresh of our graphic identity. Branding touches many parts of the project — app icons, the user interface, our <a href="https://www.youtube.com/@SuperTuxKartOfficial" target="_blank">YouTube channel</a>, and several websites (the blog, <a href="https://members.supertuxkart.net/Projects" target="_blank">Patreon page</a>, <a href="https://supertuxkart.net" target="_blank">main site</a>, and <a href="https://forum.supertuxkart.net" target="_blank">forum</a>).</p><p>I can't update everything at once, so I'm developing a consistent visual identity that can roll out across projects over time.</p><p>This first glimpse focuses on an update to the iconic logotype.</p><h1>What’s so super about TuxKart?</h1><p>A redesign is a good opportunity to re-examine all existing design elements: colours, naming, and the visual conventions that make SuperTuxKart what it is.</p><p>That doesn't mean we should change everything. Rather, it's a chance to ask which elements define the project's character, and which are merely historical baggage.</p><p>As explained in the <a href="https://supertuxkart.net/History_of_SuperTuxKart" target="_blank">history article</a>, SuperTuxKart grew out of the original TuxKart and picked up the "Super" prefix along the way.</p><p>Whether to keep that prefix for a future release — and therefore in the logo — was an interesting question. The name clearly nods to Super Mario Kart, but Nintendo only used "Super" for the SNES era, so why should we?</p><p>Well, we love it — and there are practical reasons too. Our domains, repositories, and many distribution entries are registered under the name SuperTuxKart, so changing it would be disruptive.</p><p>For the foreseeable future, "Super" will remain part of the name.</p><p><br> </p><h2>Step 1: Modernise what’s there</h2><p>I started by carefully vectorising the hand-drawn, pixelated wordmark. While tracing it, I refined small details, aligned the letterforms more consistently, and corrected lighting discrepancies on the bevels.</p><p>These tweaks are subtle — you might not notice them at first glance — but when played side-by-side they make a significant difference to balance and harmony.</p><p><br>  <br> </p><h2>Step 2: Turn it into a new logo</h2><p>Using the refined wordmark as a base, I explored different branding directions. Some ideas leaned into "evolution" as a theme, taking inspiration from nature and from technological progress.</p><p>Ultimately we decided that the game itself doesn't call for an overly bold brand identity. As a small volunteer project, the logo needs to be timeless and adaptable, so we kept the concept simple: a fresher, more grown-up look that still preserves the playfulness of the original.</p><p><br>  <br> </p><h2>Step 3: Have fun</h2><p>With a clean wordmark in place, I also made a 3D version, and there are plenty of fun ways to use it — in 3D animations, title sequences, and short clips for development videos.</p><p><br>      </p><p>What do you think? Do you like the new haircut for your favourite kart racing game? I'd love to hear your thoughts — tell me <a href="https://forum.supertuxkart.net" target="_blank">on the forum</a> or drop a comment here on the blog.</p>
+
+----
+
+Poster: - file://3ymcaezrn1tn01fq
+
+----
+
+Date: 2026-06-25 21:10:00
+
+----
+
+Author: - user://B3V0pdkI
+
+----
+
+Tags: Design, Test
+
+----
+
+Uuid: eq3mjuo6vatoml4q

@@ -1,0 +1,45 @@
+Title: SuperTuxKart 1.5 is now available on iOS
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>SuperTuxKart 1.5 was <a href="https://blog.supertuxkart.net/2025/10/supertuxkart-15-release.html">released last month</a> with official binaries available for Linux, Windows, Mac, Android and Switch Homebrew.</p>
+
+<p>It is now also available on iOS devices such as iPhones and Ipads through the Apple App Store. Devee, who first brought SuperTuxKart to Android a decade ago and former member of our team, has recently <a href="https://apps.apple.com/us/app/supertuxkart/id6737858957">published the game there</a>.</p></span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdMvKwtlwnQADyj8v9NlOyXUcknamtXnNWBYMp1751hdVZ_ajIeC43osq_saA0v3Ob78CGxUuX9zvTE-C9-A5v7M2QjMeLXGSnDqz1HGFr-r8lAyYg-wrukvlXvJL1D4UH9FD6yyKhDvry0UMWFHlnwzL7GEPbOJ4G2JA2lZDXveraKgd8UJozC030Uw/s640/Blog_iOS_AppStore.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdMvKwtlwnQADyj8v9NlOyXUcknamtXnNWBYMp1751hdVZ_ajIeC43osq_saA0v3Ob78CGxUuX9zvTE-C9-A5v7M2QjMeLXGSnDqz1HGFr-r8lAyYg-wrukvlXvJL1D4UH9FD6yyKhDvry0UMWFHlnwzL7GEPbOJ4G2JA2lZDXveraKgd8UJozC030Uw/s640/Blog_iOS_AppStore.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A screen capture of the AppStore. As you might notice, the release is not done directly by the STK team.<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>While beta versions had previously been available via Testflight, this is the first SuperTuxKart release easily accessible on Apple mobile devices.</p>
+
+<p>Licensing concerns previously stopped us from releasing STK on the Apple App Store. Because of Apple’s monopoly on software distribution to their mobile devices – which has recently been the object of litigation <a href="https://news.bloomberglaw.com/antitrust/apple-failed-to-open-app-store-to-competition-judge-rules">in the USA</a>, <a href="https://www.bbc.com/news/articles/cpvjdm4mp92o">the EU</a> and <a href="https://www.france24.com/en/live-news/20251023-uk-court-rules-apple-abused-app-store-dominance">the UK</a>, although with an unfortunate focus on fees over the freedom of end-users to truly own their device –, it was not possible to offer a different way to install the game.</p>
+
+<p>SuperTuxKart 1.5 on the Apple App Store uses our Vulkan rendering engine, translated to Apple’s Metal API via MoltenVK. Our Vulkan renderer does not support as many graphical features as our OpenGL renderer, but is dual-licensed under GPL3 and MPL2. Although phones are getting more powerful year after year, losing on the highest settings is a more acceptable trade-off on battery-powered mobile devices.</p>
+
+<p>Like on other platforms, STK on iOS comes without any form of advertisement or user-tracking.</p>
+  
+<p>The iOS release offers the same touchscreen controls as the Android version. It is also compatible with the use of a game controller. Mastering all the game mechanics and performing with high consistency is more difficult with touchscreen controls than with a gamepad or a keyboard. Thankfully, players can pick from four difficulty levels to find the right level for them.</p>
+
+<p>Finally, manual installation of addons outside of STK’s official addon repository, while technically possible, is much more complicated than on a computer.</p></span>
+<br/>
+
+<h1 style="text-align: left;">Conclusion</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>Despite the aforementioned caveats, we hope that people who wanted to play SuperTuxKart on iPhones and Ipads will enjoy the game!</p>
+
+<p>It comes with the full complement of tracks and karts available for other systems, as well as the possibility to install everything available on STK Addons.</p>
+
+<p>As an aside, I would also like to mention something we've been asked about a few times: the Snap package for STK (Snaps are a form of software packaging promoted by Ubuntu). It is not maintained and still offers 1.3 as the latest stable version. The SuperTuxKart team does not control donwstream repackaging efforts, and we advise Ubuntu users to use either our official binaries or the Flatpak or AppImage versions of STK to get access to the 1.5 release.</p>
+
+<p>I’ll be back next week with a new blog post exploring in detail some of the changes to game mechanics that have been made for STK Evolution.</p></span>
+
+----
+
+Date: 2025-11-22T14:57:00
+
+----
+
+Uuid: gzefjch5xdomnu4v

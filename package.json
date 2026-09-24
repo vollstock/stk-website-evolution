@@ -1,0 +1,21 @@
+{
+    "name": "projectname",
+    "scripts": {
+        "watch": "concurrently \"npm run watch-css\" \"npm run watch-js\"",
+        "watch-css": "npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./assets/css/styles.css -w",
+        "watch-js": "onchange --initial './src/js/**/*' --exclude './assets/js/**/*' -- npm run bundle-js",
+        "bundle-js": "bundle-js ./src/js/index.js --out ./assets/js/main.js && bundle-js ./src/js/components/downloadBox.js --out ./assets/js/downloadBox.js && npm run uglify-js",
+        "uglify-js": "uglifyjs ./assets/js/main.js --output ./assets/js/main.min.js",
+        "build": "npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./assets/css/styles.css -m && npm run bundle-js"
+    },
+    "dependencies": {
+        "@tabler/icons": "^3.47.0",
+        "@tailwindcss/cli": "^4.3.3",
+        "bundle-js": "^1.0.3",
+        "concurrently": "^10.0.5",
+        "onchange": "^7.1.0",
+        "swiper": "^14.2.0",
+        "tailwindcss": "^4.3.3",
+        "uglify-js": "^3.19.3"
+    }
+}

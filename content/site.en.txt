@@ -1,0 +1,97 @@
+Title: SuperTuxKart Evolution
+
+----
+
+Menu:
+
+- 
+  title: About
+  hassubmenu: 'true'
+  link: ""
+  submenu:
+    - 
+      title: Characters
+      subtitle: Lorem ipsum dolor sit amet
+      link: ""
+    - 
+      title: Tracks
+      subtitle: Lorem ipsum dolor sit amet
+      link: ""
+    - 
+      title: Powerups
+      subtitle: Lorem ipsum dolor sit amet
+      link: ""
+    - 
+      title: Game Modes
+      subtitle: Lorem ipsum dolor sit amet
+      link: ""
+    - 
+      title: History
+      subtitle: Lorem ipsum dolor sit amet
+      link: ""
+- 
+  title: Resources
+  hassubmenu: 'true'
+  link: ""
+  submenu:
+    - 
+      title: Gallery
+      subtitle: Lorem ipsum
+      link: ""
+    - 
+      title: Addons and Online-Rankings
+      subtitle: Lorem ipsum
+      link: >
+        https://testingstkaddons.supertuxkart.net/
+    - 
+      title: Developer Docs
+      subtitle: Lorem ipsum
+      link: '#'
+    - 
+      title: Blog
+      subtitle: Lorem, ipsum
+      link: ""
+    - 
+      title: Patreon
+      subtitle: Lorem, ipsum
+      link: https://members.supertuxkart.net/
+  has-submenu: 'true'
+- 
+  title: Community
+  hassubmenu: 'true'
+  link: ""
+  submenu:
+    - 
+      title: Forums
+      subtitle: Lorem ipsum
+      link: https://forum.supertuxkart.net/
+    - 
+      title: Youtube
+      subtitle: Lorem ipsum
+      link: >
+        https://www.youtube.com/@SuperTuxKartOfficial
+    - 
+      title: Reddit
+      subtitle: Lorem ipsum
+      link: https://www.reddit.com/r/SuperTuxKart/
+    - 
+      title: IRC
+      subtitle: Lorem ipsum
+      link: 'https://web.libera.chat/?channels=#supertuxkart'
+    - 
+      title: Github
+      subtitle: Lorem ipsum
+      link: https://github.com/supertuxkart/
+  has-submenu: 'true'
+- 
+  title: Downloads
+  hassubmenu: 'false'
+  link: page://pz3wpxgwzkordz23
+  submenu: [ ]
+  has-submenu: 'false'
+- 
+  title: Donate ❤️
+  hassubmenu: 'false'
+  link: page://pygr4u78yyyfedvg
+  submenu: [ ]
+  has-submenu: 'false'

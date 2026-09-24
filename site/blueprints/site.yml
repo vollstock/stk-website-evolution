@@ -1,0 +1,53 @@
+title: Site
+
+tabs:
+
+  content:
+    label: Content
+    icon: folder-structure
+    columns:
+      main:
+        sections:
+          pages:
+            type: pages
+
+          menusection:
+            type: fields
+            fields:
+              menu:
+                type: structure
+                fields:
+                  title:
+                    type: text
+
+                  hasSubmenu:
+                    type: toggle
+                    text:
+                      - 
+                        *: 'no'
+                      -
+                        *: 'yes'
+                  link:
+                    type: link
+                    label: Mainmenu item
+                    when:
+                      hasSubmenu: false
+
+                  subMenu:
+                    type: structure
+                    label: Submenu items
+                    when:
+                      hasSubmenu: true
+                    fields:
+                      title:
+                        type: text
+
+                      subtitle:
+                        type: text
+
+                      link:
+                        type: link
+  blog:
+    label: Blog
+    icon: rss
+    extends: layouts/blogLayout

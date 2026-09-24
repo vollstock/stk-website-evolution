@@ -1,0 +1,5 @@
+@layer base {
+    a:hover {
+        @apply text-orange-400;
+    }
+}

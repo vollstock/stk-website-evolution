@@ -1,0 +1,107 @@
+Title: SuperTuxKart 1.1 Release Candidate
+
+----
+
+Text:
+
+<h2>
+SuperTuxkart 1.1 RC1 is out </h2>
+The SuperTuxKart team is happy to announce the release of the first release candidate for STK 1.1.<br />
+<br />
+The changes in the team didn't keep the project from moving forward, propelled by the dedication of our core contributors that already made most of the work for the previous versions.<br />
+<br />
+For this release, one of our goals was to keep compatibility with 1.0. The new version offers many improvements, but physics, items and tracks stay the same. Existing 1.0 profiles are read and used by 1.1, so progress and configurations are not lost.<br />
+<br />
+This compatibility didn't preclude improving STK a lot.<br />
+<br />
+Binaries for Linux, Windows, Android and Mac are available here : <a href="https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/1.1-rc1/">https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/1.1-rc1/</a><br />
+<br />
+The iOS version can be tested through testflight : <a href="https://testflight.apple.com/join/mbK8RjHq">https://testflight.apple.com/join/mbK8RjHq</a><br />
+<h2>
+What's new? </h2>
+<h3>
+Better online play</h3>
+1.0 was the first release supporting online multiplayer. It has been a success, with many people coming together to race. Over 4500 players tried out ranked races, among which hundreds did dozens if not hundreds of races. Skilled drivers have given us many great races that have been shared online in videos [<a href="https://www.youtube.com/watch?v=4PWCaSFb6F0" target="_blank">1</a>] [<a href="https://www.youtube.com/watch?v=6wNbdh0xXL8&list=PLjVNjtwXEFU4RLBOYnhtfAbkjAgDalP5W" target="_blank">2</a>] [<a href="https://www.youtube.com/watch?v=Or859vCpFbU" target="_blank">3</a>] [<a href="https://www.youtube.com/watch?v=rGx4CAXYaY0" target="_blank">4</a>].<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Ao_SL5S5__RiWPw03xVtl1WQ2GoPNxFLbTRw2XYDNrjukNfBockiyvjrLN5xHADt4d0ZdBC-0sAr3MER8wvXvzKFwCgHWBqmgjh8w4dsvxP0kVgk2UZ83rGW7tCyncN8QwHGVRRHV2g/s1600/1.1RC_OnlineRace.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_Ao_SL5S5__RiWPw03xVtl1WQ2GoPNxFLbTRw2XYDNrjukNfBockiyvjrLN5xHADt4d0ZdBC-0sAr3MER8wvXvzKFwCgHWBqmgjh8w4dsvxP0kVgk2UZ83rGW7tCyncN8QwHGVRRHV2g/s640/1.1RC_OnlineRace.png" width="640" /></a></div>
+<br />
+<br />
+Other modes, like free-for-all, football and capture-the-flag, have also been popular.<br />
+<br />
+<b>This has been an important area of focus in the new version</b>, adding missing features and polishing some rough edges ; mostly thanks to Benau.<br />
+<br />
+Among the most important changes to networking are IPv6 client and server support, improved synchronization (especially for collisions), expanded support for AIs, management features for server owners, and increased support for addons, along many more minor fixes and quality-of-life features.<br />
+<h3>
+General polish and features</h3>
+Despite compatibility with 1.0, the new version add some features meaningful for gameplay.<br />
+<br />
+Powerups held by other karts can now be shown through an option. Glancing at those in the middle of the race and reacting accordingly without compromising the main driving is a fine balancing act. This is also meant to patch a potential exploit hole, as multiplayer clients already had that information available even if it wasn't displayed.<br />
+<br />
+1.1 offers a story mode timer that allows you to see how quickly you can manage to complete it, if you're up to the challenge.<br />
+<br />
+Other changes are more subtle. Some of those enhance compatibility and stability: full support for unicode file paths, prevention of "this program is not responding" messages, fixes for rare crashes... Other polish the experience : battle spawn points are random, there is no ground sound anymore when the kart is flying, and many more.<br />
+<h3>
+UI enhancements</h3>
+User interface has been another key area for fixes and improvements.<br />
+<br />
+All across the UI, a lot of issues with scaling to 1440p and 4K resolutions have been fixed. It is also now possible to adjust the game's font size to best fit your liking.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVux4sHBBwEQxZye7BIVByB-5Ft8UIVmxyaxpRnMpGee3mDbczA1BTqildqScIh8vHPW_4mhiXROicmQxn8m4aFMIkNQ7ywFgdG1cT5sKcmSA9TvfKuR4KmVYBKiiHN-_4sSew66gFPQY/s1600/1.1RC_FontSize.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" data-original-height="1120" data-original-width="1279" height="560" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVux4sHBBwEQxZye7BIVByB-5Ft8UIVmxyaxpRnMpGee3mDbczA1BTqildqScIh8vHPW_4mhiXROicmQxn8m4aFMIkNQ7ywFgdG1cT5sKcmSA9TvfKuR4KmVYBKiiHN-_4sSew66gFPQY/s640/1.1RC_FontSize.png" width="640" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Small and very large font size compared at the same resolution</td></tr>
+</tbody></table>
+<br />
+Emojis are now supported and available when chatting in servers. This also enabled us to display country flags for players online.  As asked by many players, ranking changes after a ranked races are now displayed in the result screen.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZi5PfqO1RrvqtWGrCGEUAFjqq2FpfDWP3OalUcdy4nKVgl9qXZDyJBVCItvlOTqO4nMS7x3q2KFZPZtbTSOTQmZgiSGKN4kofXjLt6vdCwjE73QfBSBBwgffSow5DP15Xn_r_c5OvxFY/s1600/1.1RC_endscreen.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="636" data-original-width="1131" height="358" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZi5PfqO1RrvqtWGrCGEUAFjqq2FpfDWP3OalUcdy4nKVgl9qXZDyJBVCItvlOTqO4nMS7x3q2KFZPZtbTSOTQmZgiSGKN4kofXjLt6vdCwjE73QfBSBBwgffSow5DP15Xn_r_c5OvxFY/s640/1.1RC_endscreen.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+There has been many other small enhancements or fixes that can't be listed here. <br />
+<h3>
+A new arena: Pumpkin Park</h3>
+While the main tracks stay the same apart some very minor bugfixes, 1.1 ships with Pumpkin Park, an arena by samuncle that was previously part of the gift package.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5acyJBtVYgqNZAeMYIAQB7mlEk9nE17lgzwrvDTcVc6cT9bqs1yu9u4rpDiCw684hvXCVz2wephavp-5SsyqXn0oNtasV6V0P7JoFaOlBtW07aZnm9p89Ylgx-rzzhKgIVH4amnOu9KY/s1600/1.1RC_PumpkinPark.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="720" data-original-width="1279" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5acyJBtVYgqNZAeMYIAQB7mlEk9nE17lgzwrvDTcVc6cT9bqs1yu9u4rpDiCw684hvXCVz2wephavp-5SsyqXn0oNtasV6V0P7JoFaOlBtW07aZnm9p89Ylgx-rzzhKgIVH4amnOu9KY/s640/1.1RC_PumpkinPark.png" width="640" /></a></div>
+<h3>
+Mobile enhancements and iOS support</h3>
+Since 0.9.3, SuperTuxKart is available on Android. While most of the code is shared with the computer versions, mobile devices don't offer the same experience. Significant work, especially by deveee, has gone towards a seamless experience on mobile.<br />
+<br />
+The big novelty however is that SuperTuxKart is also now compatible for iOS, through Benau's work.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqnWCzhAYUAz0rpte1gQs6POXU0lkrsFh8jmi3rbslNQUJHVnmcydShEMwWODfQd5FRclizuyAljs7zjJciYYEO-5lJ0w7ndixxuuMACtmWLCY6S_A0DjStzeTa3aQGnZfwIz2XbleHVc/s1600/1.1RC_iPhoneXS.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" data-original-height="645" data-original-width="1258" height="205" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqnWCzhAYUAz0rpte1gQs6POXU0lkrsFh8jmi3rbslNQUJHVnmcydShEMwWODfQd5FRclizuyAljs7zjJciYYEO-5lJ0w7ndixxuuMACtmWLCY6S_A0DjStzeTa3aQGnZfwIz2XbleHVc/s400/1.1RC_iPhoneXS.png" width="400" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">SuperTuxKart on an iPhone XS</td></tr>
+</tbody></table>
+<br />
+<br />
+The next most important change for mobile STK in 1.1 is the option of downloading in-game the assets that are missing from the default packages because of size limitations.<br />
+<h2>
+Closing words</h2>
+We hope you'll take as much pleasure playing SuperTuxKart as we did seeing it improve through our work and our community's feedback.<br />
+<br />
+With the holidays coming soon, we have no set date for the 1.1 release. We're waiting on translators to finish updating translation and on your feedback about major issues that needs to be addressed to move from this release candidate to the final 1.1 release. Please report any bug you encounter on our GitHub tracker, after checking someone didn't report it already: <a href="https://github.com/supertuxkart/stk-code/issues">https://github.com/supertuxkart/stk-code/issues</a><br />
+<br />
+If you are interested in what is new in 1.1, a more detailed changelog can be found here : <a href="https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md">https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md</a><br />
+<br />
+After 1.1 is out, we plan on asking past STK contributors to dual-license the game under both the
+ GPLv3 (the game's current license) and the MPL, to give the project 
+more freedom to deal with some software repositories like Steam, while sticking to 
+free software.<br />
+<br />
+If you enjoy our game, you may also chose to contribute with code or art. There is almost limitless room for improvement, and you can make a difference by making it your game, too.<br />
+<br />
+Happy holidays!
+
+----
+
+Date: 2019-12-21T05:16:00
+
+----
+
+Uuid: g4d63bfphqvrvt7q

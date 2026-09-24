@@ -1,0 +1,21 @@
+columns:
+  left:
+    width: 1/2
+    sections:
+      drafts:
+        extends: sections/blogArticles
+        label: Drafts
+        status: draft
+
+      unlisted:
+        extends: sections/blogArticles
+        label: In Review
+        status: unlisted
+
+  right:
+    width: 1/2
+    sections:
+      listed:
+        extends: sections/blogArticles
+        label: Published
+        status: listed

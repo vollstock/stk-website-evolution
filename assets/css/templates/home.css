@@ -1,0 +1,41 @@
+.swiper-button-prev,
+.swiper-button-next {
+    overflow: visible;
+    filter:
+        drop-shadow(-1.5px -1.5px 0.25px black) drop-shadow(1.5px -1.5px 0.25px black) drop-shadow(1.5px 1.5px 0.25px black) drop-shadow(-1.5px 1.5px 0.25px black);
+    transition: transform 0.16s cubic-bezier(0.5, 1, 0.89, 1);
+    transform: translateY(0)
+}
+
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: translateY(-0.05rem);
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+    transform: translateY(0.1rem);
+}
+
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg {
+    stroke: var(--color-orange-400);
+}
+
+.swiper-button-prev:active svg,
+.swiper-button-next:active svg {
+    stroke: var(--color-orange-600);
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+    transition: stroke 0.16s cubic-bezier(0.5, 1, 0.89, 1);
+    stroke: var(--color-orange-500);
+    stroke-width: 1.5px;
+    overflow: visible;
+}
+
+.swiper-pagination-bullet-active {
+    outline: 1.5px solid black;
+}

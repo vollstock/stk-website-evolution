@@ -1,0 +1,120 @@
+Title: SuperTuxKart Evolution Roadmap
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Along with the announcement of SuperTuxKart Evolution, we promised that we would release a roadmap for the project.</p>
+  
+<p>Here it is, with our team walking a thin line between the urge to share good news and the need to not over-promise. There is a reason, after all, while vague promises and "coming soon" announcements are so common.</p>
+
+<p>As a brief reminder, SuperTuxKart Evolution is the name of the project’s next major release. With all the changes we are hard at work bringing to life, we see it as a new game within the same series, rather than as a mere update.</p></span>
+<br />
+
+  <h1 style="text-align: left;">General Overview</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>We'll share timeline estimates once we have a better grip on how long these features actually take to implement.</p>
+  
+<p>We could list every GitHub issue we're tackling and every texture we're planning to update, but that would turn this roadmap into a technical specification that nobody wants to read. Instead, we'll cover the major pieces here and save the detailed breakdowns for future blog posts, where we can properly explain why seemingly simple changes often lead us down unexpected rabbit holes.</p>
+</span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0f0MCFFAFKXlrwK5OoSJ4uHcSJ9u2U-9zYZl8cHlPOblJwGGfOsjZzbcNQVV_A_v1a2GCccZC-10ENNaRTCpBYLs3sVJbzB5LJj3bXFRwIll-1aMqEyOEafZGqmeihbJkOwH-MAeIDvXp39gsbDR9hV8lNiidP0juULCc4oZ1DyT08c-wzZYCPFaO5w/s1920/Blog_06_STK_Roadmap.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0f0MCFFAFKXlrwK5OoSJ4uHcSJ9u2U-9zYZl8cHlPOblJwGGfOsjZzbcNQVV_A_v1a2GCccZC-10ENNaRTCpBYLs3sVJbzB5LJj3bXFRwIll-1aMqEyOEafZGqmeihbJkOwH-MAeIDvXp39gsbDR9hV8lNiidP0juULCc4oZ1DyT08c-wzZYCPFaO5w/s640/Blog_06_STK_Roadmap.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">We will color the panels as our work progress and we release more focused announcements.<br /></td></tr></tbody></table>
+<br/>
+
+  <h1 style="text-align: left;">New karts</h1>
+  
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>SuperTuxKart Evolution will increase the roster of characters you can pick from. Mr. Iceblock will make a comeback in STK, and brand new characters will also be present.</p>
+
+<p>Existing karts will also receive love to make the graphical and animation quality more uniform.</p>
+</span>
+<br />
+
+  <h1 style="text-align: left;">New User Interface</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>SuperTuxKart's current UI gets the job done, but, after years of incremental changes, it's starting to show its age. We're rethinking the interface from the ground up, building a new foundation rather than merely applying a new coat of paint.</p>
+  
+<p>A professional designer has approached us to help guide this process, and we are grateful to benefit from his vast experience. The new interface will include proper animations to guide user focus, scalable icons that look crisp across all display resolutions, and navigation that hopefully makes sense to people who haven't spent years learning our current system's quirks. Whether we can deliver all the improvements we aim at in our intended timeframe remains to be seen, but we're cautiously optimistic.</p>
+</span>
+<br />
+
+  <h1 style="text-align: left;">New tracks & Update to Existing Tracks</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Tracks are the core of a racing game: we’re creating new environments to immerse yourself in and race through. Each track presents its own unique set of challenges both for players trying to master them and for us trying to make them actually work.</p>
+  
+  <p>Here's a glimpse of our new tracks:</p>
+  <ul style="text-align: left;"><li>Alpine Valley,</li>
+    <li>Freytra Peaks (formerly known as Snow Weeks),</li>
+    <li>Drainage Dash (codename, final name pending),</li>
+    <li>A completely new Fort Magma,</li>
+    <li>At least four more that we’re not ready to name yet.</li></ul>
+</span>
+  
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR3w-Lu-pXkuBg_VsoFFNLAY4K9iyGEIfpMKCTMPyRtPXnZIm5pOjSSb0JQozfvVAHJL-9Ildm1a7_YXzmwRDNi1pEWEwuLwvaiuS5yx4NgY5YcpuRKNiaLZRZ-MtDQN68s3qPbK5E3Iqb_GXmnZrE2F1riNnscRmHJPPyjcXrMr0Gx2Nx8fejFajxeg/s1920/Blog_06_STK_DrainDash_final.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR3w-Lu-pXkuBg_VsoFFNLAY4K9iyGEIfpMKCTMPyRtPXnZIm5pOjSSb0JQozfvVAHJL-9Ildm1a7_YXzmwRDNi1pEWEwuLwvaiuS5yx4NgY5YcpuRKNiaLZRZ-MtDQN68s3qPbK5E3Iqb_GXmnZrE2F1riNnscRmHJPPyjcXrMr0Gx2Nx8fejFajxeg/s640/Blog_06_STK_DrainDash_final.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Drainage Dash<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>A few tracks will be removed between STK 1.5 and SuperTuxKart Evolution, but most others will stay. However, even there expect many changes:</p>
+  <ul style="text-align: left;"><li>New textures,</li>
+    <li>Improved models,</li>
+    <li>Balance improvements,</li>
+    <li>Addressing known issues for a smoother experience,</li>
+    <li>And more.</li></ul>
+
+<p>We'll share more details on these tracks as they progress through our development pipeline and approach release readiness.</p>
+
+<p>Freytra Peaks and Drainage Dash will be made available to donators in a gift package that will accompany 1.5’s release.</p>
+  </span>
+<br />
+  
+  <h1 style="text-align: left;">New Story Mode</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>The overworld from SuperTuxKart 0.8 won't be making the transition to Evolution. While we could rebuild it to match our current quality standards, the development time required would mean fewer new tracks.</p>
+
+<p>Instead, we're building a completely new Story mode that ditches the overworld approach in favor of a more focused experience:</p>
+  <ul style="text-align: left;"><li>Over 40 challenges,</li>
+    <li>New cutscenes and plotline,</li>
+    <li>New challenge types,</li>
+    <li>A redesigned tutorial.</li></ul>
+</span>
+<br />
+
+  <h1 style="text-align: left;">Improved Gameplay</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Getting the gameplay to feel right is one of those things that's hard to quantify but impossible to ignore. SuperTuxKart 1.0 smoothed out many rough edges, and Evolution builds on years of player feedback while adding new elements to keep things interesting.</p>
+  
+<p>Unless you’re a long-time STK fan, you’re probably not keen for all the details, so here are the highlights: a new third drifting level (for those who master the first two), a smarter racing AI featuring AI personalities, and at least three new powerups. Many of these changes are already implemented in <a href="https://github.com/supertuxkart/stk-code/compare/1.5-rel...BalanceSTK2">our experimental branch</a> if you want to see the technical details.</p></span>
+<br />
+
+  <h1 style="text-align: left;">Other</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>There are many further elements that don’t fit neatly in the previous major categories, but are still important for the game. We are not forgetting about them.</p>
+</span>
+<br />
+  
+  <h1 style="text-align: left;">Conclusion</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>We'll be sharing regular development updates as we work through this roadmap: talk is cheap, and we'd rather show you what we're creating.</p>
+  
+<p>SuperTuxKart Evolution stands on SuperTuxKart which itself stands on the shoulders of over two decade of contributors who built the foundation we're expanding on.</p>
+  
+<p>If you'd like to join that tradition by contributing code, art, or simply joining the conversation, reach out to us or register on <a href="https://forum.supertuxkart.net/">our new forum</a>.</p>
+  
+<p>We'll also announce donation options soon for those who want to support the team for the time it dedicates to development.</p>
+  
+<p>More updates will come as we make progress.</p>
+  </span>
+
+----
+
+Date: 2025-09-23T22:24:00
+
+----
+
+Uuid: gh8jksaqtt9diy7v

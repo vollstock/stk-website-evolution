@@ -1,0 +1,37 @@
+Title: Home
+
+----
+
+Herotitle: <p>SuperTuxKart Evolution</p>
+
+----
+
+Herosubtitle: <p>A free and fun<br>kart racing game</p>
+
+----
+
+Herobackground: - file://hhpt1yvvgzjavfzv
+
+----
+
+Ctatitle: Make it your own!
+
+----
+
+Ctasubtitle: Tux Kart is free and open source.
+
+----
+
+Ctatext: Create tracks and karts and share them with the community.
+
+----
+
+Ctaimage: - file://jr4zz4kijlq3yd4a
+
+----
+
+Heroimage: - file://jr4zz4kijlq3yd4a
+
+----
+
+Uuid: luwgahpkqckn0veu

@@ -1,0 +1,62 @@
+Title: SuperTuxKart 1.1 released
+
+----
+
+Text:
+
+We are happy to announce that the final 1.1 release is ready!<br />
+<br />
+Compared to the previous release candidate, based on the feedback we received, you can now change the touchscreen controller type in race paused dialog:<br />
+<br />
+<div style="text-align: center;">
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgckRJhOH2vwQOmQYHRdb6kEbFaLphkjDmQAgc5357x9C7oVrztn__m9R2osUc9itHgML6CQsNDYoGAWdVP0klozJxdGsueHfW1TglyKiMBKvbuyFRZtkPMyUmiHC1-61EntZ4eeGnmVLes/s1600/mobile.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="779" data-original-width="1600" height="193" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgckRJhOH2vwQOmQYHRdb6kEbFaLphkjDmQAgc5357x9C7oVrztn__m9R2osUc9itHgML6CQsNDYoGAWdVP0klozJxdGsueHfW1TglyKiMBKvbuyFRZtkPMyUmiHC1-61EntZ4eeGnmVLes/s400/mobile.jpg" width="400" /></a></div>
+<br /></div>
+<br />
+As previously stated, we have started the process to dual license STK to MPLv2 or any later version, and therefore we have started contacting the previous contributors as stated on <a href="https://supertuxkart.net/STK_Dual_licensing">https://supertuxkart.net/STK_Dual_licensing</a> (see previous blogpost for more details on dual-licensing).<br />
+<br />
+So in case you have name there make sure to check your mailbox, we look forward to your reply!<br />
+<br />
+<br />
+<div style="text-align: center;">
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdM6bgOvjEBB2TzmEkhMTpWlQ2PUVh9EbDfnDN6Ekv-fa8aJaPj9BU_n2wPsK7a8D7GsvWxYeaUpBGFNowDoO57y0KZ_-p8-Mi6aKwf35zDbvxRMbKj8hUqQw1mxZ5QGDJF5jIx1FRcVWf/s1600/xue.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="900" data-original-width="1600" height="225" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdM6bgOvjEBB2TzmEkhMTpWlQ2PUVh9EbDfnDN6Ekv-fa8aJaPj9BU_n2wPsK7a8D7GsvWxYeaUpBGFNowDoO57y0KZ_-p8-Mi6aKwf35zDbvxRMbKj8hUqQw1mxZ5QGDJF5jIx1FRcVWf/s400/xue.png" width="400" /></a></div>
+<br /></div>
+<div style="text-align: center;">
+<br /></div>
+<h2>
+What's new?</h2>
+The new features were described in more detail in the previous blogpost so you can refer to the previous post for more details. Here is a summary of the new changes :<br />
+<ul>
+<li>Improved online multiplayer play</li>
+<ul>
+<li>Fix network lags in various scenarios when playing online</li>
+<li>Add AI support to local networking servers</li>
+</ul>
+<li>UI enhancements</li>
+<li>A new arena: Pumpkin Park</li>
+<li>Mobile enhancements and iOS support (The iOS version can be tested through testflight : <a href="https://testflight.apple.com/join/mbK8RjHq" style="color: #478c24; font-family: Georgia, serif; font-size: 16px; text-decoration-line: none;">https://testflight.apple.com/join/mbK8RjHq</a> )</li>
+<li>Complex text layout and emoji support</li>
+<li>Story mode timer for speedrunners</li>
+<li>Generic polish and minor improvements</li>
+</ul>
+<div>
+Check <a href="https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md">https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md</a> for details</div>
+<h2>
+Downloads</h2>
+Download the game here : <a href="https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/1.1">https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/1.1</a><br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+
+----
+
+Date: 2020-01-05T02:52:00
+
+----
+
+Uuid: a3nboe2rsfsddeyn

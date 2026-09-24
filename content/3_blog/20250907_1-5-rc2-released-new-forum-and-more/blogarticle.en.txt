@@ -1,0 +1,61 @@
+Title: 1.5-rc2 released, new Forum, and more !
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>The SuperTuxKart team is glad to announce that the resources we feared might be lost have now been successfully transferred.</p>
+
+<p>This means in particular a continuity of online services for STK players and access for the team to important tools of outreach.</p>
+
+<p>For the SuperTuxKart project, this is the best outcome possible.</p>
+
+<p>While we wish this could have happened more smoothly, last week’s shakeup unlocked the situation, and the shared interest from all parties in seeing the project thrive has allowed to clear things up and to reach a common understanding.</p>
+
+<p>I want to personally thank Benau, who has shown great character in seeking this positive resolution.</p></span>
+  <br />
+
+<h1 style="text-align: left;">SuperTuxKart 1.5-rc2 released</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>SuperTuxKart 1.5-rc2 is now <a href="https://github.com/supertuxkart/stk-code/releases/tag/1.5-rc2">available for download</a>.</p>
+
+<p>Compared to the previous release candidate, it essentially features bug fixes : new features are avoided in the RC period.</p>
+
+<p>One small exception is a toggle in the advanced graphics settings allowing users to pick the game’s rendering engine without having to manually edit a configuration file. The game’s default rendering engine remains OpenGL, as it’s currently more feature-complete.</p>
+  <br />
+  
+  <h1 style="text-align: left;">New Forum</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>We are pleased to announce to the community the official opening of <a href="https://forum.supertuxkart.net/">our new forum</a>.</p>
+
+<p>This new forum replaces the previous forum hosted by FreeGameDev, that became read-only in the fall of 2024.</p>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhb79M699gd0lWuMwfXb5KwgZlpXWBlEYr1syhHNStVWQtC-UdcwywxunNusf1TxtMcq7vhW09uh2Z133_Y97H9nr0ayIV4kOQiqRXUJMUKD4Dsjl2KkO-HKbku9egUHBBIbw6Dun-srt_IdRkkW2PuuJOVkxve8MTyfn5pG1PBfdZRAfv0eESxtNQ_w/s1066/Blog_05.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="843" data-original-width="1066" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhb79M699gd0lWuMwfXb5KwgZlpXWBlEYr1syhHNStVWQtC-UdcwywxunNusf1TxtMcq7vhW09uh2Z133_Y97H9nr0ayIV4kOQiqRXUJMUKD4Dsjl2KkO-HKbku9egUHBBIbw6Dun-srt_IdRkkW2PuuJOVkxve8MTyfn5pG1PBfdZRAfv0eESxtNQ_w/s640/Blog_05.png" width="600" /></a></td></tr></tbody></table>
+  
+<p>It offers a place for players to have more involved discussions than on instant messaging groups, for contributors to showcase their creations, and for everyone to communicate with the development team.</p>
+  <br />
+
+  <h1 style="text-align: left;">Improved online server</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>SuperTuxKart online services — such as creating online accounts, retrieving the list of online servers, and downloading addons — rely on a server provided by the STK team.</p>
+
+<p>On Thursday 4th, they have been successfully migrated to a new, more powerful server. For players, there is nothing to do: the game will automatically connect to the new server when you need to access online services.</p>
+
+<p>This change addresses the issue of sporadic overloads observed in past months, that would occasionally disconnect game servers during races.</p>
+
+<p>It also incidentally make the game snappier in some situations where it waits on an answer from the main server, such as loading the list of servers.</p>
+  <br />
+
+    <h1 style="text-align: left;">Conclusion</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>Please <a href="https://github.com/supertuxkart/stk-code/issues">report</a> bugs you might find in the rc2 release, and don’t forget to register on <a href="https://forum.supertuxkart.net/">our forum</a> to discuss about the game.</p>
+
+<p>Stay tuned for upcoming SuperTuxKart news: 1.5 release, SuperTuxKart Evolution’s roadmap, and more.</p>
+
+----
+
+Date: 2025-09-07T01:19:00
+
+----
+
+Uuid: 0xofoj42ncu2n0tx

@@ -1,0 +1,148 @@
+Title: Why average FPS and 1% low FPS are misleading
+
+----
+
+Text:
+
+<h1 style="text-align: left;">A new benchmarking mode</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Until now, SuperTuxKart didn’t have an easy way for anyone to test the performance of the game on their system :</p>
+<ul style="text-align: left;"><li>Enabling the integrated FPS counter could give an estimate, but it required work from the user and suffered from limited data provided to the user and repeatability issues.</li>
+<li>Using the command line to run a race with AI karts. This is used for example in the <a href="https://openbenchmarking.org/test/pts/supertuxkart">OpenBenchmarking test suite</a> but also suffers from issues we will return to later.</li></ul>
+  <p>This changes with the upcoming 1.5 release.</p>
+<p>It will be possible, with a few clicks, to run a fast test and receive a summary of the performance at the current settings, or to run a more comprehensive test and receive recommanded settings. More on this at the end.</p>
+<p><b>A question I asked myself while designing this mode was: "Which metric should be used to evaluate performance?"</b></p>
+</span>
+<br />
+
+<h1 style="text-align: left;">Average FPS and the problem of smoothness</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Games create the illusion of continuous movement by presenting a rapid succession of static images. More images in the same time frame means that the game looks and feels more fluid to the player. It also means that the result of the player’s inputs is visible quicker: the game feels more responsive.</p>
+
+<p>The most obvious and most common metric to quantify this is the average "Frames per Second", commonly known as average FPS. It is a metric that has been around for a long time and that is easy to intuitively understand: it tells us at what rate the CPU and GPU can produce new images of the game’s state, updating what is shown on the screen to the player.</p>
+
+  <p><b>A single number, easy to compute, easy to understand</b>: up to this day, it is by far the most common metric used to test the performance of different settings or hardware.</p>
+
+  <p>But as readers familiar with the topic already know, <b>average FPS is a deeply flawed metric</b>.</p>
+
+<p>A constant, smooth, 120 average FPS offers a superior experience to a constant smooth, 60 average FPS. But in most games, and especially so on personal computers where the hardware can range from very low-end to the high-end, framerates are not constant.</p>
+
+<p>Instead, some frames take more time to compute than others. Perhaps the game is trying to render a more complex scene. Perhaps more data needs to be moved from memory into the CPU or GPU computational cores, while on other frames most needed data is already present in cache. In online multiplayer, the game might need to do more calculations to update the game state based on data received from the server.</p>
+
+<p>This means that the same average FPS can correspond to very different realities, from a fluid experience to an unplayable experience marked by heavy stuttering.</p>
+</span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6-SSZOgKNu_MWWphLpKFBp76O6e-wqNnlmwMIGUeW8RCXDOu4sA9352Ym3Z3PptMqPI01cAlUOVR0H_AXr8fWwG0DkIHhQUPt-AkzsYG6tAT-Nj5ylkvMQLWACgEvtHPJfBzzAZBfd8SpYEXVkWw_fj2AvXWKyicEC5f9DCt9NZnesuEtdoRe69s4aw/s943/Blog_02a.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="530" data-original-width="943" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6-SSZOgKNu_MWWphLpKFBp76O6e-wqNnlmwMIGUeW8RCXDOu4sA9352Ym3Z3PptMqPI01cAlUOVR0H_AXr8fWwG0DkIHhQUPt-AkzsYG6tAT-Nj5ylkvMQLWACgEvtHPJfBzzAZBfd8SpYEXVkWw_fj2AvXWKyicEC5f9DCt9NZnesuEtdoRe69s4aw/s640/Blog_02a.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Variation in frame duration leads to perceptible stutters<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>This also means that <b>a higher average FPS may correspond to a worse player experience</b> if the duration of frames are less regular.</p>
+</span>
+<br />
+
+<h1 style="text-align: left;">1% low FPS: a partial solution</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>1 % low FPS is the most common solution used in benchmarking to avoid the pitfall of misleading FPS averages. Instead of looking at the average of all frames, it sorts all the frames recorded during the test, then <a href="https://gamersnexus.net/site-news/2513-testing-methodology-explained-1percent-lows-and-delta-t">takes the slowest 1 % </a>, and computes the corresponding average.</p> 
+
+  <p>If a game has very regular frame durations, the 1 % low value will be very close to the average. If, to the contrary, frame durations are all over the place, the 1 % low will be far below the average. A large number of online reviewers make use of this metric, and it provides an obvious improvement.</p>
+
+  <p>Here is the same underlying data as in the previous chart, but with frame durations sorted and the frames used to compute the 1 % low highlighted:</p>
+  </span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC1bWBc2Yel9e9yJBf13mwXwN8zEwQor3w1YRYThsFbKZSxsWswDorDVrsvbTXhRqH8usnV9QCmGktv_4Kisbyh9ljJRQwAx_gPeCll6JppFz9WKX2xggnhpNVeMeTHK3br3hjIEsocJsp5x_aLGfRtZXu5xQrCZ4pJpAEVkUuzidSKgCszoGMdaHScg/s943/Blog_02b.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="530" data-original-width="943" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC1bWBc2Yel9e9yJBf13mwXwN8zEwQor3w1YRYThsFbKZSxsWswDorDVrsvbTXhRqH8usnV9QCmGktv_4Kisbyh9ljJRQwAx_gPeCll6JppFz9WKX2xggnhpNVeMeTHK3br3hjIEsocJsp5x_aLGfRtZXu5xQrCZ4pJpAEVkUuzidSKgCszoGMdaHScg/s640/Blog_02b.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Irregular frametimes get a worse 1% low result<br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+  <p>The difference between the smooth 60FPS average and the choppy 60FPS average is correctly reflected, with a massive difference between 60FPS (1 % low) and below 20FPS (1 % low).</p>
+
+  <p>But while unquestionably better than the average, 1 % low is also a flawed metric when it comes to being a measure of the most important parameter – player experience. The determining factor to player experience is how slow are the slow frames.</p>
+
+  <p>Isn’t that precisely what 1 % low is about ? Yes, and no ! Unfortunately, the result is dependent on the total number of frames, and an increase in the number of quick frames will increase the number of frames among the 1 % slowest.</p>
+
+  <p>The following chart shows how two series, having the same number and duration of slow frames, and therefore the same stuttering and poor player experience, can receive different 1 % low scores with a different total number of frames:</p>
+    </span>
+
+  <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvSXa05XzbhJF7TESVkQ7zS6K3SXu9UUhh0Gu_zgsdN3oDzc2uHrDUYTxjqXgatHi4TjepJFNzRRt_Sd5r6xY9-NBnl3prgjRR6kNfdDQbBCeRAE5iSqh887AzAT_wdxSC-1Rb_s9WM-_ec7XSOOGKXsHvjmTMqLqv87BatEGzR65y4NI7tqYga7S1BA/s943/Blog_02c.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="648" data-original-width="943" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvSXa05XzbhJF7TESVkQ7zS6K3SXu9UUhh0Gu_zgsdN3oDzc2uHrDUYTxjqXgatHi4TjepJFNzRRt_Sd5r6xY9-NBnl3prgjRR6kNfdDQbBCeRAE5iSqh887AzAT_wdxSC-1Rb_s9WM-_ec7XSOOGKXsHvjmTMqLqv87BatEGzR65y4NI7tqYga7S1BA/s640/Blog_02c.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The very quick frames between stutters don't improve player experience<br /></td></tr></tbody></table>
+
+  <br />
+
+<h1 style="text-align: left;">A new metric</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>When trying to boil down a large set of datapoints into a single number, some of the information contained therein is inevitably going to be lost.</p>
+
+<p>A naïve metric that wouldn’t fall into the pitfall we noticed for 1 % lows is minimum FPS : take the single slowest frame in the benchmark, and compute the corresponding FPS.</p>
+
+<p>But it suffers from its own issues : minimum FPS tends to vary significantly when repeating tests, and a single frame out of thousands is also a poor representation of the overall subjective experience.</p>
+
+<p>The crux of the issue with metrics such as 1 % low is that the importance of each frame is weighted based on the total number of frames. <b>In the previous chart, the 3 slowest frames represent respectively 1 % and 0.75 % of the total number of frames, but they represent 3.46 % of the entire duration of the test in both situations.</b></p>
+
+<p>The set of frames used to compute metrics meant to showcase how smooth a game is should be based on a fixed proportion of the total benchmark time, not on a fixed proportion of the total number of frames.</p>
+
+<p>Measuring the average FPS corresponding to 3 % or 5 % of the benchmark time would be one way to do it. Because the required computations are very quick for a computer, our integrated benchmark asks two slightly different questions:</p>
+  <ul><li>How much time is spent in frames slower than needed to reach a target framerate?</li>
+    <li>How much excess time is spent waiting?</li></ul>
+
+  <p>Let’s take the following frame-time chart:</p>
+  </span>
+
+  <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsL_aArnic_6HOzAYAkoTAcjWgQABvbEfABTJBylsagEboAUs_QMtvXwFWtM8-vB9-Rx5WIRKp6hN0Ik8_PIp0pX-dejAIdgcb8djCSZOQ2eg6bRB8B6qJbZNIJ61cVSL7wCQxXysjPeFZ3YUwdqLtKP3DvCFgAWshxa2LfgIWSysTJnV2NXIJPbiCGw/s971/Blog_02d.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="515" data-original-width="971" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsL_aArnic_6HOzAYAkoTAcjWgQABvbEfABTJBylsagEboAUs_QMtvXwFWtM8-vB9-Rx5WIRKp6hN0Ik8_PIp0pX-dejAIdgcb8djCSZOQ2eg6bRB8B6qJbZNIJ61cVSL7wCQxXysjPeFZ3YUwdqLtKP3DvCFgAWshxa2LfgIWSysTJnV2NXIJPbiCGw/s640/Blog_02d.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+    <p>By asking the first question, we can produce this much easier analyzed second chart:</p>
+  </span>
+  
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDW8RldqvVtG7AIu8Oz83PtPWFYf4WEDlIVn3CHvdBPmutj2t9l-xVysZbi-y1ZMuYktwmgUnrAUkAtjqsxP0XaBXoB_iP-CJyd8vCKz-u-CMPkR8zq2HCZbSDwb9VOBlQphcioxe0R1Q2mCKCG5yPowC-57bZesvJNnHRmSNjWdTl1iLJxxCyMttwUg/s971/Blog_02e.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="515" data-original-width="971" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDW8RldqvVtG7AIu8Oz83PtPWFYf4WEDlIVn3CHvdBPmutj2t9l-xVysZbi-y1ZMuYktwmgUnrAUkAtjqsxP0XaBXoB_iP-CJyd8vCKz-u-CMPkR8zq2HCZbSDwb9VOBlQphcioxe0R1Q2mCKCG5yPowC-57bZesvJNnHRmSNjWdTl1iLJxxCyMttwUg/s640/Blog_02e.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>Easier to parse than a full frametime chart, it contains key informations about performance levels and is robust against distortions induced in average FPS and 1 % low FPS by more fast frames. Here, shifting the curves towards the right and higher target FPS requires improving the slow and average frames.</p>
+
+<p>Looking at excess time offers a slightly different picture. Let’s take a target FPS of 100. This translates to a target frametime of 10 milliseconds. Excess time would be, in this example, all the time spent in a frame beyond 10ms. This metric penalizes relatively less minor misses and more major misses.</p>
+  </span>
+
+    <br />
+  
+  <h1 style="text-align: left;">Conveying this information to the player</h1>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>The full curves are interesting when trying to analyze the performance characteristics of the game, of particular settings or of a particular track, especially when testing code changes. But simple numbers also have their use.</p>
+
+<p>The player running the benchmark needs a few numbers that can guide his settings choice or help him compare the performance of his system with others. STK’s benchmark offers three numbers:</p>
+<ul><li>Steady FPS : Defined as the highest target FPS with less than 1 % time spent in slow frames and less than 0.1 % excess time. In the previous chart, it is at 35. This metric is a target for the player prioritizing the avoidance of any stutter.</li>
+<li>Mostly Steady FPS : With less than 12 % time spent in slow frames and less than 2 % excess time, it offers a good indicator for most players wanting a mix of performance and eye-candy. In the previous chart, it is at 38.</li>
+<li>Typical FPS : With less than 50 % time spent in slow frames and less than 10 % excess time, it produces values that are usually close to the average FPS, making it useful to compare performance with other games. In the previous chart it is at 40, while the average FPS is at 40,7. However, highly irregular frametimes will produce lower values than with average FPS, making it more robust.</li></ul>
+  </span>
+
+      <br />
+    
+  <h1 style="text-align: left;">SuperTuxKart’s new benchmark mode in action</h1>
+  
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>To ensure consistency and repeatability, SuperTuxKart’s integrated benchmark use a replay and the game’s own profiler mode, which records very accurate frametimes. It then displays a basic summary screen, and allows to save a report containing more detailed results.</p>
+  </span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="BLOG_video_class" height="279" src="https://www.youtube.com/embed/FD96_VhgatM" width="480" youtube-src-id="FD96_VhgatM"></iframe></div></td></tr><tr><td class="tr-caption" style="text-align: center;">If the player activates the pause menu mid-benchmark, it will keep running unless the player choses to exit the benchmark completely.<br /></td></tr></tbody></table>
+
+  <span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>The replay allows different benchmark runs to last the same duration and to show the same scene. This makes results much more consistent over the player driving by himself or Ais racing around, as done in the OpenBenchmarking test.</p>
+
+<p>A replay doesn’t perfectly represent a real race, but it’s close enough, and the integrated benchmark uses the most demanding track in the standard release to present a worst-case scenario. Performance on any other standard track will be similar or better (often significantly so).</p>
+
+    <p>Three main operations determine how good STK’s performance is:</p>
+    <ul><li>Parsing the scene and sending draw calls to the GPU. This is CPU-intensive.</li>
+      <li>Rendering the scene. This is GPU-intensive.</li>
+ <li>In online multiplayer, replaying game events to synchronize the local state with the server state. This is CPU-intensive, because the game needs to simulate physics and other events between the time at which the server sent a state update and the current local time.</li></ul>
+
+<p><b>The benchmark stresses the two first operations and is representative of single-player performance. Online multiplayer is typically more CPU-demanding.</b></p>
+
+<p>In SuperTuxKart 1.5, it will be possible to set the integrated frame-limiter to various values, including 1000 which is practically speaking unlimited. This is another advantage over the methods OpenBenchmarking currently has to use, where the maximum FPS cannot exceed 120.</p>
+      </span>
+
+----
+
+Date: 2024-07-07T10:12:00
+
+----
+
+Uuid: vf76g7ftvnkwblww

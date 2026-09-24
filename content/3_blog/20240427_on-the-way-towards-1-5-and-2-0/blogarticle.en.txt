@@ -1,0 +1,91 @@
+Title: On the way towards 1.5... and 2.0!
+
+----
+
+Text:
+
+<h1 style="text-align: left;">Some history</h1>
+
+<p><span style="font-size: large; font-family: verdana; line-height: 140%"><b>SuperTuxKart 1.0 was released 5 years ago, on the 20th of April 2019.</b> With the introduction of online multiplayer, among many other changes and improvements, it marked a pivotal moment in the history of the game.
+<br /><br />
+Afterwards, it was decided to commit to a policy of version compatibility: instead of making breaking changes that would prevent online play between different 1.x versions or would make it impossible to compare records between versions, game mechanics and tracks have been kept functionally identical, with very few exceptions (such as expanding some checklines).
+<br /><br />
+Instead, the focus of development has been centered on improving all the other aspects of the STK experience. Releases from 1.1 to 1.4 have featured, alongside numerous bugfixes and UI improvements, many significant enhancements.
+<br /><br />
+Some of these were very visible, such as the release of new arenas and kart models, all tracks included inside mobile releases, the introduction of render resolution scaling, a basketball minimap indicator, a brand new cartoon skin, customizable font size, new respawn animations of track items, etc.
+<br /><br />
+Others have been more discreet but no less important, such as support for IPv6 servers or the adoption of SDL2 (improving compatibility with gamepads, simplifying ports to new platforms and more). The overall <a href="https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md">changelog</a> contains more details.</span></p>
+<br />
+
+<h1 style="text-align: left;">SuperTuxKart 1.5 is coming this summer</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p><b>A year and a half after the release of version 1.4, SuperTuxKart 1.5 is finally around the corner.</b> The list of changes that will be included is not yet finalized, but it brings some notable improvements, such as:</p>
+<ul style="text-align: left;"><li>Allow to configure STK’s maximum FPS within the game’s options, instead of being limited to a maximum of 120 (30 for Android). The game’s physics, running independently from the framerate, remain at 120FPS.</li>
+<li>New LoD (Level of Detail) settings to reduce "popping" for a minor performance cost. As STK is fairly easy to run on modern systems, this is an appreciable quality improvement.</li>
+<li>A new benchmark mode</li><li>Finer control of the game’s audio levels</li>
+<li>And of course the usual minor bugfixes and improvements</li></ul>
+</span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8NMKYG2nyvDEiuTBdgmiRKif-JouYJIucDz8IeTYgxBo28u-YKQhL83H1yT9KWgjXCsYind3JUgOsE1E01_lagEDLVMm9NC9EYt6bLs71V-MPWG0jAyiBKK7uyw5KOCy7ZHREApupRer9NTyXW0isbOHOFyyuigeD91GJL4wrN5ESbQCcUdtWIB-0TA/s1918/New_settings.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1079" data-original-width="1918" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8NMKYG2nyvDEiuTBdgmiRKif-JouYJIucDz8IeTYgxBo28u-YKQhL83H1yT9KWgjXCsYind3JUgOsE1E01_lagEDLVMm9NC9EYt6bLs71V-MPWG0jAyiBKK7uyw5KOCy7ZHREApupRer9NTyXW0isbOHOFyyuigeD91GJL4wrN5ESbQCcUdtWIB-0TA/s640/New_settings.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">The new framelimiter configuration and integrated benchmark<br /></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>There are always many further enhancements and fixes that we would like to see in the next release, but the STK team wants to bring all the existing improvements to the players sooner than later: <b>the release of STK 1.5 is expected this summer</b>.
+<br /><br />
+But this is not the most significant announcement in this blog post.</p>
+</span>
+<br />
+
+<h1 style="text-align: left;">SuperTuxKart 2.0: an ambitious project</h1>
+
+<p><span style="font-size: large; font-family: verdana; line-height: 140%"><b>After the release of 1.5, development efforts will officially switch towards SuperTuxKart 2.0</b>, featuring major gameplay changes and more significant track updates than any single STK release in the last fifteen years.
+<br /><br />
+A 1.6 release featuring some backported bugfixes and improvements may happen, but providing a new major release will be 
+the project’s priority.
+<br /><br />
+The 2.0 version will feature a minimum of five <b>new high-quality standard tracks</b>, improved versions of all existing tracks, alongside <b>considerable changes and improvements to all the elements of gameplay</b>.
+<br /><br />
+A substantial proportion of these changes already exist in an experimental branch I created at the end of 2023, coming back from a long break, to start implementing and testing them. This branch, which will be merged in the main development codebase after the release of 1.5, already features major revisions, such as three brand new powerups and a new kart class. Future blog posts will elaborate on the various changes and features coming for 2.0.</span></p>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><div class="separator" style="clear: both; text-align: center;"><iframe allowfullscreen="" class="BLOG_video_class" height="279" src="https://www.youtube.com/embed/wX181iwNBHM" width="480" youtube-src-id="wX181iwNBHM"></iframe></div></td></tr><tr><td class="tr-caption" style="text-align: center;">An early showcase of one of the new powerups<br /></td></tr></tbody></table>
+<p>
+<br />
+<span style="font-size: large; font-family: verdana; line-height: 140%">On the track-making side, efforts are led by Sven Andreas Belting, our lead artist and designer of Black Forest. He is working on several new track projects (many already quite advanced), as well as updates to several tracks, be they graphical or, in coordination with myself, related to gameplay. Typhon306 is also providing significant help.</span>
+<br /></p>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUyIA7y8xUAqiQIcCLPPvD11xnWhbfs8i3Nts27mAsRTgcr_v6Uis3M2b4aY0cpeQVyJnJNLIaNWXkcWNM1yn10G94qBA23ZCDARke4q3eiaCi5UvsJoMiJMhX_OVeT67mYIoi6f1yPHi8-5YaveAx-GQN4fq7OxWRDYIsUsuZXIWS2yxigVhHoMhyRA/s1920/FortMagma_preview.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1081" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUyIA7y8xUAqiQIcCLPPvD11xnWhbfs8i3Nts27mAsRTgcr_v6Uis3M2b4aY0cpeQVyJnJNLIaNWXkcWNM1yn10G94qBA23ZCDARke4q3eiaCi5UvsJoMiJMhX_OVeT67mYIoi6f1yPHi8-5YaveAx-GQN4fq7OxWRDYIsUsuZXIWS2yxigVhHoMhyRA/s640/FortMagma_preview.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A preview of two of the new tracks<br /></td></tr></tbody></table><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIsNhh7jXjItlz-wis2GiNaFBHaeC8xsSeKNgqxiv1WZNGqvLSQJRTHYTaaBVR2k2b-pF0s_kiH_048MBbvzkoCoq100QNUtxm5TT4zYhLR2pcYAQVNFWE99Lm03k-0aajZ2dnC3rTSCe7v5bjTGFf4_Vg6bIem31TIGapxLTkRcirdUcw_A5RLoCcJg/s1920/SnowWeeks_preview.png" style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="1920" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIsNhh7jXjItlz-wis2GiNaFBHaeC8xsSeKNgqxiv1WZNGqvLSQJRTHYTaaBVR2k2b-pF0s_kiH_048MBbvzkoCoq100QNUtxm5TT4zYhLR2pcYAQVNFWE99Lm03k-0aajZ2dnC3rTSCe7v5bjTGFf4_Vg6bIem31TIGapxLTkRcirdUcw_A5RLoCcJg/s640/SnowWeeks_preview.png" width="480" /></a></div>
+<p><br />
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<b>Our aim is to significantly raise the standard of visual quality for tracks included in SuperTuxKart 2.0, while also providing improved polish and gameplay.</b>
+<br /><br />
+As versions following STK 2.0 will also follow the compatibility principle, we aim for a particularly high-quality for everything that will remain the same in 2.1 and other 2.x releases. Beyond the kart properties, physics, powerups, and obviously standard tracks, this includes things such as a new AI, more fun to play against, and a brand new Story Mode. Nonetheless, we would also like to lift other parts of the game; for example better performance from the engine and progress on the Vulkan renderer, improvement of non-racing modes, refreshing the GUI, featuring some new musics, or an improved addons system.
+  </span></p>
+<br />
+
+<h1 style="text-align: left;">A labor of love</h1>
+
+<p><span style="font-size: large; font-family: verdana; line-height: 140%">We are very excited for this, in the genuine sense of the word exciting, that soulless corporate-speak sometimes makes us forget. It is difficult, however, to provide a solid estimate for when this major release will happen. The SuperTuxKart project is alive, has a clear vision and is moving towards some important milestones, but it is also a project of passion carried by a small team.
+<br /><br />
+It is still moving forward because contributors (most having spent more time playing the game than we would like to admit) want it to become better. Its free software licensing allows interested people to contribute.
+<br /><br />
+But this also means that, unlike commercial games, the STK project cannot pay dedicated full-time developers and artists. It often feels better to do something for free, willingly,  for the sake of a work well done, than to do it for a paltry amount of money; and recruiting freelancers to do some things while key contributors investing much more time get nothing also seems wrong. Raising enough funds from the community to truly change this approach has always seemed too far-fetched.
+<br /><br />
+The story of STK is that of the successes of free software games, but also of their struggles.
+<br /><br />
+Hence, <b>to make SuperTuxKart a better game and to reach the 2.0 release sooner, the most important thing we need are new contributors</b>, be they helping with a few specific things or with many. Artists who could contribute new textures, 3D modelling, music, icons; developers who could implement features, fix bugs, improve the code structure or work on the engine; contributors willing to improve documentation, create content advertising the game or meticulously report bugs: there is no shortage of things that could help.</span></p>
+<br />
+
+<h1 style="text-align: left;">Final words</h1>
+
+<p><span style="font-size: large; font-family: verdana; line-height: 140%">This blog featured no updates since 1.4’s release, as the activity around the project slowed down until my comeback, and other contributors of the project were not inspired to write. We want to avoid such a hiatus happening again.
+<br /><br />
+I will try to provide in this blog, every one or two months, an update on SuperTuxKart’s progress: future plans, detailed presentation of a new feature, etc.</span></p>
+
+<p style="line-height: 100%; margin-bottom: 0cm; text-align: left;"><style type="text/css">p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }a:link { color: #000080; text-decoration: underline }</style></p>
+<h1><style type="text/css">p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }a:link { color: #000080; text-decoration: underline }</style></h1>
+
+----
+
+Date: 2024-04-27T22:20:00
+
+----
+
+Uuid: y9qq6u3byu23yt7u

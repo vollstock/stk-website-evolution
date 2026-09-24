@@ -1,0 +1,30 @@
+Title: Release Candidate for SuperTuxKart 1.5
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>The SuperTuxKart team is happy to announce the first release candidate for SuperTuxKart 1.5.
+<br /><br />
+Several months have elapsed since the release of the 1.5 beta version, and more changes than we initially anticipated have delayed the release. Our contributors have been busy with their lives beyond the game, and since 1.5 is the last planned release of the 1.x series, there is always one more bugfix or feature that would be nice to add.
+<br /><br />
+You can download binaries for Linux, Windows, Mac and Android here : <a href="https://github.com/supertuxkart/stk-code/releases/tag/1.5-rc1">https://github.com/supertuxkart/stk-code/releases/tag/1.5-rc1</a></p></span>
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSf6CPODMtUxi8NEgniW0bND6Y7w1HI2cXpwXYxQolPSzWs9Ub9haQd4uypNAQRkgwL7gv5Gj553553GStHvxBqiaGHAuzB-F43x8axfKh56vKT_E8VJX4Ar7WfFAVPCi7Ugf3RZZbfpyw_5e_pEzPdBl1p5wje_7b84JGbPwxmv3fAr2yvEqwtl1SDw/s2560/Candela_1.5rc_sven.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1440" data-original-width="2560" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSf6CPODMtUxi8NEgniW0bND6Y7w1HI2cXpwXYxQolPSzWs9Ub9haQd4uypNAQRkgwL7gv5Gj553553GStHvxBqiaGHAuzB-F43x8axfKh56vKT_E8VJX4Ar7WfFAVPCi7Ugf3RZZbfpyw_5e_pEzPdBl1p5wje_7b84JGbPwxmv3fAr2yvEqwtl1SDw/s960/Candela_1.5rc_sven.png" width="600" /></a></td></tr></tbody></table>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>The final 1.5 release announcement will dwelve more into the improvements since the last major release and I invite interested users to consult <a href="https://github.com/supertuxkart/stk-code/blob/1.5-branch/CHANGELOG.md">the changelog</a> for more details, but since the beta release, the game has received, in addition to many bugfixes and minor features:</p>
+<ul style="text-align: left;"><li>Better display of karts, tracks and game modes, eliminating or reducing the need to scroll to see the available options,</li>
+<li>Improved animations for the parachute and bubblegum shield,</li>
+<li>Graphical enhancements to the overworld as a good-bye to the 1.x Story Mode,</li>
+<li>New egg hunts on three tracks (Black Forest, Gran Paradisio Island and The Old Mine),</li>
+<li>SSAA (render resolution above 100%) and Percentage-Closer Soft Shadows for users with powerful GPUs,</li>
+<li>Spotlight support and significant updates to the Vulkan renderer, bringing it closer to feature parity, although OpenGL remains the default renderer.</li></ul>
+<p>Please report any issue you encounter (and that has not already been reported!) on <a href="https://github.com/supertuxkart/stk-code/issues">our bug tracker</a>.</p></span>
+
+----
+
+Date: 2025-05-27T21:52:00
+
+----
+
+Uuid: s0ssg6jhqadepgyq

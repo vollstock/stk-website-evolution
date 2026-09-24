@@ -1,0 +1,24 @@
+Title: SuperTuxKart 1.3 release
+
+----
+
+Text:
+
+<p>The SuperTuxKart team is happy to announce the release of version 1.3. Online play is still compatible with the previous 1.x versions. Here are the changes compared to <a href="https://blog.supertuxkart.net/2021/08/supertuxkart-13-release-candiate.html">release candidate</a>:</p><h1 style="text-align: left;">Clickable URLs in text</h1><div>After feedback, we made URLs in text on STK UI clickable! It uses native
+ functions, some of which are powered by SDL2 SDL_OpenURL, to determine a
+ suitable application to open links too:<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEj-Mot8aZ6eL3ybQHQFZXMhkjWuO1l9wfu7fuKff9_Y4jOfaXDz1LKxd5pYrMgfSYpY82Uf5dKmwDf6w44C9Vlr54Wiq7JIlzOApYm_u7pwRQvOrYkyCGM3jOGuY942uuqeG6rTjsRfq_2C453JeO_7gtzhzYkNttvALny0vz3vvt0ZM87Ez-yxplzgVw=s2220" style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="2220" src="https://blogger.googleusercontent.com/img/a/AVvXsEj-Mot8aZ6eL3ybQHQFZXMhkjWuO1l9wfu7fuKff9_Y4jOfaXDz1LKxd5pYrMgfSYpY82Uf5dKmwDf6w44C9Vlr54Wiq7JIlzOApYm_u7pwRQvOrYkyCGM3jOGuY942uuqeG6rTjsRfq_2C453JeO_7gtzhzYkNttvALny0vz3vvt0ZM87Ez-yxplzgVw=s320" width="320" /></a></div><div style="text-align: center;">Telegram links can be opened in Android</div></div><div><a href="https://blogger.googleusercontent.com/img/a/AVvXsEghAV4MLb2k2AYaF8euSkUglWp-aXurIMlZpUVqp6e12ABuwIrD6P_gCpOYC9ZokVLRl_i2oR7PjBOt22UZtQFxTNqzqNKn9KnKChvIUfTS5mrafSJ1cIS1XSWm9j2JwsnOwGOYPP_ggwuupDwEqu-MRIiLICuyEV9ScI5mDXXhQUM_dsOVfSC4ikWIXg=s2220" style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="1080" data-original-width="2220" src="https://blogger.googleusercontent.com/img/a/AVvXsEghAV4MLb2k2AYaF8euSkUglWp-aXurIMlZpUVqp6e12ABuwIrD6P_gCpOYC9ZokVLRl_i2oR7PjBOt22UZtQFxTNqzqNKn9KnKChvIUfTS5mrafSJ1cIS1XSWm9j2JwsnOwGOYPP_ggwuupDwEqu-MRIiLICuyEV9ScI5mDXXhQUM_dsOVfSC4ikWIXg=s320" width="320" /></a></div><div style="text-align: center;">You can open the walkthrough videos as well!</div><h1 style="text-align: left;">Minor tracks fixes</h1><div>The unpopular Las Dunas Soccer Stadium has been revised thanks to 
+feedback from the STK community and now features a new simplified and 
+symmetric soccer pitch. We hope it gives the STK community another good 
+choice of soccer field!</div><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjoYYESCYC9PZM-IQPI2OcTTw4j1uFHp1DG3RXB7iStZBjdJZ4-sREJVd239I9yZN9Jf216v-3zxZqUK1hU7fdqwML4VekhO0437JmsWGvdEml1aZlrG5NeI6FjiKYYClsz3Rnpe4dp-Pq97UpyhkT6-8z00RZf-vOdvcsE-BTiFc1S8VLuyTsMGGXL3A=s1920" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1080" data-original-width="1920" height="180" src="https://blogger.googleusercontent.com/img/a/AVvXsEjoYYESCYC9PZM-IQPI2OcTTw4j1uFHp1DG3RXB7iStZBjdJZ4-sREJVd239I9yZN9Jf216v-3zxZqUK1hU7fdqwML4VekhO0437JmsWGvdEml1aZlrG5NeI6FjiKYYClsz3Rnpe4dp-Pq97UpyhkT6-8z00RZf-vOdvcsE-BTiFc1S8VLuyTsMGGXL3A=s320" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><br /></div><div>We also added lap line extensions, which makes sure the lap counting 
+still takes place even if you drive a little bit off the road, to the 
+following tracks:</div><div><ul style="text-align: left;"><li>Hacienda</li><li>Old Mine</li><li>Ravenbridge Mansion</li><li>Shifting Sands</li></ul></div><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhQ11EgnyIS3VSUt_lJnhHh8ABB-Rx2e_4ySLwGSnruxl4U9rbMrhgzMVE_lKYEJb5rOtBud_2WRjg80lfMfQy8fl3W4FjxB1bg0BqSjQFfB_dgDvySiUi7i6d7ciBuKE80F6pXnTfsVInjZw-gEmE_CXe1BhcCNCl3mtPUZByfsrzKFACi9mwWs6oLeg=s1920" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" data-original-height="1080" data-original-width="1920" height="180" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQ11EgnyIS3VSUt_lJnhHh8ABB-Rx2e_4ySLwGSnruxl4U9rbMrhgzMVE_lKYEJb5rOtBud_2WRjg80lfMfQy8fl3W4FjxB1bg0BqSjQFfB_dgDvySiUi7i6d7ciBuKE80F6pXnTfsVInjZw-gEmE_CXe1BhcCNCl3mtPUZByfsrzKFACi9mwWs6oLeg=s320" width="320" /></a></div><div></div><div style="text-align: center;">Now, if you cross inside these 2 red boxes, your lap is still counted</div><div><br /></div><div>Complete list of changes can be found <a href="https://github.com/supertuxkart/stk-code/blob/1.3/CHANGELOG.md">here</a>.
+
+Download the latest release <a href="https://github.com/supertuxkart/stk-code/releases/tag/1.3">now</a>, we hope you enjoy the 1.3 release!</div>
+
+----
+
+Date: 2021-09-28T15:30:00
+
+----
+
+Uuid: f7pczcwwhckj6vta

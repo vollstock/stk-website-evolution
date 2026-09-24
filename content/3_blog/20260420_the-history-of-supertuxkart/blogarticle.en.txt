@@ -1,0 +1,92 @@
+Title: The History of SuperTuxKart
+
+----
+
+Text:
+
+<span>
+<p>On the 20th of April 2019, SuperTuxKart 1.0 <a href="https://blog.supertuxkart.net/2019/04/supertuxkart-10-release.html" target="_blank">was released</a>. Today marks the 7th anniversary of this momentous event in the project’s history.</p>
+
+<p>April is a special month for SuperTuxKart, as it was also when the first code for the original TuxKart was written, while SuperTuxKart 0.9, which brought the game’s modern graphics renderer, was released on the 21st of April 2015.</p>
+
+<p><strong>To celebrate this occasion, the SuperTuxKart team is happy to share the most comprehensive history of the project ever written</strong>, replete with links and illustrations.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdpPsZHO4FEck5_jpKYizXY_-aPhWF6PfJxctxWT4dsvuq-tMhsbMr2OfGmlvKwVOs8wyHm3dMnI9cirq67530lhk7dWQvIJ__Nccbd3gOVdCgR35JUQ77-r93lk5yJtPQ_FaL2A-yvkKo1ibUX8OKrKJiUyBRFysN0TZ2UHVbw-Gz0isPZFpbqZyQEA/s3840/SuperTuxKart_History_Title.jpg"></a>
+
+<span>
+<p>From the early days of TuxKart to SuperTuxKart Evolution, exploring how the game changed but also who made it change and what events it went through: <strong><a href="https://supertuxkart.net/History_of_SuperTuxKart" target="_blank">a new ‘History’ page is now available on our website</a></strong>.</p>
+
+<p>Whether you discovered the game later on (many of today’s players were not yet born when SuperTuxKart first started!) or whether you followed it over the years, <strong>if you like SuperTuxkart you will find a treasure-trove of information showing how the game evolved to take its modern shape and what important events happened along the way</strong>.</p>
+
+<p>As a history, it tells about people, their goals, their achievements, and some of the difficulties they faced on the way.</p>
+
+<p>During the dozens of hours it took me to piece things together and write this history, it was a constant challenge to balance which details were too technical or specific and which should be included, which would add to the understanding of SuperTuxKart’s journey and which would be better confined to the game’s changelog.</p>
+
+<p>Speaking of the changelog, which is linked among many sources in the history page’s additional references, it has also seen updates filling some gaps in older versions, notably when various karts were added or removed.</p>
+
+<p>This is also why the history page is not a mere blog post: it is meant to be a reference for years to come, that can be updated with the story of SuperTuxKart Evolution, as well as, for the other sections, some of the interesting details that I inevitably missed when trying to summarize two decades of history in an accurate but engaging narrative.</p>
+
+<p>Another reason is that SuperTuxKart’s history is so rich that it is simply too long for a typical blog post. You can read it at your own pace, focusing on whichever era itches your curiosity the most.</p>
+</span>
+
+<br>
+<h2>Website updates</h2>
+
+<span>
+<p>The new page exploring SuperTuxKart’s history is not the only recent change to our website.</p>
+
+<p>The <a href="https://supertuxkart.net/Projects" target="_blank">projects page</a> has been completely redone to include many more instances of SuperTuxKart being used in various projects, as well as illustrations for some of them. This also required some changes for our website to neatly display pictures on the side.</p>
+
+<p>To this day, SuperTuxKart’s libre nature make it a favorite for technical demonstrations and research papers, with several new projects from 2024 and 2025 alone.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSubyu1jptmLD2a1sJrsdIA4IJXc8YWLogRupTtqo3lkdyWazy_PE8HR31lIPafvMnYTiVz87UOXwyP9VE4PhxNfYUXGf-7samASmxjYmOqUskWBtMex6kmcSQgaRZelXZm4HEQhgCeTvgKgZQRc1O3pyPed0Og0XMrEt0e933sRLyTguwJjFLPucWNw/s960/Projects_DEFCON.png"></a><br>
+
+<span>
+<p>The <a href="https://supertuxkart.net/Gallery" target="_blank">gallery page</a> also received a major update, including a better organization, thumbnail for the trailers, captions, and some new pictures.</p>
+
+<p>New pages on <a href="https://supertuxkart.net/Performance_testing" target="_blank">performance testing</a> and on track-making (<a href="https://supertuxkart.net/Making_Tracks:_Optimization" target="_blank">performance optimization</a> and <a href="https://supertuxkart.net/Making_Tracks:_Gameplay_Fundamentals" target="_blank">gameplay fundamentals</a>) have been added.</p>
+
+<p>The history entry in the FAQ page has, of course, been revised, going from a dry list of version numbers and release dates mentioning a few key changes to a brief overview linking to the new history page. Finally, there have been some small changes elsewhere.</p>
+
+<p>A note regarding translations: some of the website’s pages were translated as a bloc. This made it very difficult to update those pages, as any new paragraph would break the translation of everything that followed, requiring a lot of manual work to restore. It could also cause issues if the page’s formatting elements were mistakenly modified by a translator.</p>
+
+<p>We’re currently <a href="https://forum.supertuxkart.net/thread-295-post-766.html" target="_blank">moving away from this method</a>, but in the short term this means some pages will lose their translations, until those are updated.</p>
+
+<br>
+<h2>More to come</h2>
+
+<span>
+<p>Looking back at SuperTuxKart’s journey to write its history was both humbling and inspiring.</p>
+
+<p>I hope that reading through it will give you a deeper appreciation and understanding of STK!</p>
+
+<p>Regarding the website, there is still much to do make it as good as we wish it to be. Work there has to be balanced with other tasks such as working on the game’s code and preparing the next updates on Evolution’s progress, but we aim to get there step by step.</p>
+
+<p>If you are interested in helping to update our documentation, reach out <a href="https://forum.supertuxkart.net/" target="_blank">on our forum</a>.</p>
+
+<p>To help make development more sustainable, we have also created <a href="https://members.supertuxkart.net/" target="_blank">a patreon page</a>. Recurrent donations are not yet available, but <strong>you can already join as a member to receive notifications about future posts and updates!</strong></p>
+
+<p>Until next time!</p>
+</span></span>
+
+----
+
+Poster: - file://odfakxe8ca83n2bn
+
+----
+
+Date: 2026-04-20 22:50:00
+
+----
+
+Author: - user://VCrnfJEu
+
+----
+
+Tags: 
+
+----
+
+Uuid: majx943ehbq2tuvk

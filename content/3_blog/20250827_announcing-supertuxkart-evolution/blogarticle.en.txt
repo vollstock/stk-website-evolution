@@ -1,0 +1,50 @@
+Title: Announcing SuperTuxKart Evolution
+
+----
+
+Text:
+
+<span style="font-size: large; font-family: verdana; line-height: 140%"><p>A new major game version bringing a fresh experience with heaps of new content and plenty of improvements : that’s what many STK players have been waiting for, and it’s what the SuperTuxKart Evolution project aims to bring about.</p>
+
+<p>The STK team has a vision for this next great step in SuperTuxKart’s journey, and we are committed to bring it to life, honoring the legacy of those whose work allowed SuperTuxKart to become an icon of open-source and Linux gaming.</p>
+  
+  <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdCDkxR3zIRPURWlT27445ILD_gAHxdAlSsruP4-sL0RJvpEIjHaxBlHbP0yBNAwRW_CsCtpdPkaoCXtjJ83qxQl1brDyqo5ufRrbb1zXG9Tde70oXq_I1kKyuoMCKih7eDUSOfCxKqA4L6y5zp_MMLPNOWaPDHTCFWcuEHbGs8sHVl2Uf63UZU5q5kA/s2048/logo_alpha.png" style="display: block; margin-left: auto; margin-right: auto; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="2048" data-original-width="2048" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdCDkxR3zIRPURWlT27445ILD_gAHxdAlSsruP4-sL0RJvpEIjHaxBlHbP0yBNAwRW_CsCtpdPkaoCXtjJ83qxQl1brDyqo5ufRrbb1zXG9Tde70oXq_I1kKyuoMCKih7eDUSOfCxKqA4L6y5zp_MMLPNOWaPDHTCFWcuEHbGs8sHVl2Uf63UZU5q5kA/s640/logo_alpha.png" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">STK Evolution's logo<br /></td></tr></tbody></table>
+
+<p>The SuperTuxKart Evolution project is led by Sven, our lead artist, and by myself, Alayan, our lead game designer.</p>
+  
+<p>We have already thought and worked on many of those changes, and a roadmap detailing our plans will be made available in an upcoming update alongside further details.</p></span>
+  <br />
+
+  <h1 style="text-align: left;">What about 1.5?</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p><i>UPDATE 02/09/25: We are happy to announce that over the last few days, we managed to get some misunderstandings cleared and to find common ground with Benau, who became co-leader of STK in 2019. The sections below have been amended to reflect this. A further announcement will follow.</i></p>
+  
+<p>If you have been following the project in recent times, you may be wondering when the promised 1.5 version is coming. The release candidate came out almost 3 months ago.</p>
+  
+<p>The code was pretty much ready, but misunderstandings hampered communication and trust, preventing the team from agreeing on a release timeline and freezing progress.</p>
+
+  <p><i>UPDATE 02/09/25: Despite some differences in vision, both sides want SuperTuxKart to go on. As a result of the agreement we reached, much of previous concerns over project resources are not relevant anymore. There will still be a few changes, but on the basis of technical merit.</i></p>
+  
+  <p><i>As indicated in the previous version of this announcement, we aim to release 1.5 soon, but it is now planned to be a joint release with the cooperation of Benau and Devee, as we had long hoped for.</i></p>
+
+  <br />
+  
+  <h1 style="text-align: left;">Closing words</h1>
+
+<span style="font-size: large; font-family: verdana; line-height: 140%">
+<p>This announcement is bittersweet, as the promise of a renewed development effort is mixed with news of trouble within the team. Thankfully, wisdom and understanding appear set to prevail.</p>
+
+<p>SuperTuxKart Evolution is an ambitious project, but we already have demonstrated our capabilities with our past contributions, and we intend to prove our seriousness through hard work, regular updates on the game’s development, and ultimately a great release.</p>
+
+<p>We also wish to renew communication with and between people who enjoy SuperTuxKart. We plan on opening a new forum very soon for this purpose.</p>
+
+<p>If you have further questions, you can direct them in the comments below.</p>
+
+----
+
+Date: 2025-08-27T08:09:00
+
+----
+
+Uuid: tcvmpshn0ro7sdug

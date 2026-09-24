@@ -1,0 +1,48 @@
+title: Default Page
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          # Hero
+          heroHeadline:
+            type: headline
+            label: Hero
+          heroTitle:
+            type: writer
+            nodes: false
+            marks: false
+          heroSubtitle:
+            type: writer
+            nodes: false
+            marks: false
+          heroBackground:
+            label: Background
+            type: files
+            multiple: false
+
+          # Call to action
+          ctaHeadline:
+            type: headline
+            label: Call to action
+          ctaTitle:
+            type: text
+          ctaSubTitle:
+            type: text
+          ctaText:
+            type: text
+          ctaImage:
+            type: files
+            multiple: false
+
+  sidebar:
+    width: 1/3
+    sections:
+      pages:
+        type: pages
+        template: default
+      files:
+        type: files

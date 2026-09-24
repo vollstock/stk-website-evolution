@@ -1,0 +1,63 @@
+Title: SuperTuxKart 1.2 Release Candidate 1 available!
+
+----
+
+Text:
+
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">We are happy to announce the release of the first release candidate for STK 1.2!
+</span></pre>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgkQ0SxPRd3YspmuTT4k-45iT4puBA26bQ43Nw2Kye2TixyhhjdP20_asTp_uP9or3bSwolh07i299NrYEbhUZbgvUVLOSd_PhiF7ygYgzmTkbi04QDOSkdD8UAQvZLH13K5BheK17zKNr/s1600/Screenshot_20200721-184125_SuperTuxKart.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><img border="0" data-original-height="779" data-original-width="1600" height="155" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgkQ0SxPRd3YspmuTT4k-45iT4puBA26bQ43Nw2Kye2TixyhhjdP20_asTp_uP9or3bSwolh07i299NrYEbhUZbgvUVLOSd_PhiF7ygYgzmTkbi04QDOSkdD8UAQvZLH13K5BheK17zKNr/s320/Screenshot_20200721-184125_SuperTuxKart.jpg" width="320" /></span></a></div>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"></pre>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><br /></span></div>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">As this release is in the 1.x series, it will be compatible with the previous 1.x releases in terms of online gameplay and physics.
+
+One of the most important changes for this release is that we ported a lot of low-level windows creation/input handling code to SDL2, which improves/allows the following:
+
+<b>Improved gamepad handling</b>
+
+In the past, our gamepad handling was done using outdated Irrlicht-based code, which lacks basic features like hotplug. With SDL2, STK has the following improvements to gamepad handling:
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7ib_FqEwzRW65Ry9LQJ9Cs26wmdBsCw1hvB9DSCFNdWT5nVIJDnSBWgiJCuV6H_BT_2ppASxjb-TNHRGq9obMKXFcFZF0iP4onreFMQs-2am7EgartEz9Ax7rUwJJ-ybddvz6KIOsVa0l/s1600/gp.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="900" data-original-width="1600" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7ib_FqEwzRW65Ry9LQJ9Cs26wmdBsCw1hvB9DSCFNdWT5nVIJDnSBWgiJCuV6H_BT_2ppASxjb-TNHRGq9obMKXFcFZF0iP4onreFMQs-2am7EgartEz9Ax7rUwJJ-ybddvz6KIOsVa0l/s320/gp.jpg" width="320" /></a></div>
+- Hotplug support: You can now plug/unplug gamepads and STK will immediately detect the changes, restarting STK is no longer required.
+- SDL2 gamepad controller mapping: This allows a uniform default controller binding suitable for most Xbox-style controllers, and also makes re-mapping controls significantly easier (buttons will show up as e.g. "X" or "Left thumbstick left", rather than "Button 19", etc.)
+- Most gamepad-related bugs, such as not being able to rebind controls on some devices/platforms, should now be fixed.  If you were having issues with your gamepad in a previous release, make sure to give this release a try!
+
+<b>Improved portability to new platforms</b>
+
+One example is our Haiku port, now that SDL2 is used, its pull request was just feature definitions for platform specific code, see <a href="https://github.com/supertuxkart/stk-code/pull/4309">https://github.com/supertuxkart/stk-code/pull/4309</a>. With SDL2, we also now allow using the Asian input method for all platforms we support, thanks to excellent text handling in SDL2.</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimI-EPkAGi7FuFWj4GlCRmy7iQKQbJlpjVrmcJtqTk9SmKZ1-bAjec98lBL5FXsEmTs6C4Y8X4AU6G3gSPjF-b9aXxK2ZiB28a15iIzwpGBO5RhqERZjB-53Do-TrzCtsd-Xeq4Ogk90Jx/s1600/haiku.jpg" imageanchor="1" style="clear: left; font-family: "Times New Roman"; margin-bottom: 1em; margin-right: 1em; text-align: center; white-space: normal;"><img border="0" data-original-height="900" data-original-width="1600" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimI-EPkAGi7FuFWj4GlCRmy7iQKQbJlpjVrmcJtqTk9SmKZ1-bAjec98lBL5FXsEmTs6C4Y8X4AU6G3gSPjF-b9aXxK2ZiB28a15iIzwpGBO5RhqERZjB-53Do-TrzCtsd-Xeq4Ogk90Jx/s320/haiku.jpg" width="320" /></a></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;">
+</pre>
+<div style="overflow-wrap: break-word; white-space: pre-wrap;">
+<span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">We've also been hard at work improving many other areas of STK!</span></div>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
+For the user interface, we integrated a "Modern" skin, which is in a new, different style compared to our existing skins. One big highlight of this skin is that all icons of it are drawn as SVG icons. We are working on allowing STK to render the SVG files directly, which will help the GUI to not be pixelated at high resolutions, without having to using large PNG files. We may write more on this skin's features in a future blog post.</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvDosuoUlUJV0EXcCf1kXBmJTkgb6tVXzIr11R40sy925xk5i3vHaIbDTYvx4QPi-S7eEF2k2hNAhN0CiHLDsLB2LhGEXh6psmBEvZ3y3le15uRoJJ3anlECefzhcd1dmtklJF7VfLBm_5/s1600/Screenshot_20200721-184448_SuperTuxKart.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center; white-space: normal;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><img border="0" data-original-height="779" data-original-width="1600" height="155" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvDosuoUlUJV0EXcCf1kXBmJTkgb6tVXzIr11R40sy925xk5i3vHaIbDTYvx4QPi-S7eEF2k2hNAhN0CiHLDsLB2LhGEXh6psmBEvZ3y3le15uRoJJ3anlECefzhcd1dmtklJF7VfLBm_5/s320/Screenshot_20200721-184448_SuperTuxKart.jpg" width="320" /></span></a></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
+</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">For gameplay, we added multiple camera modes, which allow significantly more flexibility for the user:
+</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif; margin-left: 1em; margin-right: 1em; text-align: center; white-space: normal;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIpGK0uM8hLiKUEFPCTL0d5WBSRw-nQxBrBWzwmLCBla5WcqJhCWl_nl-IidaPV6S0yiyoMHwyPnkTikYn8ZTD0YYYWuf4mSX1Me4pQixXKrL9k2YxhSr7x57hF_cdwWaX5dD5eQoMeGFy/s1600/Screenshot_20200721-184243_SuperTuxKart.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center; white-space: normal;"><img border="0" data-original-height="779" data-original-width="1600" height="155" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIpGK0uM8hLiKUEFPCTL0d5WBSRw-nQxBrBWzwmLCBla5WcqJhCWl_nl-IidaPV6S0yiyoMHwyPnkTikYn8ZTD0YYYWuf4mSX1Me4pQixXKrL9k2YxhSr7x57hF_cdwWaX5dD5eQoMeGFy/s320/Screenshot_20200721-184243_SuperTuxKart.jpg" width="320" /></a></span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">We also adjusted the code for online servers, so you can now use any addon karts online!
+
+Although there aren't any new tracks in this release, one of our community members, Crystal, updated the Pidgin kart with some improvements, such as headlight/taillight, new tires, and a new spoiler.</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq6eK8hOo1jRZlPPviBJKcNpoiAwxbfha1YHR9EvD4AmUeU09rns64mfQzrX85AdnfNowmEdbSl6xolgYVu_VW5WD4Wwjuy3F3wcKN5LogjWlpAaS2c2iAKh_NgCl3uxyOGStsNdulLHlD/s1600/Capture_decran_2020-07-21_a_12.15.24.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center; white-space: normal;"><img border="0" data-original-height="327" data-original-width="318" height="200" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq6eK8hOo1jRZlPPviBJKcNpoiAwxbfha1YHR9EvD4AmUeU09rns64mfQzrX85AdnfNowmEdbSl6xolgYVu_VW5WD4Wwjuy3F3wcKN5LogjWlpAaS2c2iAKh_NgCl3uxyOGStsNdulLHlD/s200/Capture_decran_2020-07-21_a_12.15.24.png" width="194" /></a></span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
+</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Additionally, we switched to a new packaging format for the Android release, which allows all tracks to be bundled without additional downloads.</span></pre>
+<pre style="overflow-wrap: break-word; white-space: pre-wrap;"><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
+For the progress in dual-licensing STK, currently around 30-40% of contributors have agreed.  We will send another email which will give more information before the final 1.2 comes out.
+
+We hope you enjoy the release of STK 1.2 Release Candidate 1, get it <a href="https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/1.2-rc1/">here</a>!</span></pre>
+
+----
+
+Date: 2020-07-21T17:01:00
+
+----
+
+Uuid: 2zdxkg9q3wawqida

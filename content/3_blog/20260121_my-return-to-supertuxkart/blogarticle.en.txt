@@ -1,0 +1,113 @@
+Title: My Return to SuperTuxKart
+
+----
+
+Text:
+
+<span>
+<p>In 2017, I left SuperTuxKart on the highest note imaginable - a standing ovation at the Blender Conference in Amsterdam as we launched the mobile version. I believed then, and still do, that it's better to end with a firework than fade slowly to irrelevance. I thought that chapter was closed. But sometimes, a project you love calls you back - not because your story wasn't complete, but because there's a new story to write.</p>
+
+<p>The team asked me to return not because I have all the answers, but because I remember the questions we used to ask ourselves during those seven years, from 2010 to 2017.</p>
+  
+<p>I am Samuncle, former lead artist of SuperTuxKart.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ9_Esn-b44C-0HG02O5y7ugupa_TxI4GJt4P1Ha1iIqia7Qi4YKtjafjfErc6UjR0o4TAr6dzwnR0EwDugENF-2rcmLt2laqPlLGefV_Wd968FBlmPT54Qe0FtBhP_ib67-2V5zM_pRkRM4FEOXYmO2sSdWbQ40mm2BW8FfHCVK8B2xHDoOVRrBiVpQ/s2560/candela-city-sam-return.jpg"></a><br>
+
+<br>
+
+<h1>Humble Beginning and Angry Letter</h1>
+
+<span>
+<p>My journey to SuperTuxKart began in 2007 with youthful exhuberance, ambition and questionable priorities: I wanted to hack my school's Wi-Fi, which apparently required Linux. Installing GPU drivers was a nightmare back then, and the common wisdom was "download a game to test if it works." That game was SuperTuxKart.</p>
+
+<p>But the seeds were planted much earlier. Since playing DOOM on DOS machines as a child, I'd been obsessed with making games. I remember cutting out cardboard pieces, trying to construct my own "3D" worlds. When Far Cry arrived, and later Crysis, something crystallized in my mind. Not the gameplay itself, but the mythology of it - a game so technically advanced it became a benchmark, a statement of what was possible.</p>
+
+<p>I wanted to create that. Not necessarily an FPS, but something that carried that same audacity.</p>
+
+<p>In 2010, I read about a new SuperTuxKart beta release and downloaded it. I was devastated by what I saw. The graphics were… not what I'd hoped for. So I did what any passionate teenager would do: I sent an angry letter to the developers telling them they were bad at their jobs.</p>
+
+<p>One of the artists responded with a challenge I didn't expect: "Do better."</p>
+
+<p>I left for a week. I worked on something called Hacienda. When I returned, I had created something better than anything in the game at that time.</p>
+
+<p>That's how I joined SuperTuxKart, part reckless, part intimidated, wholly sincere. I literally started by complaining. But beneath the bravado, I was scared and unsure. I was an apprentice who didn't yet know what magic looked like. What followed was a slow process of refining every map, learning from existing contributors, and gradually discovering what I could contribute.</p>
+
+<p>Interestingly, I wrote to several other open-source projects around that time (less harshly, I promise). They all rejected me. So I stayed with SuperTuxKart. Sometimes the best path chooses you.</p>
+</span>
+<br>
+
+<h1>The War for Better Graphics</h1>
+
+<span>
+<p>I quickly evolved from angry teenager to lead artist. I could see that many open-source games were failing not in code, but in visual ambition. So I invested everything into raising the art quality - from the beautiful shores of Gran Paradiso Island to the lost ruins of Cocoa Temple.</p>
+
+<p>But art alone wasn't enough. We were constrained by Irrlicht, our rendering engine, which had severe limitations you wouldn’t even imagine in 2026. For instance you couldn't use more than four textures per object. Linux distribution policies made it worse - they forced us to use vanilla Irrlicht, rebuilding our game and discarding our modifications. We were trying to reach for the stars while wearing chains.</p>
+
+<p>So we made an audacious decision: we forked Irrlicht entirely and built Antarctica, our own engine. I pushed relentlessly for this. My collaborators, Auria, Hiker, and later Benau, all extraordinarily competent and professional - somehow tolerated my increasingly wild demands. I'm grateful for their guidance and patience as I learned what leadership actually meant.</p>
+
+<p>For me, the release of Antarctica was the realization of that childhood dream. Crysis wasn't about first-person shooters - it was about philosophy. It was about creating something so technically and artistically aspiring that people asked, "How is this even possible?" I wanted SuperTuxKart to ask that same question for open-source gaming. Not 'good enough for FOSS.' Not 'impressive given the constraints.' Just… what if we refused to accept limitations at all?</p>
+
+<p><strong>It took years, but by 2016 we were making it real.</strong> <a href="https://www.youtube.com/watch?v=0FEwDH7XU9Q" target="_blank">Professional trailers</a>, <a href="https://supertuxkart.net/assets/wiki/OfficialPoster_090.jpg" target="_blank">bold marketing</a>. We were making people ask, <strong>"Wait, this is Free and Open Source?!"</strong></p>
+
+<p><strong>There's an uncomfortable truth about why SuperTuxKart succeeded where many open-source games struggled: I never looked at other open-source projects as my measuring stick.</strong></p>
+
+<p>I studied Pixar. <a href="https://www.youtube.com/watch?v=k9bUTfFF3_4" target="_blank">Disney</a>. Blizzard cinematics. I asked: 'What makes people feel something when they see this?' Not 'What's achievable with volunteer developers?' but 'What's worth achieving?'</p>
+
+<p>This wasn't arrogance, it was survival. If players compared SuperTuxKart to other FOSS games, we'd be niche forever. But if we could make them forget it was open-source, if the first reaction was 'Wait, this is beautiful,' then we could talk about freedom, and community, and all the values that matter.</p>
+
+<p><strong>By 2017, everything had aligned. We had our engine. We had stunning tracks. We were launching on mobile. Standing in Amsterdam, receiving that applause, I felt complete.</strong></p>
+
+<p>But I also had a new job. Initially, I was naive enough to think I could do both but the 9 to 6 and sometime 7 or even 8 made it impossible, so I left. I spent the years that followed on diverse work: 3D artist, software engineer designing rendering engines. Ironically, I ended up on the other side of the table, working on technical problems similar to what I'd tackled at SuperTuxKart. The work was excellent, but less artistic, more technical. I missed art for art's sake. I missed the permission to be unreasonable in pursuit of beauty.</p>
+
+<p>And I missed SuperTuxKart. I'd known it the moment I stepped off that Amsterdam stage. I knew that chapter was closed, that I'd never contribute that way again.</p>
+
+<p>Until today.</p>
+</span>
+<br>
+
+<h1>Why Now?</h1>
+
+<span>
+<p><strong>When reading the Evolution roadmap and connecting with the new team, I realized they were asking the same question we obsessed over almost a decade ago: "What can open-source gaming actually become?"</strong></p>
+
+<p>Today, SuperTuxKart has grown tremendously - more players, network mode, ongoing development. The team reached out because they want to recapture that mindset: to redefine what open-source games can be, standing on the shoulders of what we built together.
+Looking back, maybe we were naive. But that naivety gave us permission to attempt the impossible.</p>
+</span>
+<br>
+
+<h1>Guiding the Next Generation</h1>
+
+<span>
+<p>I'm particularly excited to work as the executive producer, helping our team leader Alayan and our new lead artist Sven. Sven has an incredible talent, and the same energy I had at his age. My role isn't to impose my vision - it's to help them find theirs, and give them permission to be uncomfortably ambitious.</p>
+
+<p>We stand on the shoulders of giants - Auria, Hiker, and countless contributors who believed that open-source deserved excellence, not excuses. Now it's our turn to be those shoulders for the next generation.</p>
+
+<p>Sometimes the most valuable thing an old wizard can offer isn't answers, but the courage to ask: <strong>"Why shouldn't we?"</strong></p>
+
+<p>Let's see what Act II brings.</p>
+
+<p>Sam</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxjPpFl7-SENss0S1OxtKqrWCnP6gkSjjyLDCZXdgLyK5h_KKr68GDv4PLpv7HoGIB9mizRzYD2dKT0u20rSpDgjSohhDXljz6KNhiCZ_2YkcBn8ElFD9fE3UCKSzW_NsS1FVgUlxvwvydh2M3aG0mZjXrnGOZVZqzmmGrfP0ZPU60QGEk_XQKn6FdWw/s1024/sam_icon_high_resolution.png"></a>
+
+----
+
+Poster: - file://fbg4uustqe2ymlgz
+
+----
+
+Date: 2026-01-21 21:30:00
+
+----
+
+Author: - user://VCrnfJEu
+
+----
+
+Tags: 
+
+----
+
+Uuid: day8piflwaxap2su
