@@ -1,1 +1,13 @@
+Alt: Logo of the Open Source Initiative
+
+----
+
 Uuid: jynfigm1j5l72qnq
+
+----
+
+Sort: 2
+
+----
+
+Template: image

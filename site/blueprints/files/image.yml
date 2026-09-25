@@ -1,0 +1,10 @@
+title: Image
+icon: image
+
+accept:
+  mime: image/*
+  type: image
+fields:
+  alt:
+    label: Alt Text
+    type: text

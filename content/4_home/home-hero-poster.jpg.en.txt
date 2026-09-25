@@ -2,4 +2,8 @@ Uuid: jnh2jsu57q9j0hxf
 
 ----
 
-Sort: 4
+Sort: 7
+
+----
+
+Focus: 49.9% 57.7%

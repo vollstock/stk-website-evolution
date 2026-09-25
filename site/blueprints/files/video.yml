@@ -1,0 +1,11 @@
+title: Video
+icon: video
+
+accept:
+  mime: video/*
+  type: video
+fields:
+  poster:
+    type: files
+    multiple: false
+    query: file.page.images

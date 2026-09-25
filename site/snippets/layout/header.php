@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $site->title() ?></title>
+    <!-- TODO: favicon -->
     <?= css(['assets/css/styles.css', '@auto']) ?>
     <?php if ($page->intendedTemplate()->name() === 'home'): ?>
         <?= css('assets/vendor/swiper/swiper-bundle.min.css') ?>

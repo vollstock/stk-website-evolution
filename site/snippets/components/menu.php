@@ -47,13 +47,13 @@
                                 z-10 p-4 mt-3 w-screen max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg outline-1 outline-gray-900/5
                                 ">
                             <?php foreach ($item->subMenu()->toStructure() as $child): ?>
-                                <li class="relative flex items-center gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                <li class="group relative flex items-center gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                     <a class="flex-auto" href="<?= $child->link()->toUrl() ?>">
                                         <span class="font-semibold text-orange-500"><?= $child->title() ?></span>
                                         <p class="mt-1 text-gray-600"><?= $child->subTitle() ?></p>
                                     </a>
                                     <?php if (isexternal($child->link()->toUrl())): ?>
-                                        <?= icon('assets/vendor/tabler/external-link.svg', "text-gray-300 size-5") ?>
+                                        <?= icon('assets/vendor/tabler/external-link.svg', "text-gray-300 size-5 shrink-0 group-hover:text-gray-400") ?>
                                     <?php endif ?>
                                 </li>
                             <?php endforeach ?>

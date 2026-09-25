@@ -53,7 +53,7 @@ $iconForPlatform = static function (string $platform): ?string {
 
 $releaseCache = kirby()->cache('release');
 $release = $releaseCache->get('releaseData');
-
+// TODO: verify if cache is working and check whether this is causing some late server responses I have been seeing
 if ($release === null) {
     try {
         $response = Remote::get($releaseUrl, [

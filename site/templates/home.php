@@ -14,13 +14,15 @@ use Kirby\Toolkit\A;
             <!-- TODO: poster image -->
             <video autoplay playsinline loop muted
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
-                poster="">
+                <?php if ($poster = $bg->poster()->toFile()): ?>
+                poster="<?= $poster->resize(1280, 720, 50)->url() ?>"
+                <?php endif ?>>
                 <source src="<?= $bg->url() ?>" type="video/mp4" />
             </video>
         <?php elseif ($bg->type() === 'image'): ?>
             <img src="<?= $bg->url() ?>"
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
-                alt="">
+                alt="<?= $bg->alt() ?>">
         <?php endif ?>
     <?php endif ?>
 
@@ -39,30 +41,32 @@ use Kirby\Toolkit\A;
 
 
 <!-- News -->
-<section class="overflow-hidden">
+<section class="overflow-hidden"">
     <?php snippet('components/container', ['class' => 'flex flex-col items-center gap-8'], slots: true) ?>
     <?php slot() ?>
     <!-- Headline -->
-    <h1 class="text-3xl font-bold text-sky-400">Latest News</h1>
+    <h1 class=" text-3xl font-bold text-sky-400">Latest News</h1>
 
     <!-- Swiper -->
     <?php snippet('components/blogSwiper') ?>
 
     <!-- Links -->
-    <div class="flex gap-12">
-        <a href="https://members.supertuxkart.net/" class="flex items-center gap-3 text-gray-300 hover:text-orange-400">
-            <?= icon('assets/vendor/tabler/brand-patreon.svg', 'size-4 text-gray-500') ?>
+    <div class="flex gap-6 md:gap-12">
+
+        <a href="https://members.supertuxkart.net/" class="flex items-center gap-3 dark:text-gray-300 hover:text-orange-400">
+            <?= icon('assets/vendor/tabler/brand-patreon.svg', 'size-12 md:size-4 text-gray-300 md:text-gray-500') ?>
             Articles on Patreon
-            <?= icon('assets/vendor/tabler/chevron-right.svg', 'size-4 text-orange-500') ?>
+            <?= icon('assets/vendor/tabler/chevron-right.svg', 'size-8 md:size-4 text-orange-500') ?>
         </a>
 
         <?php if ($blog =  $site->find('blog')): ?>
-            <a href="<?= $blog->url() ?>" class="flex items-center gap-3 text-gray-300 hover:text-orange-400">
-                <?= icon('assets/vendor/tabler/rss.svg', 'size-4 text-gray-500') ?>
+            <a href="<?= $blog->url() ?>" class="flex items-center gap-3 dark:text-gray-300 hover:text-orange-400">
+                <?= icon('assets/vendor/tabler/rss.svg', 'size-12 md:size-4 text-gray-300 md:text-gray-500') ?>
                 Articles in the blog
-                <?= icon('assets/vendor/tabler/chevron-right.svg', 'size-4 text-orange-500') ?>
+                <?= icon('assets/vendor/tabler/chevron-right.svg', 'size-8 md:size-4 text-orange-500') ?>
             </a>
         <?php endif ?>
+
     </div>
     <?php endslot() ?>
     <?php endsnippet() ?>
@@ -74,34 +78,43 @@ use Kirby\Toolkit\A;
     <!-- Background -->
     <?php if ($bg = $page->ctaBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
-            <!-- TODO: poster image -->
             <!-- TODO: focal point (from poster?) -->
             <video autoplay playsinline loop muted
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
-                poster="">
+                <?php if ($poster = $bg->poster()->toFile()): ?>
+                poster="<?= $poster->resize(1280, 720, 50)->url() ?>"
+                <?php endif ?>>
                 <source src="<?= $bg->url() ?>" type="video/mp4" />
             </video>
         <?php elseif ($bg->type() === 'image'): ?>
             <img src="<?= $bg->url() ?>"
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
-                alt="">
+                alt="<?= $bg->alt() ?>"
+                loading="lazy">
         <?php endif ?>
     <?php endif ?>
 
     <!-- Text box -->
     <?php snippet('components/container', ['class' => 'z-0 flex lg:justify-end'], slots: true) ?>
     <?php slot() ?>
-    <div class="flex flex-col gap-4 w-100 bg-white dark:bg-gray-200 p-8 rounded-xl md:mx-6 my-6 shadow">
-        <h1 class="text-lg font-bold text-gray-500 tracking-wide"><?= $page->ctaTitle()->kt() ?></h1>
-        <h2 class="-mt-3 md:text-left text-2xl md:text-3xl font-black text-orange-400 tracking-wide"><?= $page->ctaSubtitle() ?></h2>
-        <div><?= $page->ctaText()->kt() ?></div>
+    <div class="flex w-full max-w-120 flex-col gap-6 bg-white dark:bg-gray-200 p-8 rounded-xl md:mx-6 my-6 shadow">
+        <div>
+            <h1 class="font-semibold text-sky-500 tracking-wide mb-1"><?= $page->ctaTitle()->kt() ?></h1>
+            <h2 class="text-orange-400 text-3xl font-black tracking-wide md:text-left"><?= $page->ctaSubtitle() ?></h2>
+        </div>
+        <div class="text-gray-700"><?= $page->ctaText()->kt() ?></div>
 
-        <?php snippet('components/button', ['class' => 'whitespace-nowrap mt-3 max-w-full max-w-96', 'variant' => 'white', "size" => "sm"], slots: true) ?>
-        <?php slot() ?>
-        <span>Get involved</span>
-        <?= icon('assets/vendor/tabler/arrow-right.svg', 'text-gray-400') ?>
-        <?php endslot() ?>
-        <?php endsnippet() ?>
+        <!-- Buttons -->
+        <div class="flex flex-wrap gap-3">
+            <?php foreach ($page->ctaLinks()->toStructure() as $link): ?>
+                <?php snippet('components/button', ['class' => 'whitespace-nowrap grow-1 px-0!', "size" => "sm", "href" => $link->link()->toUrl()], slots: true) ?>
+                <?php slot() ?>
+                <span><?= $link->title()->kt() ?></span>
+                <?= icon('assets/vendor/tabler/arrow-right.svg') ?>
+                <?php endslot() ?>
+                <?php endsnippet() ?>
+            <?php endforeach ?>
+        </div>
     </div>
     <?php endslot() ?>
     <?php endsnippet() ?>
@@ -113,8 +126,8 @@ use Kirby\Toolkit\A;
     <?php snippet('components/container', ['class' => 'flex flex-col gap-8 text-gray-700 dark:text-white text-lg lg:text-center lg:w-200 pb-0!'], slots: true) ?>
     <?php slot() ?>
     <div>
-        <h1 class="text-sky-500 text-lg mb-0 tracking-wide"><?= $page->aboutTitle()->kt() ?></h1>
-        <h2 class="text-orange-500 text-3xl font-bold mt-0 tracking-wider"><?= $page->aboutSubTitle()->kt() ?></h2>
+        <h1 class="font-semibold text-sky-500 tracking-wide mb-1"><?= $page->aboutTitle()->kt() ?></h1>
+        <h2 class="text-orange-400 text-3xl font-black tracking-wide"><?= $page->aboutSubTitle()->kt() ?></h2>
     </div>
 
     <p class="font-light tracking-wide"><?= $page->aboutText()->kt() ?></p>
@@ -130,7 +143,9 @@ use Kirby\Toolkit\A;
         <?php foreach ($page->features()->toStructure() as $feature): ?>
             <div class="flex gap-4">
                 <?php if ($icon = $feature->icon()->toFile()): ?>
-                    <img src="<?= $icon->resize(96, 96, 80)->url() ?>" class="size-12 object-contain" />
+                    <img src="<?= $icon->resize(96, 96, 80)->url() ?>" class="size-12 object-contain"
+                        alt="<?= $icon->alt() ?>" 
+                        loading="lazy" />
                 <?php endif ?>
                 <div>
                     <h1 class="text-orange-500 font-bold inline mr-2"><?= $feature->title()->kt() ?></h1>

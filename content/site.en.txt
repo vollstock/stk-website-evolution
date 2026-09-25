@@ -5,14 +5,14 @@ Title: SuperTuxKart Evolution
 Menu:
 
 - 
-  title: About
+  title: Discover
   hassubmenu: 'true'
   link: ""
   submenu:
     - 
       title: Game Modes
       subtitle: Lorem ipsum dolor sit amet
-      link: ""
+      link: page://x3j2ivk6uq41thfw
     - 
       title: Characters
       subtitle: Lorem ipsum dolor sit amet
@@ -20,15 +20,15 @@ Menu:
     - 
       title: Tracks
       subtitle: Lorem ipsum dolor sit amet
-      link: ""
+      link: page://wz7mdmzkyoyfyakq
     - 
       title: Powerups
       subtitle: Lorem ipsum dolor sit amet
-      link: ""
+      link: page://ompotqqnxqta3rmw
     - 
       title: History
       subtitle: Lorem ipsum dolor sit amet
-      link: ""
+      link: page://ijfu7jsw01gutpeo
 - 
   title: Resources
   hassubmenu: 'true'
@@ -45,7 +45,7 @@ Menu:
     - 
       title: Gallery
       subtitle: Lorem ipsum
-      link: ""
+      link: page://sepi6cfkrpxfymap
     - 
       title: Addons and Rankings
       subtitle: >
@@ -56,11 +56,11 @@ Menu:
     - 
       title: Developer Documentation
       subtitle: Everything code
-      link: ""
+      link: page://xf76fklmpndyj7le
     - 
       title: Artist Guides
       subtitle: Create custom tracks and karts
-      link: ""
+      link: page://ojrmighsixpbjdh6
   has-submenu: 'true'
 - 
   title: Community

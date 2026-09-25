@@ -14,11 +14,11 @@ Herobackground: - file://hhpt1yvvgzjavfzv
 
 ----
 
-Ctatitle: <p>Make it your own!</p>
+Ctatitle: <p>Get involved</p>
 
 ----
 
-Ctasubtitle: <p>SuperTuxKart is free and open source.</p>
+Ctasubtitle: <p>SuperTuxKart is free and open source – make it your own!</p>
 
 ----
 
@@ -26,7 +26,18 @@ Ctatext: <p>Create tracks or karts and share them with the community.</p>
 
 ----
 
-Ctabackground: - file://uiarzsexuwadf57q
+Ctabackground: - file://ckoguzkvpkydjd02
+
+----
+
+Ctalinks:
+
+- 
+  title: Developer Docs
+  link: page://xf76fklmpndyj7le
+- 
+  title: Artist Guides
+  link: page://ojrmighsixpbjdh6
 
 ----
 
