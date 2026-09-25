@@ -42,16 +42,16 @@
     <?php endsnippet() ?>
 </footer>
 
-<?= js('assets/js/main.min.js') ?>
+<?= js('assets/js/main.min.js', ['defer' => true]) ?>
 
 <?php if ($page->intendedTemplate()->name() === 'home'): ?>
     <?= js([
+        'assets/vendor/swiper/swiper-bundle.min.js',
         'assets/js/downloadBox.js',
-        'assets/vendor/swiper/swiper-bundle.min.js'
-    ]) ?>
+    ], ['defer' => true]) ?>
 <?php endif ?>
 
-<?= js('@auto') ?>
+<?= js('@auto', ['defer' => true]) ?>
 </body>
 
 </html>
