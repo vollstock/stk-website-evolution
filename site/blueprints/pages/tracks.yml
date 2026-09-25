@@ -1,0 +1,7 @@
+fields:
+  info:
+    type: info
+    label: false
+    theme: passive
+    text: |
+      This page has no content fields.

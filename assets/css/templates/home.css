@@ -36,6 +36,9 @@
     overflow: visible;
 }
 
-.swiper-pagination-bullet-active {
-    outline: 1.5px solid black;
+
+@media (prefers-color-scheme: dark) {
+    .swiper-pagination-bullet-active {
+        outline: 1.5px solid var(--color-gray-950);
+    }
 }

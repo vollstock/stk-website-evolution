@@ -47,6 +47,36 @@ tabs:
 
                       link:
                         type: link
+  
+  gameassets:
+    label: Game Assets
+    icon: box
+    columns:
+      left:
+        width: 1/2
+        fields:
+          # fields in the left column
+          characters:
+            type: structure
+            fields:
+              name:
+                type: text
+              media:
+                type: files
+                multiple: false
+                layout: card
+              text:
+                type: writer
+                
+      right:
+        width: 1/2
+        fields:
+          tracks:
+              type: structure
+              fields:
+                title:
+                  type: text
+
   blog:
     label: Blog
     icon: rss

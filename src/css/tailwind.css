@@ -19,8 +19,11 @@
 :root {
     --swiper-theme-color: var(--color-orange-500) !important;
     --swiper-pagination-bottom: calc(var(--spacing) * -8);
-    --swiper-pagination-bullet-inactive-color: #fff;
     --swiper-pagination-bullet-width: calc(var(--spacing) * 3);
     --swiper-pagination-bullet-height: calc(var(--spacing) * 1);
     --swiper-pagination-bullet-border-radius: calc(var(--spacing) * 0.333);
+    
+    @variant dark {
+        --swiper-pagination-bullet-inactive-color: #fff;
+    }
 }

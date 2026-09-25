@@ -20,6 +20,7 @@ const swiper = new Swiper('#blog-swiper', {
             slidesPerView: 2.5,
         }
     },
+    keyboard: true,
     scrollbar: false,
     // {
     //     el: '.swiper-scrollbar',

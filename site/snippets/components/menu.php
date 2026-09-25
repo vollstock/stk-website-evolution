@@ -7,7 +7,7 @@
     <?php slot() ?>
     <nav aria-labelledby="mainmenulabel"
         class="bg-gray-950/90 w-full flex rounded-2xl items-center justify-between px-3 py-2 lg:py-4 lg:px-6 transition-all">
-        <h2 id="mainmenulabel" class="sr-only"><?= t('menu.mainMenu') ?></h2>
+        <h2 id="mainmenulabel" class="sr-only">Main Menu</h2>
 
         <!-- Left (Logo) -->
         <div class="flex lg:flex-1">

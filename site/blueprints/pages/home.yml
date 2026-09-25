@@ -38,7 +38,7 @@ columns:
             marks: false
           ctaText:
             type: writer
-          ctaImage:
+          ctaBackground:
             type: files
             multiple: false
           

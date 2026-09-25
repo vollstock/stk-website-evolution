@@ -14,19 +14,19 @@ Herobackground: - file://hhpt1yvvgzjavfzv
 
 ----
 
-Ctatitle: Make it your own!
+Ctatitle: <p>Make it your own!</p>
 
 ----
 
-Ctasubtitle: SuperTuxKart is free and open source.
+Ctasubtitle: <p>SuperTuxKart is free and open source.</p>
 
 ----
 
-Ctatext: Create tracks and karts and share them with the community.
+Ctatext: <p>Create tracks or karts and share them with the community.</p>
 
 ----
 
-Ctaimage: - file://jr4zz4kijlq3yd4a
+Ctabackground: - file://uiarzsexuwadf57q
 
 ----
 
@@ -71,6 +71,44 @@ Features:
     tools to create Tux Kart are open.
   icon:
     - file://jynfigm1j5l72qnq
+
+----
+
+Ctaimage:
+
+- 
+  id: tux-in-workshop.jpg
+  image:
+    back: pattern
+    color: orange-500
+    cover: false
+    icon: image
+    url: >
+      http://localhost/media/pages/home/e7972805a9-1790321301/tux-in-workshop.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost/media/pages/home/e7972805a9-1790321301/tux-in-workshop-38x.jpg
+      38w,
+      http://localhost/media/pages/home/e7972805a9-1790321301/tux-in-workshop-76x.jpg
+      76w
+  info: ""
+  link: /pages/home/files/tux-in-workshop.jpg
+  permissions:
+    delete: true
+    sort: true
+  text: tux-in-workshop.jpg
+  uuid: file://cket1pw3ezg32g7n
+  dragText: '(image: file://cket1pw3ezg32g7n)'
+  extension: jpg
+  filename: tux-in-workshop.jpg
+  mime: image/jpeg
+  parent: pages/home
+  template: null
+  url: >
+    http://localhost/media/pages/home/e7972805a9-1790321301/tux-in-workshop.jpg
+  sortable: true
+  type: image
 
 ----
 

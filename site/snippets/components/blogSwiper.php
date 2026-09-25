@@ -11,11 +11,12 @@ $articles = $blog->children()->listed()->sortBy('date', 'desc')->limit(5);
     <div class="swiper-wrapper">
         <?php foreach ($articles as $article): ?>
 
-            <article class="swiper-slide aspect-3/2 bg-gray-600 rounded-2xl overflow-clip shadow-lg/20 border border-background/1">
+            <article class=" swiper-slide group
+                 aspect-1/1 md:aspect-3/2 lg:aspect-5/4 bg-gray-600 rounded-2xl overflow-clip shadow-sm hover:shadow-xl dark:border dark:border-gray-600
+                 transform-gpu transition! duration-200 scale-100 lg:hover:scale-105 rotate-0 lg:hover:-rotate-1">
                 <a href="<?= $article->url() ?>">
                     <?php if ($poster = $article->poster()->toFile()): ?>
-                        <!-- TODO: use smaller thumbnail -->
-                        <img src="<?= $poster->resize(850, 564, 80)->url() ?>" class="size-full object-cover" loading="lazy" />
+                        <img src="<?= $poster->resize(850, 564, 80)->url() ?>" class="size-full object-cover transform-gpu transition-transform duration-300 group-hover:scale-110" loading="lazy" />
                         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <?php endif ?>
                     <div
@@ -26,7 +27,6 @@ $articles = $blog->children()->listed()->sortBy('date', 'desc')->limit(5);
                                 <span class="mx-2 text-shadow-none">|</span>
                             <?php endif ?>
                             <?php if ($author = $article->author()->toUser()): ?>
-                                <!-- TODO: use smaller thumbnail -->
                                 <?php if ($avatar = $author->avatar()): ?>
                                     <img class="size-5 mr-1 rounded-full inline border-background/50 border" src="<?= $avatar->resize(40, 40, 80)->url() ?>" />
                                 <?php endif ?>
@@ -49,5 +49,5 @@ $articles = $blog->children()->listed()->sortBy('date', 'desc')->limit(5);
     <div class="swiper-button-next"></div>
 
     <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+    <!-- <div class="swiper-scrollbar"></div> -->
 </div>

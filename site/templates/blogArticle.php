@@ -54,16 +54,18 @@
         <?= $page->text()->kt() ?>
     </article>
     <aside class="mt-6 md:mt-0">
-        <?php if ($page->hasPrevListed()): ?>
-            <a href="<?= $page->prevListed()->url() ?>">previous page</a>
-        <?php endif ?>
+        <div class=" sticky top-24">
+            <?php if ($page->hasPrevListed()): ?>
+                <a href="<?= $page->prevListed()->url() ?>">previous page</a>
+            <?php endif ?>
 
-        <?php if ($page->hasNextListed()): ?>
-            <a href="<?= $page->nextListed()->url() ?>">next page</a>
-        <?php endif ?>
+            <?php if ($page->hasNextListed()): ?>
+                <a href="<?= $page->nextListed()->url() ?>">next page</a>
+            <?php endif ?>
 
-        <p>Sharing</p>
-        <p>Related</p>
+            <p>Sharing</p>
+            <p>Related</p>
+        </div>
     </aside>
 </div>
 

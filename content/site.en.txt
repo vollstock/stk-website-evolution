@@ -10,19 +10,19 @@ Menu:
   link: ""
   submenu:
     - 
-      title: Characters
+      title: Game Modes
       subtitle: Lorem ipsum dolor sit amet
       link: ""
+    - 
+      title: Characters
+      subtitle: Lorem ipsum dolor sit amet
+      link: page://ofkdjqg5gcun2ujl
     - 
       title: Tracks
       subtitle: Lorem ipsum dolor sit amet
       link: ""
     - 
       title: Powerups
-      subtitle: Lorem ipsum dolor sit amet
-      link: ""
-    - 
-      title: Game Modes
       subtitle: Lorem ipsum dolor sit amet
       link: ""
     - 
@@ -35,26 +35,32 @@ Menu:
   link: ""
   submenu:
     - 
-      title: Gallery
-      subtitle: Lorem ipsum
-      link: ""
-    - 
-      title: Addons and Online-Rankings
-      subtitle: Lorem ipsum
-      link: >
-        https://testingstkaddons.supertuxkart.net/
-    - 
-      title: Developer Docs
-      subtitle: Lorem ipsum
-      link: '#'
-    - 
       title: Blog
       subtitle: Lorem, ipsum
-      link: ""
+      link: page://tekf9ods5g3naita
     - 
       title: Patreon
       subtitle: Lorem, ipsum
       link: https://members.supertuxkart.net/
+    - 
+      title: Gallery
+      subtitle: Lorem ipsum
+      link: ""
+    - 
+      title: Addons and Rankings
+      subtitle: >
+        Space for community assets and online
+        players
+      link: >
+        https://testingstkaddons.supertuxkart.net/
+    - 
+      title: Developer Documentation
+      subtitle: Everything code
+      link: ""
+    - 
+      title: Artist Guides
+      subtitle: Create custom tracks and karts
+      link: ""
   has-submenu: 'true'
 - 
   title: Community
@@ -95,3 +101,32 @@ Menu:
   link: page://pygr4u78yyyfedvg
   submenu: [ ]
   has-submenu: 'false'
+
+----
+
+Characters:
+
+- 
+  name: Tux
+  media: [ ]
+  text: '<p>The hero of SuperTuxKart. Tux is a brave penguin who must save his friend, Gnu, from the evil clutches of Nolok. Tux is the mascot of Linux.</p>'
+- 
+  name: Gnu
+  media: [ ]
+  text: '<p>Tux’s wise mentor, Gnu rides a flying carpet and lives peacefully in a pagoda. When Nolok captures him, the entire kingdom will try to save him. Gnu is the mascot of the GNU Project.</p>'
+- 
+  name: Nolok
+  media: [ ]
+  text: '<p>The villain of SuperTuxKart, Nolok is always concocting some sort of malevolent plan inside his fiery lava castle.</p>'
+- 
+  name: Sara
+  media: [ ]
+  text: '<p>Sara is a powerful magician, and the ruler of the Mascot Kingdom. She races using a specialised snowmobile. She is the mascot of the OpenGameArt website.</p>'
+- 
+  name: Wilber
+  media: [ ]
+  text: '<p>Wilber is the official cameraman who works for WTXB-TV to record kart races, which are very popular in the Mascot Kingdom. He is the mascot of GIMP.</p>'
+
+----
+
+Tracks: 
