@@ -4,10 +4,13 @@ require_once __DIR__ . '/helpers.php';
 use Kirby\Cms\File;
 
 return [
-    'debug' => true,
+    'debug' => false,
     'languages' => true,
     'cache' => [
-        'pages' => false,
+        'pages' => [
+            'active' => true,
+            'ignore' => fn($page) => in_array($page->intendedTemplate(), ['home', 'blog'])
+        ],
         'release' => true
     ],
     'content.salt' => 'am9erxDkNJAEoJJqFTroDoFc4umAAqVDEvkRvtmywnCxuUEXjfCs9JE2JMo3JZP4',
