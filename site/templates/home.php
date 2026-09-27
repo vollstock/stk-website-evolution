@@ -37,6 +37,12 @@ use Kirby\Toolkit\A;
     </div>
     <?php endslot() ?>
     <?php endsnippet() ?>
+
+    <!-- Arrow down -->
+    <div id="scroll-hint" class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2">
+        <span class="-mb-2 text-gray-200 text-shadow-md">Scroll down</span>
+        <?= icon('assets/vendor/tabler/chevron-down.svg', 'size-12 text-orange-500 text-shadow-md text-shadow-black animate-float') ?>
+    </div>
 </section>
 
 
@@ -144,7 +150,7 @@ use Kirby\Toolkit\A;
             <div class="flex gap-4">
                 <?php if ($icon = $feature->icon()->toFile()): ?>
                     <img src="<?= $icon->resize(96, 96, 80)->url() ?>" class="size-12 object-contain"
-                        alt="<?= $icon->alt() ?>" 
+                        alt="<?= $icon->alt() ?>"
                         loading="lazy" />
                 <?php endif ?>
                 <div>

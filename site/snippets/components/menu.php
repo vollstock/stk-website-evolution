@@ -10,29 +10,39 @@
         <h2 id="mainmenulabel" class="sr-only">Main Menu</h2>
 
         <!-- Left (Logo) -->
-        <div class="flex lg:flex-1">
+        <div class="flex lg:flex-1 z-60">
             <a href="<?= $site->url() ?>" class="ml-6 scale-200 lg:scale-350 transition-transform">
                 <img class="h-8 w-auto" src="/assets/img/logo-stke.png" alt="SuperTuxKart Evolution" />
             </a>
         </div>
 
         <!-- Mobile menu button -->
-        <div class="flex lg:hidden">
-            <button class="-m-2.5 inline-flex gap-2 items-center p-2.5" @click="mobileMenuOpen = true">
+        <div class="flex lg:hidden z-60">
+            <button id="mobile-menu-button"
+                class="-m-2.5 inline-flex gap-2 items-center p-2.5">
                 <span class="text-gray-100 text-sm/6 font-semibold">Menu</span>
-                <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400') ?>
+                <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-400 rotate-180 ease-out-back') ?>
             </button>
         </div>
 
+        <!-- Mobile menu -->
+        <nav aria-labelledby="mobilemenulabel" id="mobile-menu"
+            class="bg-gray-200 dark:bg-gray-900 absolute inset-0 z-50 fixed 
+    transition! duration-200 transition-discrete duration-200
+    opacity-0 pointer-events-none
+    ">
+            <h2 id="mobilemenulabel" class="sr-only">Main Menu</h2>
+        </nav>
+
         <!-- Middle -->
-        <ul class="hidden lg:flex gap-x-1">
+        <ul class="hidden lg:flex gap-2">
             <?php foreach ($site->menu()->toStructure() as $i => $item): ?>
                 <?php if ($item->hasSubmenu()->toBool()): ?>
                     <li class="relative">
 
                         <button popovertarget="submenu-<?= $i ?>"
                             style="anchor-name: --menu-item-<?= $i ?>;"
-                            class="relative flex items-center gap-x-1 font-semibold text-gray-100  hover:bg-white/10 px-4 py-1 rounded">
+                            class="relative flex items-center gap-x-1 text-gray-100  hover:bg-white/10 px-4 py-1 rounded">
                             <?= $item->title() ?>
                             <?= icon('assets/vendor/tabler/chevron-down.svg', "size-5 flex-none text-gray-400") ?>
                         </button>
@@ -64,11 +74,11 @@
                         </ul>
                     </li>
                 <?php else: ?>
-                    <li class="text-sm/6 font-semibold text-gray-100! no-underline! hover:bg-white/10 px-4 py-1 rounded">
-                        <a href="<?= $item->link()->toUrl() ?>">
+                    <a href="<?= $item->link()->toUrl() ?>" class="text-gray-100 hover:text-orange-400 no-underline! ">
+                        <li class="hover:bg-white/10 px-4 py-1 rounded">
                             <?= $item->title() ?>
-                        </a>
-                    </li>
+                        </li>
+                    </a>
                 <?php endif ?>
             <?php endforeach ?>
         </ul>
