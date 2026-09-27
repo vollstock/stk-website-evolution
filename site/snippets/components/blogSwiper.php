@@ -14,13 +14,13 @@ $articles = $blog->children()->listed()->sortBy('date', 'desc')->limit(10);
             <!-- Slide -->
             <article class=" swiper-slide group
                  aspect-1/1 md:aspect-3/2 lg:aspect-5/4 bg-gray-600 rounded-2xl overflow-clip shadow-sm hover:shadow-xl dark:border dark:border-gray-600
-                 transform-gpu transition! duration-200 scale-100 lg:hover:scale-105 rotate-0 lg:hover:-rotate-1">
+                 transform-gpu transition! duration-200 scale-100 md:hover:scale-105 rotate-0 md:hover:-rotate-1">
                 <a href="<?= $article->url() ?>">
                     <!-- Image -->
                     <?php if ($poster = $article->poster()->toFile()): ?>
                         <img
                             src="<?= $poster->resize(850, 564, 80)->url() ?>"
-                            class="size-full object-cover transform-gpu transition-transform duration-300 group-hover:scale-110"
+                            class="size-full object-cover transition-transform duration-300 group-hover:scale-110"
                             alt="<?= $poster->alt() ?>"
                             loading="lazy" />
                         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
