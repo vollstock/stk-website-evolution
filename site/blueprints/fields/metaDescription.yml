@@ -1,0 +1,4 @@
+type: textarea
+label: Meta description
+maxlength: 160
+help: A concise summary for search results and social previews (max. 160 characters).

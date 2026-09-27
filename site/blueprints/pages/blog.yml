@@ -1,2 +1,6 @@
 title: Blog
 extends: layouts/blogLayout
+
+fields:
+  metaDescription:
+    extends: fields/metaDescription

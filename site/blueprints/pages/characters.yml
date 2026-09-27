@@ -1,6 +1,8 @@
 title: Characters Page
 
 fields:
+  metaDescription:
+    extends: fields/metaDescription
   info:
     type: info
     label: false

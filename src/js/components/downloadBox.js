@@ -1,3 +1,4 @@
+(() => {
 const detectPlatform = () => {
     const userAgent = navigator.userAgent || '';
     const platformHint = [
@@ -67,3 +68,4 @@ document.querySelectorAll('[data-download-box]').forEach((box) => {
         });
     });
 });
+})();

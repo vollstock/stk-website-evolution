@@ -12,10 +12,10 @@ use Kirby\Toolkit\A;
     <?php if ($bg = $page->heroBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
             <!-- TODO: poster image -->
-            <video autoplay playsinline loop muted
+            <video autoplay playsinline loop muted loading="lazy"
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
                 <?php if ($poster = $bg->poster()->toFile()): ?>
-                poster="<?= $poster->resize(1280, 720, 50)->url() ?>"
+                poster="<?= $poster->resize(1024, 576, 30)->url() ?>"
                 <?php endif ?>>
                 <source src="<?= $bg->url() ?>" type="video/mp4" />
             </video>
@@ -79,10 +79,10 @@ use Kirby\Toolkit\A;
     <?php if ($bg = $page->ctaBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
             <!-- TODO: focal point (from poster?) -->
-            <video autoplay playsinline loop muted
+            <video autoplay playsinline loop muted loading="lazy" preload="none"
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
                 <?php if ($poster = $bg->poster()->toFile()): ?>
-                poster="<?= $poster->resize(1280, 720, 50)->url() ?>"
+                poster="<?= $poster->resize(1024, 576, 30)->url() ?>"
                 <?php endif ?>>
                 <source src="<?= $bg->url() ?>" type="video/mp4" />
             </video>

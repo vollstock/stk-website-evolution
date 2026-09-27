@@ -12,7 +12,7 @@
         <!-- Left (Logo) -->
         <div class="flex lg:flex-1">
             <a href="<?= $site->url() ?>" class="ml-6 scale-200 lg:scale-350 transition-transform">
-                <img class="h-8 w-auto" src="/assets/img/logo-stke.svg" alt="SuperTuxKart Evolution" />
+                <img class="h-8 w-auto" src="/assets/img/logo-stke.png" alt="SuperTuxKart Evolution" />
             </a>
         </div>
 
@@ -47,12 +47,16 @@
                                 z-10 p-4 mt-3 w-screen max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg outline-1 outline-gray-900/5
                                 ">
                             <?php foreach ($item->subMenu()->toStructure() as $child): ?>
+                                <?php $isExternal = isexternal($child->link()->toUrl()); ?>
                                 <li class="group relative flex items-center gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                                    <a class="flex-auto" href="<?= $child->link()->toUrl() ?>">
+                                    <a class="flex-auto" href="<?= $child->link()->toUrl() ?>"
+                                        <?php if ($isExternal): ?>
+                                        data-no-instant
+                                        <?php endif ?>>
                                         <span class="font-semibold text-orange-500"><?= $child->title() ?></span>
                                         <p class="mt-1 text-gray-600"><?= $child->subTitle() ?></p>
                                     </a>
-                                    <?php if (isexternal($child->link()->toUrl())): ?>
+                                    <?php if ($isExternal): ?>
                                         <?= icon('assets/vendor/tabler/external-link.svg', "text-gray-300 size-5 shrink-0 group-hover:text-gray-400") ?>
                                     <?php endif ?>
                                 </li>

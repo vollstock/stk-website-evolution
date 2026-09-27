@@ -28,6 +28,8 @@ columns:
       meta:
         type: fields
         fields:
+          metaDescription:
+            extends: fields/metaDescription
           poster:
             type: files
             max: 1
