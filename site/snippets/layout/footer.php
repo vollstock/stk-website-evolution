@@ -66,7 +66,6 @@
 <script data-no-instant>
     window.addEventListener("load", (event) => {
         window.menu = new Menu();
-        window.menu.show();
         // quicklink.listen();
         // InstantClick.init();
         FastClick.attach(document.body);
