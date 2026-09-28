@@ -4,8 +4,6 @@ class Menu {
     menu = null;
     menuButton = null;
 
-    #lastScrollTop = 0;
-
     constructor() {
         // Get DOM references
         this.navbar = document.getElementById('navbar');
@@ -31,7 +29,6 @@ class Menu {
     hide() {
         this.menu.classList.remove('is-active');
         document.getElementsByTagName("html")[0].classList.remove('overflow-hidden', 'scrollbar-gutter-stable', 'bg-gray-50');
-        // close submenu
     }
 
     onScroll() {
@@ -50,8 +47,13 @@ class Menu {
         this.lastScrollTop = st;
     }
 
-    submenu(index) {
-        console.log("submenu", index);
+    openSubmenu(index) {
+        if (!Number.isInteger(index)) return;
+        this.menu.dataset.submenu = index;
+    }
+
+    closeSubmenu() {
+        delete this.menu.dataset.submenu;
     }
 }
 
