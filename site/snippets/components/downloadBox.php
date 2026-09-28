@@ -119,8 +119,7 @@ foreach ($fallbackOrder as $platform) {
 
 $escape = static fn(string|int $value): string => htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
 ?>
-<div class="download-box mt-8 rounded-4xl py-6 flex flex-col gap-2 dark:bg-gray-100"
-    data-download-box>
+<div class="download-box mt-8 rounded-4xl py-6 flex flex-col gap-2 items-center md:items-start" data-download-box>
 
     <a data-ios-badge class="hidden" href="<?= $escape($appStoreLink) ?>" data-no-instant>
         <img src="/assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" class="w-50" alt="Download on the App Store" />

@@ -12,7 +12,7 @@ use Kirby\Toolkit\A;
     <?php if ($bg = $page->heroBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
             <!-- TODO: poster image -->
-            <video autoplay playsinline loop muted loading="lazy"
+            <video autoplay playsinline loop muted disablepictureinpicture loading="lazy"
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
                 <?php if ($poster = $bg->poster()->toFile()): ?>
                 poster="<?= $poster->resize(1024, 576, 30)->url() ?>"
@@ -29,7 +29,7 @@ use Kirby\Toolkit\A;
     <?php snippet('components/container', ['class' => 'z-0 flex justify-center md:justify-end h-full items-center'], slots: true) ?>
     <?php slot() ?>
     <div class="md:mx-6 pt-16">
-        <h1 class="text-center md:text-left text-xl md:text-2xl tracking-wide font-bold text-white text-shadow-md/20">
+        <h1 class="text-center md:text-left text-2xl tracking-wide font-bold text-white text-shadow-md/20">
             <?= $page->heroTitle()->kt() ?></h1>
         <h2 class="text-center md:text-left mt-2 text-4xl md:text-5xl font-black text-yellow-400 text-shadow-lg/30">
             <?= $page->heroSubtitle()->kt() ?></h2>
@@ -39,9 +39,11 @@ use Kirby\Toolkit\A;
     <?php endsnippet() ?>
 
     <!-- Arrow down -->
-    <div id="scroll-hint" class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none opacity-100 transition-bottom duration-400">
-        <span class="-mb-2 text-gray-200 text-shadow-md">Scroll down</span>
-        <?= icon('assets/vendor/tabler/chevron-down.svg', 'size-12 text-orange-500 text-shadow-md text-shadow-black animate-float') ?>
+    <div id="scroll-hint" 
+    class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none opacity-100 duration-400 transition-[opacity,bottom]"
+    >
+        <span class="-mb-2 text-gray-200 font-medium">Scroll down</span>
+        <?= icon('assets/vendor/tabler/chevron-down.svg', 'size-12 text-orange-400 text-shadow-md text-shadow-black animate-float') ?>
     </div>
 </section>
 
@@ -85,7 +87,7 @@ use Kirby\Toolkit\A;
     <?php if ($bg = $page->ctaBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
             <!-- TODO: focal point (from poster?) -->
-            <video autoplay playsinline loop muted loading="lazy" preload="none"
+            <video autoplay playsinline loop muted disablepictureinpicture loading="lazy" preload="none"
                 class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
                 <?php if ($poster = $bg->poster()->toFile()): ?>
                 poster="<?= $poster->resize(1024, 576, 30)->url() ?>"
