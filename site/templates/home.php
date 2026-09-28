@@ -103,10 +103,10 @@ use Kirby\Toolkit\A;
     <!-- Text box -->
     <?php snippet('components/container', ['class' => 'z-0 flex lg:justify-end'], slots: true) ?>
     <?php slot() ?>
-    <div class="flex w-full max-w-120 flex-col gap-6 bg-white dark:bg-gray-200 p-8 rounded-xl md:mx-6 my-6 shadow">
+    <div class="flex w-full max-w-120 flex-col gap-8 bg-white dark:bg-gray-200 p-8 rounded-xl md:mx-6 my-6 shadow">
         <div>
-            <h1 class="font-semibold text-sky-500 tracking-wide mb-1"><?= $page->ctaTitle()->kt() ?></h1>
-            <h2 class="text-orange-400 text-3xl font-black tracking-wide md:text-left"><?= $page->ctaSubtitle() ?></h2>
+            <h1 class="font-bold text-gray-800 mb-1"><?= $page->ctaTitle()->kt() ?></h1>
+            <h2 class="text-orange-500 text-3xl font-black tracking-wide md:text-left"><?= $page->ctaSubtitle() ?></h2>
         </div>
         <div class="text-gray-700"><?= $page->ctaText()->kt() ?></div>
 
@@ -132,8 +132,8 @@ use Kirby\Toolkit\A;
     <?php snippet('components/container', ['class' => 'flex flex-col gap-8 text-gray-700 dark:text-white text-lg lg:text-center lg:w-200 pb-0!'], slots: true) ?>
     <?php slot() ?>
     <div>
-        <h1 class="font-semibold text-sky-500 tracking-wide mb-1"><?= $page->aboutTitle()->kt() ?></h1>
-        <h2 class="text-orange-400 text-3xl font-black tracking-wide"><?= $page->aboutSubTitle()->kt() ?></h2>
+        <h1 class="font-bold text-gray-800 mb-1"><?= $page->aboutTitle()->kt() ?></h1>
+        <h2 class="text-orange-500 text-3xl font-black tracking-wide"><?= $page->aboutSubTitle()->kt() ?></h2>
     </div>
 
     <p class="font-light tracking-wide"><?= $page->aboutText()->kt() ?></p>

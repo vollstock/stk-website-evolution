@@ -33,3 +33,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 });
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        // TODO
+        // if classList.contains()
+        console.log("hide arrow");
+    } else {
+        // TODO
+        // if classList.contains()
+        console.log("show arrow");
+    }
+});

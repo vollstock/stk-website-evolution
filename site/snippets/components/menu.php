@@ -2,7 +2,8 @@
 
 /** @var \Kirby\Cms\Site $site */
 ?>
-<header id="navbar" class="fixed top-0 left-0 right-0 z-50">
+<header id="navbar" class="fixed left-0 right-0 z-50
+    transition-top duration-300 top-0 lg:top-0!">
     <?php snippet('components/container', ['class' => 'pt-6! pb-0!'], slots: true) ?>
     <?php slot() ?>
     <nav aria-labelledby="mainmenulabel"
@@ -19,7 +20,7 @@
         <!-- Mobile menu button -->
         <div id="mobile-menu" class="group flex lg:hidden">
             <button id="mobile-menu-button"
-                class=" z-60 -m-2.5 inline-flex gap-2 items-center p-2.5">
+                class="z-60 -m-2.5 inline-flex gap-2 items-center p-2.5">
                 <span class="text-gray-100 group-[.is-active]:hidden inline  text-sm/6 font-semibold">Menu</span>
                 <span class="text-gray-800 dark:text-gray-100 hidden group-[.is-active]:inline text-sm/6 font-semibold">Close</span>
                 <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-400 rotate-0 group-[.is-active]:rotate-180 ease-out-back') ?>
@@ -27,11 +28,32 @@
 
             <!-- Mobile menu -->
             <nav aria-labelledby="mobilemenulabel"
-                class="bg-gray-200 dark:bg-gray-900 absolute inset-0 z-50 fixed
-        transition! duration-200 transition-discrete
-        opacity-0 group-[.is-active]:opacity-100 pointer-events-none group-[.is-active]:pointer-events-auto
-        ">
+                class="bg-gray-50 dark:bg-gray-900 absolute inset-0 z-50 fixed
+                    transition! duration-300 transition-discrete
+                    opacity-0 group-[.is-active]:opacity-100 pointer-events-none group-[.is-active]:pointer-events-auto
+                    flex
+                    ">
                 <h2 id="mobilemenulabel" class="sr-only">Main Menu</h2>
+                <ul class="grow relative -top-4 group-[.is-active]:top-0 transition-top duration-300 mt-32 mb-8 mx-8 overflow-y-auto">
+                    <?php foreach ($site->menu()->toStructure() as $item): ?>
+                        <li class="flex">
+                            <a
+                                <?php if ($item->hasSubmenu()->toBool()): ?>
+                                onclick="window.menu.submenu(0)"
+                                <?php else: ?>
+                                href="<?= $item->link()->toUrl() ?>"
+                                <?php endif ?>
+                                class="flex grow px-4 py-5 select-none
+                                    rounded-xl hover:text-orange-500 dark:text-gray-200 hover:bg-black/3 active:bg-black/3 hover:dark:bg-white/5 active:dark:bg-white/5">
+                                <span class="grow text-xl"><?= $item->title()->kt() ?></span>
+
+                                <?php if ($item->hasSubmenu()->toBool()): ?>
+                                    <?= icon("assets/vendor/tabler/chevron-right.svg", "text-orange-500") ?>
+                                <?php endif ?>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
             </nav>
         </div>
 
@@ -53,7 +75,7 @@
                             style="position-anchor: --menu-item-<?= $i ?>; position-area: bottom center;"
                             class="
                                 starting:open:opacity-0 starting:open:translate-y-1
-                                transition ease-out duration-200 
+                                transition ease-out duration-300 
                                 opacity-100 translate-y-0
                                 z-10 p-4 mt-3 w-screen max-w-xs overflow-hidden rounded-2xl bg-white shadow-lg outline-1 outline-gray-900/5
                                 ">
