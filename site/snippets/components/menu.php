@@ -17,22 +17,23 @@
         </div>
 
         <!-- Mobile menu button -->
-        <div class="flex lg:hidden z-60">
+        <div id="mobile-menu" class="group flex lg:hidden">
             <button id="mobile-menu-button"
-                class="-m-2.5 inline-flex gap-2 items-center p-2.5">
-                <span class="text-gray-100 text-sm/6 font-semibold">Menu</span>
-                <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-400 rotate-180 ease-out-back') ?>
+                class=" z-60 -m-2.5 inline-flex gap-2 items-center p-2.5">
+                <span class="text-gray-100 group-[.is-active]:hidden inline  text-sm/6 font-semibold">Menu</span>
+                <span class="text-gray-800 dark:text-gray-100 hidden group-[.is-active]:inline text-sm/6 font-semibold">Close</span>
+                <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-400 rotate-0 group-[.is-active]:rotate-180 ease-out-back') ?>
             </button>
-        </div>
 
-        <!-- Mobile menu -->
-        <nav aria-labelledby="mobilemenulabel" id="mobile-menu"
-            class="bg-gray-200 dark:bg-gray-900 absolute inset-0 z-50 fixed 
-    transition! duration-200 transition-discrete duration-200
-    opacity-0 pointer-events-none
-    ">
-            <h2 id="mobilemenulabel" class="sr-only">Main Menu</h2>
-        </nav>
+            <!-- Mobile menu -->
+            <nav aria-labelledby="mobilemenulabel"
+                class="bg-gray-200 dark:bg-gray-900 absolute inset-0 z-50 fixed
+        transition! duration-200 transition-discrete
+        opacity-0 group-[.is-active]:opacity-100 pointer-events-none group-[.is-active]:pointer-events-auto
+        ">
+                <h2 id="mobilemenulabel" class="sr-only">Main Menu</h2>
+            </nav>
+        </div>
 
         <!-- Middle -->
         <ul class="hidden lg:flex gap-2">

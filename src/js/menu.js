@@ -3,31 +3,27 @@ class Menu {
 
     menu = null;
     menuButton = null;
-    menuIcon = null;
-    isActive = false;
 
     constructor() {
         this.menu = document.getElementById('mobile-menu');
 
         this.menuButton = document.getElementById('mobile-menu-button');
         this.menuButton.addEventListener('click', this.toggle.bind(this));
-        
-        this.menuIcon = this.menuButton.querySelector('svg');
     }
 
     toggle() {
-        this.isActive = !this.isActive;
-        this.isActive ? this.show() : this.hide();
+        this.menu.classList.toggle('is-active');
+        document.body.classList.toggle('overflow-hidden', this.menu.classList.contains("is-active"));
     }
 
     show() {
-        this.menu.classList.remove('opacity-0', 'pointer-events-none');
-        this.menuIcon.classList.remove('rotate-180');
+        this.menu.classList.remove('is-active');
+        document.body.classList.remove('overflow-hidden');
     }
 
     hide() {
-        this.menu.classList.add('opacity-0', 'pointer-events-none');
-        this.menuIcon.classList.add('rotate-180');
+        this.menu.classList.add('is-active');
+        document.body.classList.add('overflow-hidden');
     }
 }
 
