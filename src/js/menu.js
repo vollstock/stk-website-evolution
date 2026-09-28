@@ -13,21 +13,10 @@ class Menu {
         this.menuButton = document.getElementById('mobile-menu-button');
 
         // Add event listener to mobile button
-        this.menuButton.addEventListener('click', this.toggle.bind(this));
+        this.menuButton.addEventListener('click', this.toggle.bind(this), false);
 
         // Hide Header on on scroll down
-        window.addEventListener("scroll", function () {
-            // Only on mobile
-            if (window.matchMedia("(width >= 64rem)").matches) return;
-
-            var st = window.pageYOffset || document.documentElement.scrollTop;
-            if (st > this.lastScrollTop) {
-                this.navbar.classList.add('-top-24!');
-            } else {
-                this.navbar.classList.remove('-top-24!');
-            }
-            this.lastScrollTop = st;
-        }, false);
+        window.addEventListener("scroll", this.onScroll.bind(this), false);
     }
 
     toggle() {
@@ -36,13 +25,29 @@ class Menu {
 
     show() {
         this.menu.classList.add('is-active');
-        document.body.classList.add('overflow-hidden');
+        document.getElementsByTagName("html")[0].classList.add('overflow-hidden', 'scrollbar-gutter-stable', 'bg-gray-50');
     }
 
     hide() {
         this.menu.classList.remove('is-active');
-        document.body.classList.remove('overflow-hidden');
+        document.getElementsByTagName("html")[0].classList.remove('overflow-hidden', 'scrollbar-gutter-stable', 'bg-gray-50');
         // close submenu
+    }
+
+    onScroll() {
+        // only on mobile
+        if (window.matchMedia("(width >= 64rem)").matches) return;
+
+        // only after 100px
+        if (document.documentElement.scrollTop < 10) return;
+
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > this.lastScrollTop) {
+            this.navbar.classList.add('-top-24!');
+        } else {
+            this.navbar.classList.remove('-top-24!');
+        }
+        this.lastScrollTop = st;
     }
 
     submenu(index) {

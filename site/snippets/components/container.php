@@ -10,7 +10,7 @@ if (!isset($class)) {
 } elseif (is_string($class)) {
     $class = [$class];
 }
-$class = A::append(['container', 'mx-auto', 'max-w-6xl', 'w-full', 'py-12', 'px-6', 'md:py-16', 'lg:py-32'], $class);
+$class = A::append(['container', 'mx-auto', 'max-w-6xl', 'w-full', 'py-18', 'px-6', 'md:py-16', 'lg:py-32'], $class);
 ?>
 <div <?= HTML::attr('class', $class) ?>>
     <?= $slot ?>

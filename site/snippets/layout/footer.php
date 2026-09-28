@@ -54,7 +54,7 @@
     // '/assets/vendor/quicklink/quicklink.umd.js',
     // '/assets/vendor/instantclick/instantclick.min.js',
     '/assets/vendor/fastclick/fastclick.min.js'
-], ['defer' => true, 'data-no-instant']) ?>
+], ['data-no-instant']) ?>
 
 <?php if ($page->intendedTemplate()->name() === 'home'): ?>
     <?= js([
@@ -64,8 +64,8 @@
 <?php endif ?>
 
 <script data-no-instant>
+    window.menu = new Menu();
     window.addEventListener("load", (event) => {
-        window.menu = new Menu();
         // quicklink.listen();
         // InstantClick.init();
         FastClick.attach(document.body);

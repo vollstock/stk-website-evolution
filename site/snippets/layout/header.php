@@ -50,6 +50,6 @@ $escape = static fn($value) => htmlspecialchars((string)$value, ENT_QUOTES, 'UTF
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="bg-white dark:bg-gray-900 ">
+<body class="bg-white dark:bg-gray-900">
 
     <?= snippet('components/menu'); ?>

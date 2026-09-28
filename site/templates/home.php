@@ -8,7 +8,7 @@ use Kirby\Toolkit\A;
 <?= snippet("layout/header"); ?>
 
 <!-- Hero -->
-<section class="bg-gray-900 w-full h-screen lg:aspect-video flex items-center relative">
+<section class="bg-gray-900 w-full h-screen lg:aspect-video flex items-center relative overflow-hidden">
     <?php if ($bg = $page->heroBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
             <!-- TODO: poster image -->
@@ -39,7 +39,7 @@ use Kirby\Toolkit\A;
     <?php endsnippet() ?>
 
     <!-- Arrow down -->
-    <div id="scroll-hint" class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2">
+    <div id="scroll-hint" class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none opacity-100 transition-bottom duration-400">
         <span class="-mb-2 text-gray-200 text-shadow-md">Scroll down</span>
         <?= icon('assets/vendor/tabler/chevron-down.svg', 'size-12 text-orange-500 text-shadow-md text-shadow-black animate-float') ?>
     </div>
@@ -51,7 +51,7 @@ use Kirby\Toolkit\A;
     <?php snippet('components/container', ['class' => 'flex flex-col items-center gap-8'], slots: true) ?>
     <?php slot() ?>
     <!-- Headline -->
-    <h1 class=" text-3xl font-bold text-sky-400">Latest News</h1>
+    <h1 class=" text-3xl font-bold text-sky-400 mb-8">Latest News</h1>
 
     <!-- Swiper -->
     <?php snippet('components/blogSwiper') ?>

@@ -45,7 +45,7 @@
                                 <?php endif ?>
                                 class="flex grow px-4 py-5 select-none
                                     rounded-xl hover:text-orange-500 dark:text-gray-200 hover:bg-black/3 active:bg-black/3 hover:dark:bg-white/5 active:dark:bg-white/5">
-                                <span class="grow text-xl"><?= $item->title()->kt() ?></span>
+                                <span class="grow text-medium text-xl"><?= $item->title()->kt() ?></span>
 
                                 <?php if ($item->hasSubmenu()->toBool()): ?>
                                     <?= icon("assets/vendor/tabler/chevron-right.svg", "text-orange-500") ?>
