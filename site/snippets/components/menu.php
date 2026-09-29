@@ -25,7 +25,7 @@
                 class="z-60 -m-2.5 inline-flex gap-2 items-center p-2.5">
                 <span class="text-gray-100 group-[.is-active]:hidden inline  text-sm/6 font-semibold">Menu</span>
                 <span class="text-gray-800 dark:text-gray-100 hidden group-[.is-active]:inline text-sm/6 font-semibold">Close</span>
-                <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-400 rotate-0 group-[.is-active]:rotate-180 ease-out-back') ?>
+                <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-600 rotate-0 group-[.is-active]:rotate-180 ease-out-back') ?>
             </button>
 
             <!-- Mobile: background -->
@@ -75,7 +75,7 @@
                                         <div class="dark:text-gray-200 text-sm pr-5">Back</div>
                                     </a>
                                     <!-- Title -->
-                                    <span class="absolute inset-0 flex items-center justify-center text-center font-medium text-orange-500 dark:text-orange-400 text-lg"><?= $item->title()->kt() ?></span>
+                                    <span class="absolute inset-0 flex items-center justify-center text-center font-bold text-orange-500 dark:text-orange-400 text-lg"><?= $item->title()->kt() ?></span>
                                 </div>
                                 <!-- Items -->
                                 <ul class="overflow-y-auto">
@@ -89,7 +89,7 @@
                                                 data-no-instant
                                                 <?php endif ?>>
                                                 <span class="text-xl"><?= $child->title() ?></span>
-                                                <p class="mt-1 text-gray-500 dark:text-gray-400"><?= $child->subTitle() ?></p>
+                                                <p class="text-gray-500 dark:text-gray-400"><?= $child->subTitle() ?></p>
                                             </a>
                                             <?php if ($isExternal): ?>
                                                 <?= icon('assets/vendor/tabler/external-link.svg', "text-gray-300 size-5 shrink-0 group-hover:text-gray-400") ?>
