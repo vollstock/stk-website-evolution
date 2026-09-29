@@ -15,14 +15,14 @@
         of SuperTuxKart
     </h2>
     <p>Text about all characters being open source mascots.</p>
-    
+
     <!-- TODO: Make this a swiper and add some gimmicks like shaking character images and a nice asphalt background -->
     <?php foreach ($site->characters()->toStructure() as $character): ?>
         <div class="w-[75%] aspect-16/10 shrink-0 bg-gray-500"></div>
         <h3 class="dark:text-gray-200 font-bold text-3xl"><?= $character->name()->kt() ?></h3>
         <div class="dark:text-gray-200"><?= $character->text()->kt() ?></div>
     <?php endforeach ?>
-    
+
     <?php endslot(); ?>
     <?php endsnippet(); ?>
 </section>
@@ -38,7 +38,6 @@
 
 <script>
     const characters = <?= json_encode($site->characters()->toStructure()->toArray()) ?>;
-    console.log(characters);
 </script>
 
 <?= snippet("layout/footer"); ?>
