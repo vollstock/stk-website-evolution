@@ -65,15 +65,6 @@
 
 <script data-no-instant>
     window.menu = new Menu();
-    // window.menu.show();
-    // window.menu.openSubmenu(0);
-    // setInterval(() => {
-    //     window.menu.openSubmenu(0);
-    //     setTimeout(() => {
-    //         window.menu.closeSubmenu()
-    //     }, 1500);
-    // }, 3000);
-
     window.addEventListener("load", (event) => {
         // quicklink.listen();
         // InstantClick.init();

@@ -3,11 +3,11 @@
 /** @var \Kirby\Cms\Site $site */
 ?>
 <header id="navbar" class="fixed left-0 right-0 z-50
-    transition-top duration-300 top-0 lg:top-0!">
+    transition-[top] duration-300 top-0 lg:top-0!">
     <?php snippet('components/container', ['class' => 'pt-6! pb-0!'], slots: true) ?>
     <?php slot() ?>
     <nav aria-labelledby="mainmenulabel"
-        class="bg-gray-950/90 w-full flex rounded-2xl items-center justify-between px-3 py-2 lg:py-4 lg:px-6 transition-all">
+        class="bg-gray-950/90 w-full flex rounded-2xl items-center justify-between px-3 py-2 lg:py-4 lg:px-6 transition-[padding]">
         <h2 id="mainmenulabel" class="sr-only">Main Menu</h2>
 
         <!-- Left (Logo) -->
@@ -17,8 +17,10 @@
             </a>
         </div>
 
-        <!-- Mobile menu button -->
+        <!-- Mobile menu -->
         <div id="mobile-menu" class="group flex lg:hidden">
+
+            <!-- Mobile: menu toggle -->
             <button id="mobile-menu-button"
                 class="z-60 -m-2.5 inline-flex gap-2 items-center p-2.5">
                 <span class="text-gray-100 group-[.is-active]:hidden inline  text-sm/6 font-semibold">Menu</span>
@@ -26,7 +28,7 @@
                 <?= icon('assets/vendor/tabler/menu.svg', 'size-5 text-gray-400 transition-transform duration-400 rotate-0 group-[.is-active]:rotate-180 ease-out-back') ?>
             </button>
 
-            <!-- Menu scroll container -->
+            <!-- Mobile: background -->
             <nav aria-labelledby="mobilemenulabel"
                 class="bg-gray-50 dark:bg-gray-900 absolute inset-0 z-50 fixed
                     transition-opacity duration-300
@@ -35,21 +37,23 @@
                     ">
                 <h2 id="mobilemenulabel" class="sr-only">Main Menu</h2>
 
-                <div class="grow relative -top-4 group-[.is-active]:top-0 transition-[top] duration-300 mt-32 overflow-hidden">
+                <!-- Mobile: slides wrapper -->
+                <div class="grow relative -top-4 group-[.is-active]:top-0 transition-[top] duration-300 mt-24 overflow-hidden">
 
-                    <!-- First level -->
-                    <ul class="absolute inset-0 px-8 pb-8 overflow-y-auto transition-transform translate-x-0 group-data-[submenu]:-translate-x-24 duration-600 ease-out-quint">
+                    <!-- Mobile: First level -->
+                    <ul class="top-level-menu absolute inset-0 px-8 pb-8 overflow-y-auto transition-transform translate-x-0 group-data-[submenu]:-translate-x-24 duration-600 ease-out-quint">
                         <?php foreach ($site->menu()->toStructure() as $i => $item): ?>
                             <li class="flex
                             border-t border-gray-200 dark:border-gray-700">
                                 <a
                                     <?php if ($item->hasSubmenu()->toBool()): ?>
-                                    onclick="window.menu.openSubmenu(<?= $i ?>)"
+                                    onclick="window.menu.openSubmenu(<?= $i ?>, this)"
                                     <?php else: ?>
                                     href="<?= $item->link()->toUrl() ?>"
                                     <?php endif ?>
                                     class="flex grow px-4 py-5 select-none
-                                            hover:text-orange-500 dark:text-gray-200 hover:bg-black/3 active:bg-black/3 hover:dark:bg-white/5 active:dark:bg-white/5">
+                                            [&.is-active]:bg-black/3 [&.is-active]:dark:bg-white/5
+                                            transition-colors duration-200 hover:text-orange-500 dark:text-gray-200 hover:bg-black/3 active:bg-black/3 hover:dark:bg-white/5 active:dark:bg-white/5">
                                     <span class="grow text-medium text-xl"><?= $item->title()->kt() ?></span>
 
                                     <?php if ($item->hasSubmenu()->toBool()): ?>
@@ -60,18 +64,21 @@
                         <?php endforeach ?>
                     </ul>
 
-                    <!-- Second level -->
+                    <!-- Mobile: Second level -->
                     <?php foreach ($site->menu()->toStructure() as $i => $item): ?>
                         <?php if ($item->hasSubmenu()->toBool()): ?>
-                            <div id="mobile-submenu-<?= $i ?>"
-                                class="bg-gray-50 dark:bg-gray-900 absolute inset-0 px-8 pb-8 overflow-y-auto translate-x-[100%] group-data-[submenu=0]:translate-x-0 shadow-none group-data-[submenu=0]:shadow-2xl! transition-transform duration-600 ease-out-quint">
-                                <ul>
-                                    <li class="flex py-5">
-                                        <a class="flex gap-1" href="javascript:window.menu.closeSubmenu()">
-                                            <?= icon("assets/vendor/tabler/chevron-left.svg", "text-orange-500") ?>
-                                            <span class="dark:text-gray-200">Back</span>
-                                        </a>
-                                    </li>
+                            <div class="submenu flex flex-col bg-gray-50 dark:bg-gray-900 absolute inset-0 px-8 translate-x-[100%] transition-transform duration-600 ease-out-quint">
+                                <div class="flex py-5 relative">
+                                    <!-- Back button  -->
+                                    <a class="flex z-1 items-center p-2" href="javascript:window.menu.closeSubmenu()">
+                                        <?= icon("assets/vendor/tabler/chevron-left.svg", "text-orange-500 size-5") ?>
+                                        <div class="dark:text-gray-200 text-sm pr-5">Back</div>
+                                    </a>
+                                    <!-- Title -->
+                                    <span class="absolute inset-0 flex items-center justify-center text-center font-medium text-orange-500 dark:text-orange-400 text-lg"><?= $item->title()->kt() ?></span>
+                                </div>
+                                <!-- Items -->
+                                <ul class="overflow-y-auto">
                                     <?php foreach ($item->subMenu()->toStructure() as $child): ?>
                                         <?php $isExternal = isexternal($child->link()->toUrl()); ?>
                                         <li class="flex grow px-4 py-5 select-none
@@ -81,8 +88,8 @@
                                                 <?php if ($isExternal): ?>
                                                 data-no-instant
                                                 <?php endif ?>>
-                                                <span class="font-semibold text-orange-500"><?= $child->title() ?></span>
-                                                <p class="mt-1 text-gray-600"><?= $child->subTitle() ?></p>
+                                                <span class="text-xl"><?= $child->title() ?></span>
+                                                <p class="mt-1 text-gray-500 dark:text-gray-400"><?= $child->subTitle() ?></p>
                                             </a>
                                             <?php if ($isExternal): ?>
                                                 <?= icon('assets/vendor/tabler/external-link.svg', "text-gray-300 size-5 shrink-0 group-hover:text-gray-400") ?>

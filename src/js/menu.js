@@ -3,12 +3,16 @@ class Menu {
     navbar = null;
     menu = null;
     menuButton = null;
+    topLevelMenu = null;
+    submenus = [];
 
     constructor() {
         // Get DOM references
         this.navbar = document.getElementById('navbar');
         this.menu = document.getElementById('mobile-menu');
         this.menuButton = document.getElementById('mobile-menu-button');
+        this.topLevelItems = this.menu.querySelectorAll('.top-level-menu li a');
+        this.submenus = this.menu.querySelectorAll('.submenu');
 
         // Add event listener to mobile button
         this.menuButton.addEventListener('click', this.toggle.bind(this), false);
@@ -47,13 +51,19 @@ class Menu {
         this.lastScrollTop = st;
     }
 
-    openSubmenu(index) {
+    openSubmenu(index, topLevelItem) {
         if (!Number.isInteger(index)) return;
-        this.menu.dataset.submenu = index;
+        if (topLevelItem) topLevelItem.classList.add("is-active");
+        this.menu.dataset.submenu = true;
+        this.submenus[index].classList.add('translate-x-0!', 'shadow-2xl!');
     }
 
     closeSubmenu() {
         delete this.menu.dataset.submenu;
+        this.submenus.forEach(submenu => submenu.classList.remove('translate-x-0!', 'shadow-2xl!'));
+        setTimeout(() => {
+            this.topLevelItems.forEach(submenu => submenu.classList.remove('is-active'));
+        }, 100);
     }
 }
 
