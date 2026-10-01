@@ -4,9 +4,10 @@
         "watch": "concurrently \"npm run watch-css\" \"npm run watch-js\"",
         "watch-css": "concurrently \"npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./assets/css/styles.css -w\" \"onchange --initial './src/css/templates/**/*.css' -- npm run minify-css\"",
         "watch-js": "onchange --initial './src/js/**/*' --exclude './assets/js/**/*' -- npm run bundle-js",
-        "bundle-js": "npm run bundle-main && npm run minify-js",
+        "bundle-js": "npm run bundle-main && npm run minify-js && npm run bundle-home",
         "bundle-main": "bundle-js ./src/js/index.js --out ./assets/js/.main.js && uglifyjs ./assets/js/.main.js --compress --mangle --output ./assets/js/main.min.js && rm ./assets/js/.main.js",
-        "minify-js": "find ./src/js -mindepth 2 -type f -name '*.js' -exec sh -c 'for file do output=\"./assets/js/${file#./src/js/}\"; mkdir -p \"$(dirname \"$output\")\"; uglifyjs \"$file\" --compress --mangle --output \"$output\" || exit; done' sh {} +",
+        "minify-js": "find ./src/js -mindepth 2 -type f -name '*.js' ! -path './src/js/templates/home.js' -exec sh -c 'for file do output=\"./assets/js/${file#./src/js/}\"; mkdir -p \"$(dirname \"$output\")\"; uglifyjs \"$file\" --compress --mangle --output \"$output\" || exit; done' sh {} +",
+        "bundle-home": "esbuild ./src/js/templates/home.js --bundle --minify --format=iife --outfile=./assets/js/templates/home.js",
         "minify-css": "find ./src/css/templates -type f -name '*.css' -exec sh -c 'for file do output=\"./assets/css/${file#./src/css/}\"; mkdir -p \"$(dirname \"$output\")\"; npx @tailwindcss/cli -i \"$file\" -o \"$output\" -m || exit; done' sh {} +",
         "build-css": "npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./assets/css/styles.css -m && npm run minify-css",
         "build": "npm run build-css && npm run bundle-js"
@@ -17,12 +18,13 @@
         "bundle-js": "^1.0.3",
         "concurrently": "^10.0.5",
         "fastclick": "^1.0.6",
+        "flickity": "^3.0.0",
         "onchange": "^7.1.0",
-        "swiper": "^14.2.0",
         "tailwindcss": "^4.3.3",
         "uglify-js": "^3.19.3"
     },
     "devDependencies": {
-        "@tailwindcss/typography": "^0.5.20"
+        "@tailwindcss/typography": "^0.5.20",
+        "esbuild": "^0.28.2"
     }
 }

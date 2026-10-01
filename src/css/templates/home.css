@@ -1,52 +1,27 @@
-/* #scroll-hint svg, */
-.swiper-button-prev,
-.swiper-button-next {
-    filter:
-        drop-shadow(-1.5px -1.5px 0.25px var(--color-gray-800)) 
-        drop-shadow(1.5px -1.5px 0.25px var(--color-gray-800)) 
-        drop-shadow(1.5px 1.5px 0.25px var(--color-gray-800)) 
-        drop-shadow(-1.5px 1.5px 0.25px var(--color-gray-800));
+@import url(../../../assets/vendor/flickity/flickity.min.css);
+
+.flickity-viewport {
+    overflow: visible !important;
+}
+.flickity-page-dots {
+    bottom: calc(-1 * var(--spacing) * 12);
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    overflow: visible;
-    transition: transform 0.16s cubic-bezier(0.5, 1, 0.89, 1);
-    transform: translateY(0)
+.flickity-page-dot {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+    border-radius: calc(var(--spacing) * 1.5);
+    background: var(--color-gray-300);
+    transition-property: width, background;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
 }
 
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    transform: translateY(-0.05rem);
+.flickity-page-dot.is-selected {
+    background: var(--color-orange-500);
+    width: calc(var(--spacing) * 8);
 }
 
-.swiper-button-prev:active,
-.swiper-button-next:active {
-    transform: translateY(0.1rem);
-}
-
-.swiper-button-prev:hover svg,
-.swiper-button-next:hover svg {
-    stroke: var(--color-orange-400);
-}
-
-.swiper-button-prev:active svg,
-.swiper-button-next:active svg {
-    stroke: var(--color-orange-600);
-}
-
-.swiper-button-prev svg,
-.swiper-button-next svg {
-    transition: stroke 0.16s cubic-bezier(0.5, 1, 0.89, 1);
-    stroke: var(--color-orange-500);
-    stroke-width: 1.5px;
-    overflow: visible;
-}
-
-
-@media (prefers-color-scheme: dark) {
-    .swiper-pagination-bullet-active {
-        outline: 1.5px solid var(--color-gray-950);
-    }
+.flickity-button[disabled] {
+    pointer-events: initial;
 }

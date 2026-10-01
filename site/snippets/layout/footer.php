@@ -58,8 +58,8 @@
 
 <?php if ($page->intendedTemplate()->name() === 'home'): ?>
     <?= js([
-        'assets/vendor/swiper/swiper-bundle.min.js',
-        'assets/js/components/downloadBox.js',
+        '/assets/js/components/downloadBox.js',
+        '/assets/vendor/flickity/flickity.pkgd.min.js',
     ], ['defer' => true, 'data-no-instant']) ?>
 <?php endif ?>
 

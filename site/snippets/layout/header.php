@@ -41,9 +41,6 @@ $escape = static fn($value) => htmlspecialchars((string)$value, ENT_QUOTES, 'UTF
         <meta name="twitter:image" content="<?= $escape($shareImage->url()) ?>">
     <?php endif ?>
     <?= css(['assets/css/styles.css', '@auto']) ?>
-    <?php if ($page->intendedTemplate()->name() === 'home'): ?>
-        <?= css('assets/vendor/swiper/swiper-bundle.min.css') ?>
-    <?php endif ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
