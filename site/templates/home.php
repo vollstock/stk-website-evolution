@@ -2,18 +2,16 @@
 
 /** @var \Kirby\Cms\Page $page */
 /** @var \Kirby\Cms\Site $site */
-
-use Kirby\Toolkit\A;
 ?>
 <?= snippet("layout/header"); ?>
 
 <!-- Hero -->
-<section class="bg-gray-900 w-full h-screen lg:aspect-video flex items-center relative overflow-hidden">
+<section class="bg-gray-900 w-full max-h-screen aspect-9/16 md:aspect-square lg:aspect-video flex items-center relative overflow-hidden">
     <?php if ($bg = $page->heroBackground()->toFile()): ?>
         <?php if ($bg->type() === 'video'): ?>
             <!-- TODO: poster image -->
             <video autoplay playsinline loop muted disablepictureinpicture loading="lazy"
-                class="w-full h-full object-cover md:object-[75%_0] lg:object-right center absolute inset-0"
+                class="w-full h-full object-cover md:object-[85%_0] lg:object-right center absolute inset-0"
                 <?php if ($poster = $bg->poster()->toFile()): ?>
                 poster="<?= $poster->resize(1024, 576, 30)->url() ?>"
                 <?php endif ?>>
@@ -28,10 +26,10 @@ use Kirby\Toolkit\A;
 
     <?php snippet('components/container', ['class' => 'z-0 flex justify-center md:justify-end h-full items-center'], slots: true) ?>
     <?php slot() ?>
-    <div class="md:mx-6 pt-16">
+    <div class="md:mx-6 pt-16 flex flex-col items-center md:items-start gap-2">
         <h1 class="text-center md:text-left text-2xl tracking-wide font-bold text-white text-shadow-md/20">
             <?= $page->heroTitle()->kt() ?></h1>
-        <h2 class="text-center md:text-left mt-2 text-4xl md:text-5xl font-black text-yellow-400 text-shadow-lg/30">
+        <h2 class="text-center md:text-left text-4xl md:text-5xl font-black text-yellow-400 text-shadow-lg/30 mb-8">
             <?= $page->heroSubtitle()->kt() ?></h2>
         <?= snippet("components/downloadBox"); ?>
     </div>
@@ -39,9 +37,8 @@ use Kirby\Toolkit\A;
     <?php endsnippet() ?>
 
     <!-- Arrow down -->
-    <div id="scroll-hint" 
-    class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none opacity-100 duration-400 transition-[opacity,bottom]"
-    >
+    <div id="scroll-hint"
+        class="flex flex-col items-center z-1 absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none opacity-100 duration-400 transition-[opacity,bottom]">
         <span class="-mb-2 text-gray-200 font-medium">Scroll down</span>
         <?= icon('assets/vendor/tabler/chevron-down.svg', 'size-12 text-orange-400 text-shadow-md text-shadow-black animate-float') ?>
     </div>
@@ -50,10 +47,10 @@ use Kirby\Toolkit\A;
 
 <!-- News -->
 <section class="overflow-hidden"">
-    <?php snippet('components/container', ['class' => 'flex flex-col items-center gap-8'], slots: true) ?>
+    <?php snippet('components/container', ['class' => 'flex flex-col items-center gap-8 perspective-normal'], slots: true) ?>
     <?php slot() ?>
     <!-- Headline -->
-    <h1 class=" text-3xl font-bold text-sky-400 mb-8">Latest News</h1>
+    <h1 class=" text-3xl font-bold text-sky-500 mb-8">Latest News</h1>
 
     <!-- Swiper -->
     <?php snippet('components/blogSwiper') ?>
@@ -105,12 +102,16 @@ use Kirby\Toolkit\A;
     <!-- Text box -->
     <?php snippet('components/container', ['class' => 'z-0 flex lg:justify-end'], slots: true) ?>
     <?php slot() ?>
-    <div class="flex w-full max-w-120 flex-col gap-8 bg-white dark:bg-gray-200 p-8 rounded-xl md:mx-6 my-6 shadow">
+    <!-- <h1 class="led-display">
+        <span><?= $page->ctaTitle()->kt() ?></span>
+    </h1> -->
+    <div class="flex w-full max-w-120 flex-col bg-white dark:bg-gray-200 p-8 rounded-xl md:mx-6 my-6 shadow">
         <div>
-            <h1 class="font-bold text-gray-800 mb-1"><?= $page->ctaTitle()->kt() ?></h1>
-            <h2 class="text-orange-500 text-3xl font-black tracking-wide md:text-left"><?= $page->ctaSubtitle() ?></h2>
+            <h1 class="font-bold text-sky-500 text-xl mb-3"><?= $page->ctaTitle()->kt() ?></h1>
+            <h2 class="text-orange-500 dark:text-orange-400 text-3xl font-black tracking-wide"><?= $page->ctaSubtitle() ?></h2>
         </div>
-        <div class="text-gray-700"><?= $page->ctaText()->kt() ?></div>
+
+        <div class="mt-4 mb-6 lg:my-8"><?= $page->ctaText()->kt() ?></div>
 
         <!-- Buttons -->
         <div class="flex flex-wrap gap-3">
@@ -131,11 +132,11 @@ use Kirby\Toolkit\A;
 
 <!-- About -->
 <section>
-    <?php snippet('components/container', ['class' => 'flex flex-col gap-8 text-gray-700 dark:text-white text-lg lg:text-center lg:w-200 pb-0!'], slots: true) ?>
+    <?php snippet('components/container', ['class' => 'flex flex-col items-center gap-8 text-gray-700 dark:text-white text-lg lg:text-center lg:w-200 pb-0!'], slots: true) ?>
     <?php slot() ?>
     <div>
-        <h1 class="font-bold text-gray-800 mb-1"><?= $page->aboutTitle()->kt() ?></h1>
-        <h2 class="text-orange-500 text-3xl font-black tracking-wide"><?= $page->aboutSubTitle()->kt() ?></h2>
+        <h1 class="font-bold text-sky-500 text-xl mb-3"><?= $page->aboutTitle()->kt() ?></h1>
+        <h2 class="text-orange-500 dark:text-orange-400 text-3xl font-black tracking-wide"><?= $page->aboutSubTitle()->kt() ?></h2>
     </div>
 
     <p class="font-light tracking-wide"><?= $page->aboutText()->kt() ?></p>
