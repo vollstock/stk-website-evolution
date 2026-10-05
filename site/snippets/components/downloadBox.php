@@ -176,12 +176,12 @@ $escape = static fn(string|int $value): string => htmlspecialchars((string) $val
                                     data-url="<?= $escape($variant['url']) ?>"
                                     class="cursor-pointer group relative flex items-center gap-x-4 rounded-lg px-4 py-1 text-sm/6 hover:bg-gray-200 whitespace-nowrap w-full text-left">
                                     <?php if ($variant['icon']): ?>
-                                        <?= icon($variant['icon'], 'text-sky-400 size-4') ?>
+                                        <?= icon($variant['icon'], 'text-sky-500 size-4') ?>
                                     <?php endif ?>
                                     <span class="font-medium"><?= $escape($variant['platform']) ?></span>
-                                    <span class="grow text-xs text-gray-400"><?= $escape($variant['architecture']) ?></span>
+                                    <span class="grow text-xs text-gray-500"><?= $escape($variant['architecture']) ?></span>
                                     <?php if ($variant['size'] > 0): ?>
-                                        <span class="text-xs font-light text-gray-400"><?= round($variant['size'] / 1000000) ?> MB</span>
+                                        <span class="text-xs font-light text-gray-500"><?= round($variant['size'] / 1000000) ?> MB</span>
                                     <?php endif ?>
                                 </button>
                             </li>
@@ -196,7 +196,7 @@ $escape = static fn(string|int $value): string => htmlspecialchars((string) $val
         <div data-release-meta class="flex md:row gap-2 px-4">
             <span class="text-xs text-gray-500 text-center">v <?= $escape($release['tag_name'] ?? '') ?></span>
             <span class="text-xs text-gray-300">|</span>
-            <span class="text-xs text-gray-400 text-center"><?= !empty($release['published_at']) ? date('d.m.Y', strtotime($release['published_at'])) : '' ?></span>
+            <span class="text-xs text-gray-500 text-center"><?= !empty($release['published_at']) ? date('d.m.Y', strtotime($release['published_at'])) : '' ?></span>
             <span class="text-xs text-gray-300">|</span>
             <a href="<?= $site->find('downloads') ?>" class="text-xs text-center inline-flex items-center">
                 See all Downloads

@@ -14,12 +14,3 @@ window.addEventListener("scroll", () => {
         scrollHintActive = true;
     }
 });
-
-
-// -----------------------------------------------------------------------------
-// Blog carousel
-// -----------------------------------------------------------------------------
-
-var flkty = new Flickity('#blog-carousel', {
-    contain: true
-});

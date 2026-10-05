@@ -1,0 +1,359 @@
+Title: Evolving Candela City
+
+----
+
+Text:
+
+<h1>Candela City – an overview</h1>
+
+<span>
+<p>Candela City was first introduced in SuperTuxKart in version 0.9.3 in 2017, and remained essentially the same in subsequent versions.</p>
+
+<p>For SuperTuxKart Evolution, it is receiving a very large set of changes to make it fresher, more fun, and more beautiful. In this blog post, we will discuss them in detail, as well as explore the motivation behind them. You can also watch our video below, which offers a complementary look at the new Candela.</p>
+</span>
+
+<br>
+<div>
+<span><span>&nbsp;</span></span><br>
+<span><span>Transforming Candela City into our best track</span></span></div>
+<br>
+
+<span>
+<p>Let’s first discuss briefly what motivated us to improve Candela City.</p>
+
+<p>Created by Samuncle, this track has a lot of qualities. The visual environment, mixing original elements with elements inspired by the city of Paris, as well as the cities of Venice, Lyon, and Amsterdam, is rich and feels coherent.</p>
+
+<p>For someone curious to explore, there are many neat details, such as the restaurant with its menu and noises, the cinema with its movies, or the metro closed because of a strike.</p>
+</span>
+
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi30gCV9ZNwdkTPAh0BbILst63uP0yfRax4lsxQKU-Imf_3Qs7tT7tepqo7qqRgBfSRgHwxHjMZqp73mEAxYq4AYjwMMYG37BeoquPYpLTuaksytTaAq6qaZcFK0KoLKg1xQVCXjEtadkA-92gdbPwziONSEUdtVk2nbeDBe7jfL4gw031xNipqJT1BSQ/s1070/Candela_cinema.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-dhoXCHQqkDsJqW-D-w803Vq5VumAz6hDUCFlDpXN4LOKAw0T1aHXLFckJYKfHX0otqHeTqg_lWoM21193wR6wlFfQKJM_Sb8vYqjVvF5s-KsL-0vzXzfEVH6pVw_CAqndqydjtPBDJxdtN_sSLeBz4Qj6Z8rhre8nCiHZXgrmIUrpUZF4ZCs37XFIg/s1028/Candela_venice.jpg"></a><br>
+
+<span>
+<p>When it comes to gameplay, the main boulevard being a long straight divided in two sections with gift boxes available in the middle is an original concept with a lot going for it.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7M_90F_JOqj0oBP7dXvgNV_EwUobdRSiXzy8IGQU90Psl-HyCcpAXzXDr3LX-aYRm-OmCHolajuGfMlHj7rDC3MshhjmHiZwGSg5580K01Lj0TrP6TikBPt_nuLyHOx-BM-Ws9LZH7Us7Gy4ZtpPY7YVFBKlbuTOWQ7xXIFoaHqUxI1jDciscx92OZw/s1250/Candela_old_mainboulevard.jpg"></a><br>
+
+<br>
+<h1>Shortcomings of the old version</h1>
+
+<span>
+<p>But I have long felt that Candela City was missing something to be truly great. As much as I liked some of its details, it was never my favorite to play, and many players felt the same&nbsp;: when looking at track pick rates in online multiplayer, it fell in the bottom third among standard tracks.</p>
+
+<p>What were those shortcomings separating this track from greatness&nbsp;?</p>
+
+<p>Visually, users with low settings missed out on much of its beauty, and there was certainly room to make it more visually striking for other users, but some popular tracks like Hacienda were much worse in this respect.</p>
+
+<p>During the course of the Evolution rework, visual improvements became an important part of our efforts, but as a game developer thinking a lot about gameplay and player experience, my mind focused first on those aspects.</p>
+
+<p>The strong curve just after the start was too chaotic for online play, as it was not rare to be rammed off the road with little recourse. In the great straight, players went once from right to left and no more.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4TLTkwWWlY2qYhejlgHZcKD7DtNf5ss4uza6fcrPr7XFjtOXLrioQnvxYb3xDUDQSqfuwYDvY6VZU9ChHGoWlk4S1rCjTy1rcXCfcAFzOhFw-fe0DiBHxHzdUOTl3FlSV2upVZ_Iugny_-ikGZq1L4oSTBRfi_awiOjXtBVMal4avbLr1wG8goaFT_Q/s1500/Candela_old_strongcurve.jpg"></a><br>
+
+<span>
+<p>After the very tricky start, the rest of the track was rather easy, and nitro could too often be denied to the kart behind trying to catch up. Combined with rather short laps (about 30s per lap at the highest level, with 3 laps by default), it gave little room for comebacks.</p>
+</span>
+
+
+<br>
+<h1>The park</h1>
+
+<span>
+<p>The park road is the first concept I came up with. In a city track, it is possible to update the road layout by closing some roads and opening others while keeping the bulk of the environment in place.</p>
+
+<p>The park with its great tree already existed, the secondary road that would link back to the main road was there too. When I discussed with Sven how to make Candela City worthy of SuperTuxKart Evolution, this new road was my top priority.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3REqHSRijzERtBaJw-MuPHFg8AuTyBSLIqHDDxHyBta4rCaatWBhbmSX_u6QK1J479W7pCRmB-07bldSVbwWPp5qYJwdKSuWYvAam1WuiwTAd7F1gHps0BN8tCuzl0DyVOF8BjpRbLxQYyuznSxZvyF1CDKjihDm2B6waIJpGGNlpJK_VWRjXxZX58Q/s1000/Candela_park_map_minimap.jpg"></a><br>
+
+<span>
+<p>Part of the old road was closed off, and the park received two entrances to connect it to city streets. Instead of one easy curve, players now have three curves to negotiate, including a tricky one, transforming what used to be a rather boring part of the track into a fun and exciting one.</p>
+
+<p>Once Sven started working on this new section, the benefits for visuals quickly became apparent too.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfnxlA4iotQ9L16zMgOHL1SGaQhnh-dtRbJ0pf72pOqPD3SdLV1nG_WMzRc7c1TH9jUPMHAi712s_BKyY7ITH98SRPLH8q2CpP_Gib78xVkiG5U4hsg16jaYC7bKouhnmzlWMm-jH65uT9ZybH-SXc1vqOyaklQyaDp7Rr6DCL1O1dHga8yJnIn-pb1g/s1600/Candela_park_visuals.jpg"></a>
+
+<span>
+<p>The <a href="https://members.supertuxkart.net/posts/brighter-candela-162364623" target="_blank">park section with its greenery</a> offers a nice variation from the grey-blue-pink tones that are typical of Candela City.</p>
+
+<p>We went through several iterations, with Sven making improvements and us then discussing what was left to do and various details that would make it feel right.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnrnn9EG9w-bD_7Gps373ofUDDySsXARdgKaMfY10pK-7HfiDirk8V9yU4h24Lfile8_GQirm-JvNXxx6cjH1ghLVQMnKKKWwQxtQaxR1zm3eeiFGgyXjrsmTBTNFqSqV9FaqLYWd30J7X_lAImL7scVErcFXYriR1KoZHwOhgRv2OmKH40HBgIX5oHw/s1500/Candela_park_entrance_gate.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ9W0vQTE5BbEenH5BRpsrgftztliAj-w00u7aMMAXCECiomc6_T4E2j9DgtdRvgx8EDaKK7zgR7nDGq3_V3aBO3q4D62abcXFBbQxyXfAe9qpEPP7won7d2_3tn-eED3IjPzaNHzrIbElJ3BiyqgGM-4-4g8mdnwJRU_g6SftoXNED_fPrF6S0LthOg/s922/Candela_park_realworld.jpg"></a><br>
+
+<span>
+<p>The entrance gates with their street lights, the texture of the park path, the height of the path compared to the grass, the greenery surrounding the path, the placement of barriers… Working together, all these things add up to make it beautiful and memorable.</p>
+
+<p>If you are interested in seeing intermediate steps, our supporters on Patreon have access to <a href="https://members.supertuxkart.net/posts/transformation-170652697" target="_blank">an extra video showing the park’s transformation</a>.</p>
+</span>
+
+
+<br>
+<h1>The arch roundabout</h1>
+
+<span>
+<p>The second major change to the track was inspired by Boulevard Elysia’s namesake and by my desire to make the track longer.</p>
+
+<p>While it’s always possible to increase the default lap number to ensure the duration of races is not too short, and this is a solution we adopt sometimes (in SuperTuxKart Evolution, the track Northern Resort will have 4 laps by default at higher difficulties), 3 laps is often the best compromise to provide visual and gameplay variety while not making the track too big and letting new players learn it quickly.</p>
+
+<p>After the bridge, the old Candela City track continued directly to the right into the main straight.</p>
+</span>
+
+<span>
+<p>But off to the left, beyond the barrier closing off the road, a small triumphal arch could be seen. And hence came the idea&nbsp;: have the road turn left and go drive around it&nbsp;!</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF2XBTAFGkuK-cwMNdiNAgybN6cI0m-1a5dumlVBqJAGaRa3KE6lV1y5jthGWoBuvy6fT0vlxNZxkY7GRyBjNS5jTmLh4c9io4B8RikNWLpl0VDAV81so9vIZR1ZZBRyEIb9IuLZRoJ-5hK0aYCuw-jmpYdP1Md_-xySJb9ejPzRDvqobnjGPbHssbIw/s1920/Candela_oldarch.jpg"></a><br>
+
+<span>
+<p>In early versions, the arch’s size was simply increased, but as it became a major visual landmark, an improvement to its model became a priority. PoketMarty worked on concept art and contributed the final model, while Sven handled the texturing and integration in the city.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1CLUncQPS1ri5RldkIvlPULrswasIJzkZ0vxlOMz5_xpjp1F4iJlBs1j4TKsPEsQpSw51RjjrNlsPtqzdY9FdT8S4L7cbGScB8tczLumYKeX9yRZwyS-c_3sTF0Bvqe1KlugBfspXFooXyLo6IIZRzV7wv8FfsJdLS6noIoK5augC8OYVDHuFuzygAw/s930/Candela_Arch_concept_art.png"></a><br>
+
+<span>
+<p>The new arch features a stylized flame that has also found its way in other elements across the track, making it a symbol for the city. It is inspired by the city’s name, as candela comes from a Latin word meaning candlelight, and which has come to designate a unit of light intensity. When Sam first created the track, the name Candela was itself inspired by a nickname given to Paris, the “City of Light”.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2NGs-tKDTH6pqJWJ9Z4iIyuR56r0-ut_nbm0_FV3up-NjWWy-Njv5lQcR16mlygYDY5ZHne6K5Y7YVSfzUB_iBLz5xu18U6V-LQD0yV6XaNGgJeLy0KG0i6AFn0OhegZu6_t28yzBUw0IX9SYdFSpTSQkXT1TF-zhnvBDhSufq_JuerWWbUhdZ13Wpg/s2560/Candea_Arch_3Dview.jpg"></a><br>
+
+<span>
+<p>The new boulevard section features an upward slope until the roundabout. This change, inspired by Paris’ Champs-Élysées, meant additional work for Sven, who had to reposition buildings.</p>
+
+<p>But there was also a reason coming from experience playing SuperTuxKart&nbsp;: elevation changes are fun. Their small effect on acceleration is of little importance compared to the great feel of speed and action they give to players. On a track that was previously flat except for the small bridge, this variety is very pleasing.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0cB8o6JU8YOn589p63NwbARUdPZ77z3EZnHnLi0pOzT4lnuIZxZIER-IbOvMcA2CldFgzw1tnPFKEGvhV8l1V8HPqQVwjPe-nzrA2Tzs8i-5r_ccW7T9LphyphenhyphenxORvKhQKhnQ1kPeKX4BkqVqiBKSzDKx49TVERm8xmKNAJj3eUiam1iStsxA7RzftKMQ/s1660/Candela_final_arch.jpg"></a>
+
+<span>
+<p>This new section adds both to the track variety and to its length, helping to solve the shortcomings we had identified before we started the rework.</p>
+</span>
+
+
+<br>
+<h1>A new start line</h1>
+
+<span>
+<p>The new section around the great arch also helped us to solve the issue outlined earlier regarding the start line.</p>
+
+<p>Its new location, at the exit of the roundabout leading to the boulevard feels natural, and, with ample space to drive, the chaos that plagued starts in the old location is no more.</p>
+
+<p>For the start line itself, we followed a technique that has proven itself: two indicators, one visible from afar, here a banner bearing the word “start”, and one on the ground visible from up close, here with checkered markings. A magical pink light also makes this piece of road a little more special.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyPnY3Z-MLITc-qb-4CKF08fosc4PI2SYR0OXFCfY95dLg0PllmKOQu3tXFGpDuUaYGS-hYyw8u27A0fl-5LtNtO6rdEhNRmy12a7IyG00jkaoBfwkCo58iHGiVxBBCr_aeNOsjg2qd2fqHa4Im_uz5HBY6xvL9gpTMrr59mEYAjN6LcZcXkHuqLvJdQ/s1600/Candela_new_startline.jpg"></a><br>
+
+<span>
+<p>On the visual side, karts get either a view of Boulevard Elysia, or, in reverse, a direct view of the triumphal arch and of Candela’s opera house.</p>
+
+<p>Yes, Candela’s opera house! Candela has always had some unique buildings, such as its movie theater, its restaurant, or its church. As we expanded the track to a wider area, we felt it was necessary to add more such buildings that give character to the city, and the new roundabout felt like an appropriate place for a grand building.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ9EdIw36mH9_oxbyJoiWquHZkkEXlt0m55pZ0LIvVt_NEloGjsYz2M6gcM8fPE1P45QCHfjLzIW6RK-UbYwB45lpdTK9eS78hkiDo1Dp9M_WrVLgCNC0IfjR6Ltz6YBh5Ol551iq8RMkvVISYU5BoBd5KrRWNX11ghQuAwn6aVS1iB1K6Wvd19Zpy9A/s2560/Candela_opera_house_render.jpg"></a>
+
+<br>
+<h1>Boulevard Elysia’s great straight</h1>
+
+<span>
+<p>In SuperTuxKart 1.5, Boulevard Elysia already featured one of the game’s longest straights, similar to Hacienda’s. With the new section leading up to the triumphal arch, a kart without speed boosts takes 3 seconds more than before to cover it, for a total of about 12 seconds.</p>
+
+<p>In a game like SuperTuxKart, in which drifting is a core mechanic and in which top speed is easy to attain, making one of the game’s longest straights even longer is a bold move. How could this actually enhance gameplay?</p>
+
+<p>We leaned in towards Boulevard Elysia’s uniqueness with the separators in the middle by giving players more reasons to switch between sides.</p>
+
+<p>It is the only way to get a gift box in this part of the track, as they are located exclusively in the crossings, but it is also a good way to place some drifts and we added sets of nitro on both sides. The player enters and exits the boulevard on the left side, but there is more nitro available on the right side.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFpLO6HMxuFHO73Q99wY6ZFnSZeMuF5Ia_77zaWSrEiWb3LYtD8jpeaxS0A4tTAkeQC4uJMzynWOPZlwm5lwkRi0wEWRY8aVr0WwPqTG1wDN0S3oHv9R0KtuW-tynZITWGDGbQ6TnPQfeC1FXCR8cpbhpp0tBvh6VHPjuQsePpAzsp5kPpPK3r1wXzlw/s960/Candela_new_nitro.jpg"></a><br>
+
+<span>
+<p>This improved item placement makes it very natural to cross once and back, and the newly added portion of the straight contributes here by giving players more leeway for positioning. It even makes four crossings achievable if a player wants to collect as much as possible, although this is more challenging to pull off.</p>
+
+<p>Finally, in some situations when benefitting from great speed boost items, it might be better to keep it simple and drive straight. Our changes are aimed at creating interesting choices for players, as it’s more exciting when there are several possible answers to the challenges the game offers.</p>
+
+<p>Another element that we changed in this straight is the shape of the separators. By making them more pointy, karts that fail to cross in time will mostly rebound and lose much less time than with a frontal collision. We discussed this in more detail <a href="https://members.supertuxkart.net/posts/brighter-candela-158643328" target="_blank">in a past Patreon post</a>. It is part of our efforts to make SuperTuxKart less frustrating for new players.</p>
+
+<p>Those improvements are how we transformed a long straight into a really fun part of Candela City.</p>
+</span>
+
+
+<br>
+<h1>Let there be light</h1>
+
+<span>
+<p>The sun in the sky has been replaced by a full moon to be more consistent with the track’s distinctive night-time feel, and the position of the moon in the sky now matches the direction of the shadows cast on the road. Our game engine does not support shadows from point lights, so only one main light source is used for dynamic shadows.</p>
+
+<p>Although shadows were the initial reason for the moon’s position in the sky, the way it aligns with and completes the perspective from the triumphal arch to the steel tower is very pleasing to the eye.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSqjU6gD02qYE5K1OvWLu3FU3YNajmUUJ-ZtzODYeAlU22iP1hXmqlMR1oMrfQhyxU45eAOjaeg-17dy8UWTGp_UddM3a2tUVHeJD4DUCIpard5No89dSDgB7XSHtjLX5pwjAN_xdEtk1M0TrRu6mL2walx1cpx_mi56nQI887Z5lXvYg1B7lOidhqsg/s1300/Candela_moon_two.jpg"></a><br>
+
+<span>
+<p>Another major change to lighting comes from street lights. They have been made brighter, giving a warmer tone to the main streets. Candela City is a night track, but it is set in a lively city.</p>
+
+<p>Boulevard Elysia received additional street lights, in particular on the middle separators to ensure that the center of the boulevard is also well lit.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUv4yiDiTKtADk23ml4FZLnN7q5zBxFZhXB4ITlExSMKfit0kAj3g_9RsaNKrRTpsw7VXaM0_V_2f_m7iqFkvU-QfHmzM8yZQhBPOhaU_KPd1lYJ8zg-hnqzAacfW-bPSmnvoOJewJBbxUToW1sOU_1TW6yd1aGpw2SQCC1408ad2VorszrfWrzLLVrg/s1800/Candela_well_lit_boulevard.jpg"></a><br>
+
+<span>
+<p>This change is supported by new code for SuperTuxKart Evolution enabling <a href="https://members.supertuxkart.net/posts/rendering-more-165353846" target="_blank">the use of up to 128 point lights</a> up from 32, and providing <a href="https://members.supertuxkart.net/posts/smarter-light-165361714" target="_blank">a smarter allocation of these limited slots</a>.</p>
+</span>
+
+
+<br>
+<h1>Beautiful streets</h1>
+
+<span>
+<p>Improvements to Candela City go beyond new sections and new buildings. Many smaller changes come together to bring it to a new level of quality and consistency.</p>
+
+<p>The metallic barriers on the sidewalks as well as the wooden barriers blocking side streets that player karts are not intended to go in both received a massive visual upgrade, which we covered in more detail in <a href="https://members.supertuxkart.net/posts/brighter-candela-166951076" target="_blank">one of our Patreon posts</a>.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicJ_VlYLGcxbbzeIJYypl-OGtFlmAKiZ_2BZftoJAnZWJAZ6pjuDdGbFeD1YDANK4wb1FVn-aRLEmQ9WwIwB5D3LAdKTtMocrHQdBBmpobaPH81Hfc_rjF38Yg6LhV3meWaI5S1anZGpy9kIQjZU3QbgbEGI59HUnwNYh35nvsfUfIBhEjkrfCZaSiiw/s1500/Candela_oldbarrier.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAFO4CTYpQ-qorRVx8MG_mcng4kFoEAS60HbxvEgikM2FfTKwMDGKNKnxlsDf408u1br46f24HpvHZ7udsfTdUu79cfnDEscKRISIObGP0eKs7nGSHGiwLWR_IjH8HamwSVfnQFqmzU2rTpcVoXdQp-QT5ZAF1eqh44871c8L6R_pvCTmFdi6-LW2cuA/s1500/Candela_newbarrier.jpg"></a><br>
+
+<span>
+<p>We have also adapted the wooden barriers so that, when driving in reverse mode, the arrows on the signs point to the correct direction. Reverse mode is often underappreciated, but it offers a different visual experience and gameplay experience compared to the standard direction, and the new Candela City is equally enjoyable in both directions.</p>
+
+<p>The potted plants that decorate the center of Boulevard Elysia have received a new model, courtesy of Mish7913, with Sven taking care of the texturing. The improvement compared to the old flat plant is very obvious.</p>
+
+<p>The new plant models <a href="https://members.supertuxkart.net/posts/new-flowers-for-169504655" target="_blank">can also be found in the city’s park</a>.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrcz_xKWxwj-OTvMaQEtCm4TEZxlGpcF4TJBMJG_eE2xfRAo4ZqCpyQgGZYZKd1gM4D2TLH1usDnXyAZaLVY1FFBsuegJgxepSPAdxOxzZxd6QjGOzPVPDD8H5ewSy0tIYPPSJPT3PZuB9eLYed9A8Y2ttHiEF2HaQLqB4yh9LDJ-TESMPZwJhWR_iQQ/s1200/Candela_new_flower.jpg"></a><br>
+
+<span>
+<p>Another very significant change is a fix to the UV mapping of road textures. UV mapping is the process through which a 2D texture is projected on a 3D surface, making it very important for the final look of the textured surface, and poor UV maps led to visible tiling and inconsistencies.</p>
+
+<p>The difference the fix makes is shown <a href="https://members.supertuxkart.net/posts/brighter-candela-167573866" target="_blank">in another Patreon post</a>, and Sven also took care of making the seams between different streets as unnoticeable as possible.</p>
+
+<p>But a road texture isn’t just any texture.</p>
+
+<p>It is one of the most visible, and therefore important, in the entire track. The cobblestone texture that was used in Candela City isn’t unique to it – the same texture can also be found in Cocoa Temple, where it comes from, and in Ravenbridge Mansion.</p>
+
+<p>And more to the point, it didn’t match the quality of many new elements, so Sven and I agreed that a new texture would be a good idea. The final result, with two variants, one with a beautiful fan paving pattern and one with parallel rows, speaks for itself.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiafIiM0Gn9nh9GNy9cjuTOaK4Sx2iUQ51h8MXBp85gIOzukWAkhAmBkEMXrkL2UpTZW_nUyXV2GwNkvMNJFrZr3AyeLaMSFnNVKc_hyNMN0iMjxmEFD7_c9HY6G0EtkCxaCP74tj8Ri4yBQgxWyTRmvNTZQFKf-dIZQUDf5worIIQBqXxSCPFs2BzMvQ/s1920/Candela_CobbleComparison.jpg"></a>
+
+<span>
+<p>With the beautiful new streets, the sidewalk texture felt comparatively lacking. It is much less important visually, so when I initially mentioned it to Sven we thought it might be more reasonable to leave it for later.</p>
+
+<p>But the strive for quality won out and Sven decided to also have a go at it, with an entirely new and much better paving brick texture.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhubAcAynXU6oSeiGYPDkFPudho407riUAFmIQiiEjCs00ve-SgSQPKOebJe7z7fTpifuT51p8luiCADweGgCDPNYbKEIpVSpeyEkSWtpg4iqa9DVHeo6MjwVUdKaBYOit1RQANF7GFEgZEaaiKgUS9e08qY_fkLxCOJC-jD9BnuR-0-g6j49UDkORdIQ/s1280/Candela_SidewalkComparison.jpg"></a>
+
+<span>
+<p>A change that experienced players will particularly appreciate, but which everyone will benefit from, touches sidewalks. They have been made smoother in curves to look nicer, and more importantly the height of their borders has been increased so karts rebound instead of climbing on them when hit at high speeds. This usually makes the collision less punishing, especially around the gears roundabout where climbing on the sidewalk often caused a total stop.</p>
+
+<p>We have also added crosswalks in many spots around the track. We want Candela City to feel more like a real place where people in the SuperTuxKart universe live their lives, and so we had to step back and think about the track’s design not only from the kart’s perspective, but also from the perspective of a pedestrian that would walk in the city.</p>
+
+<p>Since we felt that zebra crossings with their white stripes would hurt the city’s esthetics, we instead opted for the old style of pedestrian crossings that existed before the white stripes, with broad nails marking where people should walk. While it is not as visible, and improving contrast with the pavement has been a challenge, it gives more character and personality to the track.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnwrIhL7j2i0yoSM86HXmQf62x5qSNSxMvuL9lFI85gFz_6R_J_UagLk2kV3Za0JHH82Qb5Crsg5XOJUaNlMxBrEYItp4T4_7PPBFseI5JDisPB4NOECh12iiKYBum2A3yC7eM2msnfCjiFNoLMYmI4D43qtXoeC__hnab1Dxqoh_fczLc075WzH88VA/s1500/Candela_crosswalk.jpg"></a><br>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4uSFXwcWqzev1dfAX8cCkU4S0Q3WAXJhqxk8X7XL4ofk0AHuyniO4o8z87qyxQza9NFcsMDIR_MZUdWvtlLSzGarV5hS1WH72Ci_TLDh-vJOo6crUb6CvRGd-L8fb5onGAvmJivN76UBdGNAVj9rs18mvdhNF74PfQEA66GYcbJX7nV6lSmVdG8Lijg/s1600/Candela_crosswalk_realworld.jpg"></a><br>
+
+<span>
+<p>The nailheads are fully three-dimensional, which improves their appearance near lights. It also means that there is a tiny bump when a kart drives over one of them, but it is essentially negligible from a gameplay perspective. Their size has also been exaggerated to improve their visibility.</p>
+
+<p>Finally, few things break immersion more than seeing a kart rebound against nothing. Throughout the track, invisible walls have been removed and auto-rescue has been adjusted to replace them where strictly necessary, particularly to help karts that mess up a jump and fall outside the road. Extensive testing has been done around collisions to ensure everything works well in the new track sections.</p>
+</span>
+
+
+<br>
+<h1>Egg hunt</h1>
+
+<span>
+<p>Another new element that will come to Candela City for Evolution is a set of egg hunts for players to explore the track.</p>
+
+<p>We consider that for this game mode to be interesting, spots outside the main road that can be driven to are needed, as well as visual variety to enjoy in the process. That’s why egg hunt works so well in tracks like Black Forest or Cocoa Temple.</p>
+
+<p>For Candela City, the new areas give us more spots to hide eggs, but we are also removing multiple barriers present in racing mode. These newly opened paths make the exploration feel special.</p>
+
+<p>This philosophy of opening up the track and removing invisible walls and rescue planes to expand the available area for egg hunt is one we intend to apply for new and reworked tracks alike.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikmOk8ACuF4wkb9Ip3gbRCRL8IbxrucdoWiBw7A7GMY8BHMnMcf-v_hd3eoZJw1Bfum4gQQmVBUt5QZPz6ttLfsi2d41l3WgNqyRpjCRlIuLGqiHH469llqnzJLSvEBhHV8WZDLOm1O3TWYZl6Ei-2tzH_VmqR5PV5M_UVtdxl1lWnx50keuQ5Hcl20Q/s1920/Candela_egghunt.jpg"></a><br>
+
+<br>
+<h1>Jump ramp and details</h1>
+
+<span>
+<p>Finally, we have added a new optional jump ramp at the exit of the gears roundabout. It shortens the path slightly and gives access to a nitro and an item box, but it requires a zipper to take successfully, making it primarily an alternate path for good drivers to come back from bad positions.</p>
+
+<p>A small SuperTuxKart banner hangs above the temporary jump structure (Candela City’s inhabitants don’t want their streets closed all the time for kart racing!), and Sven also decided to add some (destructible!) boxes at the ramp’s entrance.</p>
+</span>
+
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBlUXSMNak2PHhSK2pJZl_Dgtn-Ls63JzKocM0QBVO2CdeWBzke4lwIh6ISsjMNnMhq5JYKx-mLlGU3UExZhb-U0eTKLQFltoHaiRgovAjt0-kqBhVcxbEjKma2CIu-DVKhcXZFlpQSGJ6EKmrMuzbzQjXRUkGR7qtNCkCxv41jWtWudNTpRCCG6GcFw/s1200/Candela_jump_ramp.jpg"></a>
+
+<span>
+<p>By this point in the blog post, I think that the love and care that went into making something beautiful and fun is very apparent.</p>
+
+<p>Even with how extensive this blog post is, I cannot go into every little small detail that was tweaked and improved. I’ll just mention a few more.</p>
+
+<p>The fireworks near the steel tower used to cast shadows. While the shadows would be present only for a very short time, they were surprisingly big on the new arch and around it, so it was both visible and odd. Sven discovered that, in Blender, they were set to not cast shadows, but other properties were missing, silently preventing proper exporting. Now, the spurious shadows are no more.</p>
+
+<p>Another issue that irked me happened when a kart fell outside at the gears roundabout. The kart would visibly fall through the giant spinning gear, which looked off. Rescue planes have been changed to prevent the issue.</p>
+
+<p>One last example: we fixed typos present in some of the text present in the track, such as a street name or the strike warning near the metro entrance. Few players would have noticed the issue in the old version.</p>
+
+<p>And so, that’s all for the changes discussed and shown in this article!</p>
+</span>
+
+
+<br>
+<h1>Conclusion</h1>
+
+<span>
+<p>It is unusual for a blog post about a track to be written by a developer rather than an artist, but Sven and myself have cooperated closely on this project. From the planning stage to the finishing touches, we discussed what needed to be done, and after each new version shared by Sven I would test it carefully to seek ways to make it better.</p>
+
+<p>The improvements we have done for Candela City are the most extensive that we have done so far for any track that SuperTuxKart Evolution will inherit from SuperTuxKart 1.5.</p>
+
+<p>We think that the result, for visuals as well as gameplay, is an excellent showcase of what we want to achieve with SuperTuxKart Evolution, and we hope it will provide fun to millions of players.</p>
+
+<p>Yet, we didn’t run out of ideas, and there are many small theming and visual details that we would enhance if we didn’t have 20 other tracks to take care of. The most enjoyable game is one that people can actually play, after all.</p>
+
+<p><strong>If you like what we are doing, you can support our work by <a href="https://supertuxkart.net/Donate" target="_blank">making a donation</a>. It really helps to make development more sustainable. Small articles showcasing the development of STK Evolution are also available to everyone <a href="https://members.supertuxkart.net/" target="_blank">on our Patreon</a>.</strong></p>
+
+<p>SuperTuxKart’s libre and open-source nature also means that, if there is something you want to improve directly as an artist or a developer, you can do it. Just get in touch with us to maximize chances of your contributions becoming part of the main game.</p>
+  
+<p>Likewise, if you'd be interested in helping us with video scripts or video editing, let us know. <a href="https://forum.supertuxkart.net/" target="_blank">The forum</a> is a good place to make sure we don't miss your message.</p>
+
+<p>I’ll conclude by saying thank you for reading this blog post to the end! We’d love to hear your thoughts about the new Candela, so don’t hesitate to leave a comment.</p>
+</span>
+
+----
+
+Metadescription: 
+
+----
+
+Poster: - file://8o5q78qvp8mzk99k
+
+----
+
+Date: 2026-09-30 23:40:00
+
+----
+
+Author: - user://VCrnfJEu
+
+----
+
+Tags: 
+
+----
+
+Uuid: sbkjnbpog4gemwwn

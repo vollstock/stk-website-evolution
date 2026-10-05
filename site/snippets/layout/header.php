@@ -49,4 +49,6 @@ $escape = static fn($value) => htmlspecialchars((string)$value, ENT_QUOTES, 'UTF
 
 <body class="bg-white dark:bg-gray-900">
 
-    <?= snippet('components/menu'); ?>
+    <header>
+        <?= snippet('components/menu'); ?>
+    </header>
