@@ -5,7 +5,7 @@ Title: SuperTuxKart Evolution
 Menu:
 
 - 
-  title: Discover
+  title: Manual
   hassubmenu: 'true'
   link: ""
   submenu:
@@ -18,6 +18,10 @@ Menu:
       subtitle: Lorem ipsum dolor sit amet
       link: page://ofkdjqg5gcun2ujl
     - 
+      title: Controls
+      subtitle: Gamepad and Keyboard Layout
+      link: page://msw1aynqhyflvcsv
+    - 
       title: Tracks
       subtitle: Lorem ipsum dolor sit amet
       link: page://wz7mdmzkyoyfyakq
@@ -26,9 +30,9 @@ Menu:
       subtitle: Lorem ipsum dolor sit amet
       link: page://ompotqqnxqta3rmw
     - 
-      title: History
-      subtitle: Lorem ipsum dolor sit amet
-      link: page://ijfu7jsw01gutpeo
+      title: Hints and Tips
+      subtitle: Strategies to become a better driver
+      link: page://gqj4owkuzlbinwnv
 - 
   title: Resources
   hassubmenu: 'true'
@@ -43,16 +47,20 @@ Menu:
       subtitle: Lorem, ipsum
       link: https://members.supertuxkart.net/
     - 
-      title: Gallery
-      subtitle: Lorem ipsum
-      link: page://sepi6cfkrpxfymap
-    - 
       title: Addons and Rankings
       subtitle: >
         Space for community assets and online
         players
       link: >
         https://testingstkaddons.supertuxkart.net/
+    - 
+      title: Gallery
+      subtitle: Lorem ipsum
+      link: page://sepi6cfkrpxfymap
+    - 
+      title: History
+      subtitle: 20 Years of SupertuxKart
+      link: page://ijfu7jsw01gutpeo
     - 
       title: Developer Documentation
       subtitle: Everything code
